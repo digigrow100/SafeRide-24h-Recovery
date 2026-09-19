@@ -1,3 +1,7 @@
+import servicesCarRecoveryDetail from "@/assets/images/services-car-recovery-detail.webp";
+import servicesBreakdownDetail from "@/assets/images/services-breakdown-detail.webp";
+import serviceVehicleTransport from "@/assets/images/service-vehicle-transport.webp";
+import servicesRoadsideDetail from "@/assets/images/services-roadside-detail.webp";
 import ServiceDetailRow from "./ServiceDetailRow";
 
 const ROADSIDE_ITEMS = [
@@ -17,7 +21,7 @@ export default function ServiceDetails() {
         eyebrow="EMERGENCY DISPATCH"
         title="24/7 Car Recovery"
         description="Professional recovery for stranded vehicles day and night across Bradford. Quick dispatch and careful handling for all vehicle makes and chassis setups, ensuring your car is brought to safety without secondary damage."
-        image="https://lh3.googleusercontent.com/aida-public/AB6AXuC9aAe_Jw5NpcxrTb53Tzd73j_iOQzqPaT0jHkUPL42DfVr_1hUPmGQkSd5rT0xjNxFUAa1kagLW_2wBU8nWNPTxVYNB2pcF-Ax90S56ZG86CWD_6zL8STEemcnPUsDGtQidC2TMA8oooEBdPdZaX_z3N-VH6YvZMLxBItpfQNs5FSAPysI5gGhL5mvWdXVfWoLOrOoB3Ru1iTijYxKUcgGDDYjo-rjBXeMw1ijRVnSpSy-38i3GwxZ"
+        image={servicesCarRecoveryDetail}
         imageAlt="Car being winched onto a specialized tilt-slide recovery flatbed truck at night"
         ctaLabel="CALL FOR CAR RECOVERY"
       >
@@ -42,7 +46,7 @@ export default function ServiceDetails() {
         eyebrow="ROADSIDE & MOTORWAY"
         title="Breakdown Recovery"
         description="Drivers can call SafeRide when their vehicle breaks down and requires rapid recovery assistance. Whether you are immobilized on major arterial roads like the M606/M62, city junctions, or residential streets, our technicians arrive equipped to secure and transport your vehicle immediately."
-        image="https://lh3.googleusercontent.com/aida-public/AB6AXuDk8THoGX0aPBAyBcwrWs4_PYOeDCqFd61EPicKEOGesuf9l8VTtmV4lJ47oLdxjMqXqBiQ3GUvMAPe0Bqvr8Uvrg1VWoRWNv1Z_cL5SUav5uEGCmynwLYSqPr0GB_ZlzrdnLNoNSzlS80munt350G6OeOBxgHlAZ6cvQt8kQmcU0xnojKXPNjC3G0K6Mm6w-Xi6egLtzdJITIvUxc0okV-MQV9F0-uRYj7f7vXmPjP09MaSfsDbCAe"
+        image={servicesBreakdownDetail}
         imageAlt="Roadside recovery operator inspecting an immobilized car at night"
         ctaLabel="GET BREAKDOWN HELP"
       >
@@ -61,7 +65,7 @@ export default function ServiceDetails() {
         eyebrow="LOGISTICS & TRANSIT"
         title="Vehicle Transportation"
         description="Planned and scheduled carriage for vehicles requiring secure transit across West Yorkshire and nationwide. We manage trade transports, private acquisitions, auction collections, and body shop relocations using purpose-built vehicle transporters equipped with low-angle loading ramps."
-        image="https://lh3.googleusercontent.com/aida-public/AB6AXuDTNg_u6lmHUceqpIPKZiXdHDwttrSv1VnJGQcu_bFV8Vo4I_mL2TiW2TYgRvTAZZHuW2iUezu84TrvTF00SSM2UeGhsXK4DBhEMrr9sVeDUutY_6WCfgtUTl4im88knLKH27DI4CV4Khv3lKZA0lfue9X86eQKj8vS9SfSCu0Ts8wWtDz4VhmEpeCdmNlDA1uTMT6ZM_YVvEhk0o56u18qBS_7B-0xnGuX3AfM427_AJLuU1Wcwuzd"
+        image={serviceVehicleTransport}
         imageAlt="Automotive carrier securely loaded with an executive vehicle"
         ctaLabel="ASK ABOUT VEHICLE TRANSPORT"
       >
@@ -84,7 +88,7 @@ export default function ServiceDetails() {
         eyebrow="ON-SITE FIX"
         title="Roadside Assistance"
         description="Immediate roadside help designed to resolve common immobilizing faults without a tow whenever safe to do so. Our mobile units assist with flat tire wheel changes, 12V battery jump-starts, misfueling recovery, and lockout support across metropolitan Bradford."
-        image="https://lh3.googleusercontent.com/aida-public/AB6AXuA7KmZiQcJEqE6IHMGWy2IQK3y1CYFlyIjrjoD3j2RZzc9a7sEOJR6M6hTA_iK-KBapsgZ5WkYiuxLif7wkGN6NDa7hZIgrnYVyyob0koSMmujmg_pDdUokB89inpjQqNT8flUG8hn9Rw2jfGiLYdz2U7uAJ5-KUZ8pFOKtf-cM1HmUpUjaNRW8Gt5B2cQAIKEl1Eu7YTZQgasFhU-G11ddabHfH4BLPeHdWY-Ljo7cJLxl6kJna_HZ"
+        image={servicesRoadsideDetail}
         imageAlt="Roadside mechanic attending to a car on wet tarmac at night"
         ctaLabel="CALL FOR ROADSIDE HELP"
       >

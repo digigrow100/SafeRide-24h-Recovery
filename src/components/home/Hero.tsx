@@ -1,4 +1,5 @@
 import Image from "next/image";
+import heroRollbackTruck from "@/assets/images/hero-rollback-truck.webp";
 import { SITE_PHONE_DISPLAY, SITE_PHONE_HREF } from "@/lib/site";
 
 export default function Hero() {
@@ -19,9 +20,7 @@ export default function Hero() {
           <div className="relative overflow-hidden rounded-2xl border border-primaryNeon/40 bg-secondaryBg shadow-2xl">
             <Image
               alt="SafeRide hydraulic rollback recovery truck responding to a night breakdown on the M62 near Bradford"
-              src="https://lh3.googleusercontent.com/aida/AEtjO1VP9Vsc8dLog3XjlBD68nRO_Hj1MnMeYm6EFrB-9FyN3veesAp-4cNu7tCObvRV9lSeJkX2J6M4_VeJnA3MNwK9XtM1Z9QTeFhD8vwktPb7uraf4DAd5Lt70bjDK6eJsPlt_H067H4UNIHEgtfv9fgNpJnPajbbqwtOUOBI53GO_YtjP4tnGmxc5tVCbpsYkTC8w_84_Bz4cIwHMNbbYcCuhXQxKPwI_U_IH0YB8K-ho4HSUApYWGUMQD8"
-              width={960}
-              height={480}
+              src={heroRollbackTruck}
               priority
               className="h-[400px] w-full scale-100 object-cover transition-transform duration-700 group-hover:scale-105 sm:h-[480px]"
             />

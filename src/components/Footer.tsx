@@ -1,4 +1,6 @@
+import Image from "next/image";
 import Link from "next/link";
+import siteIcon from "@/assets/images/site-icon.webp";
 import { SITE_EMAIL, SITE_EMAIL_HREF, SITE_PHONE_DISPLAY, SITE_PHONE_HREF } from "@/lib/site";
 
 const RESCUE_CHANNELS = [
@@ -16,8 +18,8 @@ export default function Footer() {
         <div className="grid grid-cols-1 gap-10 border-b border-white/10 pb-12 md:grid-cols-12">
           <div className="space-y-4 md:col-span-5">
             <Link href="/" className="flex items-center gap-3">
-              <div className="flex h-8 w-8 items-center justify-center rounded border border-primaryNeon/50 bg-secondaryBg text-primaryNeon shadow-neon-magenta">
-                <span className="material-symbols-outlined text-lg">local_shipping</span>
+              <div className="flex h-8 w-8 items-center justify-center rounded border border-primaryNeon/50 bg-secondaryBg p-1 shadow-neon-magenta">
+                <Image alt="SafeRide 24H Recovery" src={siteIcon} className="h-full w-full object-contain" />
               </div>
               <span className="font-display text-xl font-bold uppercase tracking-wider text-bodyText">
                 SAFERIDE <span className="text-primaryNeon">24H</span>

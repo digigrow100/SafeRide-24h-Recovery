@@ -1,11 +1,12 @@
 import Image from "next/image";
+import aboutFleetBanner from "@/assets/images/about-fleet-banner.webp";
 
 export default function FleetBanner() {
   return (
     <section className="relative h-[420px] w-full overflow-hidden bg-secondaryBg sm:h-[520px]">
       <Image
         alt="SafeRide 24h night recovery carrier on the motorway"
-        src="https://lh3.googleusercontent.com/aida/AEtjO1Vb1W7atfhG-9SFmrD3FG7YWqB8bvL2wRt62fwl7_4bNcaMuF7umjpI5Uk-k7geU97PePZkA_7IEz2gH-1MrxzjQEHe98ao6ff-f4kuhylsGHS-kEky-0Ok2Rp4uaHSs4D0xIdgdkYqrFKRp7vvFUeqs8ozTss9W0F1hnU"
+        src={aboutFleetBanner}
         fill
         sizes="100vw"
         className="object-cover opacity-60"

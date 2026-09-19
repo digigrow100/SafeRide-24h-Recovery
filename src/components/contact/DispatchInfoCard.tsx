@@ -1,4 +1,5 @@
 import Image from "next/image";
+import contactNightOperative from "@/assets/images/contact-night-operative.webp";
 import { SITE_EMAIL, SITE_EMAIL_HREF, SITE_PHONE_DISPLAY, SITE_PHONE_HREF } from "@/lib/site";
 
 export default function DispatchInfoCard() {
@@ -69,7 +70,7 @@ export default function DispatchInfoCard() {
         <div className="relative h-44 w-full">
           <Image
             alt="Night recovery operative securing a car wheel on a wet highway in Bradford"
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAP10yNBGA-Isn8dlcYyr2DbNrXUsycUidEI8335uaBm2gunh_-QDGorhPtmy4EawMjm-Vk-xdpUUEG7CLsFaXrnjsyzdqUG5_vsdE4mLCMi0CcS8AgEsJjreO3_B4kitGTECDhunpL3cyV--hIW-r9f_6XtNiakt0i0LYUxnjPm51gdxPA1oIwtxPNa-KEXY9v3QnIMvoV8nheP-cNtRjsfhQ2-mebAwP4gLZ-78Kt5mEGs5ek-zZF"
+            src={contactNightOperative}
             fill
             sizes="(min-width: 1024px) 40vw, 100vw"
             className="object-cover"

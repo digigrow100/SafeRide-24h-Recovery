@@ -33,7 +33,7 @@ page automatically — do not import or render them inside individual pages.
   - `alt`
   - `width`
   - `height`
-- **Current exception:** the Home/About/Services/Contact pages currently use temporary remote placeholder images from an AI design-mockup tool (`lh3.googleusercontent.com`, allow-listed in `next.config.mjs` under `images.remotePatterns`). These are stand-ins only — they should be replaced with real photography saved into `src/assets/images/` as `.webp` and imported locally as soon as real photos are available, then the remote pattern can be removed.
+- Brand assets (`logo.webp`, `site-icon.webp`, `open-graph.webp`) live in `src/assets/images/`. `site-icon.webp` is additionally copied into `public/site-icon.webp` since the favicon must be reachable by direct URL — if it's ever regenerated, update both copies.
 
 ## Editing rules
 

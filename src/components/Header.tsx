@@ -1,8 +1,10 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
+import siteIcon from "@/assets/images/site-icon.webp";
 import { NAV_LINKS, SITE_PHONE_DISPLAY, SITE_PHONE_HREF } from "@/lib/site";
 
 export default function Header() {
@@ -13,11 +15,14 @@ export default function Header() {
     <header className="fixed top-0 left-0 z-50 w-full border-b border-primaryNeon/20 bg-bg/90 backdrop-blur-xl transition-all duration-300">
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between gap-4 px-4 sm:px-6">
         <Link className="group flex items-center gap-3" href="/">
-          <div className="relative flex h-10 w-10 shrink-0 items-center justify-center overflow-hidden rounded-lg border border-primaryNeon/40 bg-secondaryBg shadow-neon-magenta transition-all group-hover:border-primaryNeon">
+          <div className="relative flex h-10 w-10 shrink-0 items-center justify-center overflow-hidden rounded-lg border border-primaryNeon/40 bg-secondaryBg p-1.5 shadow-neon-magenta transition-all group-hover:border-primaryNeon">
             <div className="absolute inset-0 bg-gradient-to-br from-primaryNeon/30 to-secondaryNeon/20" />
-            <span className="material-symbols-outlined relative z-10 text-2xl text-primaryNeon transition-transform group-hover:scale-110">
-              local_shipping
-            </span>
+            <Image
+              alt="SafeRide 24H Recovery"
+              src={siteIcon}
+              className="relative z-10 h-full w-full object-contain transition-transform group-hover:scale-110"
+              priority
+            />
           </div>
           <div className="flex flex-col">
             <span className="flex items-center gap-1.5 font-display text-lg font-black uppercase tracking-wider text-bodyText sm:text-xl">

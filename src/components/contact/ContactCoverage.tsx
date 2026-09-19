@@ -1,4 +1,5 @@
 import Image from "next/image";
+import contactCoverageMapArea from "@/assets/images/contact-coverage-map-area.webp";
 
 const CORRIDORS = [
   { area: "M606 / M62 Corridor", eta: "Avg ETA: 15-20 Min", accent: "text-primaryNeon" },
@@ -15,7 +16,7 @@ export default function ContactCoverage() {
             <div className="relative h-80 w-full sm:h-96">
               <Image
                 alt="Map of Bradford, West Yorkshire recovery coverage area"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvPHd0iFN-oKXLuGvuWhN3jLiXNmWKJWawVEPvjfOQa0Ld9-k-N61dnLA0fLZg74zkNJEp8ADqD1ilW90cDLSTqNhpwUOGHgajilzeA0VV-8i7hj3OhenREK21NRgUrocd3amOh-UzsjnBdg-uM2nRMo5yGQyBRXOakstHKDR-yP9zQtI9Tv5Zc8E0Co-Mw0l4XqtyjRPmmvweTT797Cr9GoT_vZjOibsJaGpTEdZfNFoVWK5UAEs4"
+                src={contactCoverageMapArea}
                 fill
                 sizes="(min-width: 1024px) 60vw, 100vw"
                 className="object-cover"

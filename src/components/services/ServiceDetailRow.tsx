@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image, { type StaticImageData } from "next/image";
 import { SITE_PHONE_HREF } from "@/lib/site";
 
 type Accent = "primary" | "secondary";
@@ -23,7 +23,7 @@ interface ServiceDetailRowProps {
   eyebrow: string;
   title: string;
   description: string;
-  image: string;
+  image: StaticImageData;
   imageAlt: string;
   ctaLabel: string;
   children?: React.ReactNode;
@@ -51,8 +51,6 @@ export default function ServiceDetailRow({
           <Image
             alt={imageAlt}
             src={image}
-            width={720}
-            height={420}
             className="h-80 w-full transform object-cover object-center transition-transform duration-700 ease-out group-hover:scale-105 sm:h-96 md:h-[420px]"
           />
         </div>

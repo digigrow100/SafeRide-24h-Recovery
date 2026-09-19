@@ -1,4 +1,5 @@
 import Image from "next/image";
+import aboutHeroOperator from "@/assets/images/about-hero-operator.webp";
 import { SITE_PHONE_DISPLAY, SITE_PHONE_HREF } from "@/lib/site";
 
 export default function AboutHero() {
@@ -65,7 +66,7 @@ export default function AboutHero() {
           <div className="relative aspect-[4/3] w-full overflow-hidden rounded-2xl bg-secondaryBg shadow-2xl">
             <Image
               alt="SafeRide recovery operator beside a tilt-slide flatbed truck on a wet Bradford road at night"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6HJe_2MCfqYrKGy7n-L6ZSe2TXqmXn2uXUkLL2kNBpoqSreGCrN4GLAYhbiE-PsvHS1eWbEtX52Exh8Vrdr0StjKGBcXh0TgD9jK6SvngHWhdYDnl0eGkIQ_dhL4Y313m-oS5WFHcM6A2jJAW-ueY7O70CCRMuTVI33jJibYFbk5kPHycDliIzX9gPjvmxwwV3K0F0VW0B4kRf4M1dfVT0FzVV-CJovgSu8Na7JdYjO8aszpiIJju"
+              src={aboutHeroOperator}
               fill
               priority
               sizes="(min-width: 1024px) 50vw, 100vw"

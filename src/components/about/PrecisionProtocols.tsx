@@ -1,4 +1,5 @@
 import Image from "next/image";
+import aboutHydraulicRigging from "@/assets/images/about-hydraulic-rigging.webp";
 
 const PROTOCOL_ITEMS = [
   {
@@ -39,7 +40,7 @@ export default function PrecisionProtocols() {
           <div className="relative aspect-square w-full overflow-hidden rounded-2xl bg-secondaryBg shadow-xl">
             <Image
               alt="Close-up of a heavy steel recovery hook locked onto a flatbed diamond-plate deck"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPSFV4wljRWF6fVfbp8TJAqKelI0xf5STqPoGJC53QrPyIxdQLIG4NMkDoUTz6YRnbNBTiIzEpLH9DI7ruiVaE3Z7WCeuD4xp3c1H_iq3w1rde1PsQ7YdKT3Vh1s4eaqdM_ePUlt6l88_2MhJWKiaWkGKQadbitevnCfw5UXx_FIxyjgmWFtZcrn95YEkKulcDawdw-zc1zDJpbDWZdmtTqT2OS86KbPBahzZ01UN4On_Mb0uokxd5"
+              src={aboutHydraulicRigging}
               fill
               sizes="(min-width: 1024px) 40vw, 100vw"
               className="object-cover"

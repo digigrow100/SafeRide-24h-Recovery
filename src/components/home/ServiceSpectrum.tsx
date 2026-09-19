@@ -1,4 +1,8 @@
 import Image from "next/image";
+import serviceCarRecovery from "@/assets/images/service-car-recovery.webp";
+import serviceBreakdownRecovery from "@/assets/images/service-breakdown-recovery.webp";
+import serviceVehicleTransport from "@/assets/images/service-vehicle-transport.webp";
+import serviceRoadsideAssistance from "@/assets/images/service-roadside-assistance.webp";
 import { SITE_PHONE_HREF } from "@/lib/site";
 
 const ACCENTS = {
@@ -36,8 +40,7 @@ const SERVICES = [
     description:
       "Full hydraulic tilt-slide flatbed recovery. Perfect for low ground-clearance sports vehicles, prestige saloons, and immobile AWDs.",
     spec: "TILT-SLIDE // 6.5T WINCH",
-    image:
-      "https://lh3.googleusercontent.com/aida/AEtjO1UgAcwBjl9Sy7eQvMRaqmdThCOGD6yxoeSGXt8ygCK7GtYk9hqgv9lI06tvuEbDCh2xiuTwyC1dmrWN10cxMmX9G0lLN2gfKwxrWH1X6nPkRpv4cd1XcXoUAKMEcJ6wWGgGPBQ0E45SKZpCXZ-6LYtZQa9U10jBcv--moeYed78CyXnUwQU5bCxAVtGmeboqub0uJzhAFkWip6TVJjQrXO4mSaJ9zwN3hevn-_oRatakia3l3AQQp-cKzU",
+    image: serviceCarRecovery,
     alt: "24/7 car recovery hydraulic tilt-slide flatbed truck",
   },
   {
@@ -47,8 +50,7 @@ const SERVICES = [
     description:
       "On-scene mechanical triage under torchlight. Alternator faults, fuel system airlocks, and critical drivetrain failures rescued.",
     spec: "DIAGNOSTIC & HAUL",
-    image:
-      "https://lh3.googleusercontent.com/aida/AEtjO1UtZT8j61zwj1JyUQgwgKj7zzeIFLSb3Gxrti2tCEv6lfwnHOzkIb17tFeJ6-fY5NDGBDJz9DLmQn12mVJ6JgsUh8m5T6KYwT_AZvvdA44vMX0rQupLaL_FihP6om66h-vrLyve-m6qPQOsTOCRp0CmbOIbsBxreeLiNjfsNWEGVRKOIi9RzE7B_ExSJRMmePeAZbTCfQfsxzekmt7c-TosZqVnr9OwVPkhWlbdgTMkXwbNgb1JUEAKqQ",
+    image: serviceBreakdownRecovery,
     alt: "Breakdown recovery technician diagnosing a vehicle at night",
   },
   {
@@ -58,8 +60,7 @@ const SERVICES = [
     description:
       "Nationwide scheduled transfers, auction deliveries, dealership swaps, and classic car logistics with high-spec security rigging.",
     spec: "NATIONWIDE & REGIONAL",
-    image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuDTNg_u6lmHUceqpIPKZiXdHDwttrSv1VnJGQcu_bFV8Vo4I_mL2TiW2TYgRvTAZZHuW2iUezu84TrvTF00SSM2UeGhsXK4DBhEMrr9sVeDUutY_6WCfgtUTl4im88knLKH27DI4CV4Khv3lKZA0lfue9X86eQKj8vS9SfSCu0Ts8wWtDz4VhmEpeCdmNlDA1uTMT6ZM_YVvEhk0o56u18qBS_7B-0xnGuX3AfM427_AJLuU1Wcwuzd",
+    image: serviceVehicleTransport,
     alt: "Vehicle transportation carrier loaded with an executive car",
   },
   {
@@ -69,8 +70,7 @@ const SERVICES = [
     description:
       "Direct emergency assistance on motorway hard shoulders: puncture wheel swaps, heavy battery jump starts, misfuel draining, and lockout resolution.",
     spec: "HARD SHOULDER SAFE",
-    image:
-      "https://lh3.googleusercontent.com/aida/AEtjO1WwHOrcG7sJEjCQcCO_5E6rp8RO9HWt2dbkbvrydPXdTzWL1i4HyX8TFx8xSpEUwg56zyAjVX2MtwjkYoJuXUbSssKxjWMm3c_jjTYQ_yYtjePMR6EW84i_tEFPXvOzW5y2RWQPkYN6XpeWjIUqfnMwuUirGDboMbxyl9RumQPtesudLiluwIECMSphTKjxwpOUUxYW_BgnuGA1xXCBzn7vTHPAel3NCO0zwzIG_7z97nmjWhkOeV2t2g",
+    image: serviceRoadsideAssistance,
     alt: "Roadside assistance technician on the hard shoulder at night",
   },
 ] as const;

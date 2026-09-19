@@ -1,4 +1,9 @@
 import Image from "next/image";
+import heroRollbackTruck from "@/assets/images/hero-rollback-truck.webp";
+import serviceBreakdownRecovery from "@/assets/images/service-breakdown-recovery.webp";
+import serviceVehicleTransport from "@/assets/images/service-vehicle-transport.webp";
+import galleryWinchHardware from "@/assets/images/gallery-winch-hardware.webp";
+import serviceCarRecovery from "@/assets/images/service-car-recovery.webp";
 
 const FRAMES = [
   {
@@ -10,8 +15,7 @@ const FRAMES = [
     title: "Rain-Slicked Urban Extraction",
     time: "02:40 AM",
     alt: "Recovery truck at night on a wet UK road",
-    image:
-      "https://lh3.googleusercontent.com/aida/AEtjO1VP9Vsc8dLog3XjlBD68nRO_Hj1MnMeYm6EFrB-9FyN3veesAp-4cNu7tCObvRV9lSeJkX2J6M4_VeJnA3MNwK9XtM1Z9QTeFhD8vwktPb7uraf4DAd5Lt70bjDK6eJsPlt_H067H4UNIHEgtfv9fgNpJnPajbbqwtOUOBI53GO_YtjP4tnGmxc5tVCbpsYkTC8w_84_Bz4cIwHMNbbYcCuhXQxKPwI_U_IH0YB8K-ho4HSUApYWGUMQD8",
+    image: heroRollbackTruck,
   },
   {
     span: "md:col-span-5",
@@ -22,8 +26,7 @@ const FRAMES = [
     title: "Suburban Diagnostic Scan",
     time: "03:15 AM",
     alt: "Breakdown engineer working under the bonnet at night",
-    image:
-      "https://lh3.googleusercontent.com/aida/AEtjO1UtZT8j61zwj1JyUQgwgKj7zzeIFLSb3Gxrti2tCEv6lfwnHOzkIb17tFeJ6-fY5NDGBDJz9DLmQn12mVJ6JgsUh8m5T6KYwT_AZvvdA44vMX0rQupLaL_FihP6om66h-vrLyve-m6qPQOsTOCRp0CmbOIbsBxreeLiNjfsNWEGVRKOIi9RzE7B_ExSJRMmePeAZbTCfQfsxzekmt7c-TosZqVnr9OwVPkhWlbdgTMkXwbNgb1JUEAKqQ",
+    image: serviceBreakdownRecovery,
   },
   {
     span: "md:col-span-4",
@@ -34,8 +37,7 @@ const FRAMES = [
     title: "Long-Distance Transit",
     time: undefined,
     alt: "Car transporter driving on the motorway",
-    image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuDTNg_u6lmHUceqpIPKZiXdHDwttrSv1VnJGQcu_bFV8Vo4I_mL2TiW2TYgRvTAZZHuW2iUezu84TrvTF00SSM2UeGhsXK4DBhEMrr9sVeDUutY_6WCfgtUTl4im88knLKH27DI4CV4Khv3lKZA0lfue9X86eQKj8vS9SfSCu0Ts8wWtDz4VhmEpeCdmNlDA1uTMT6ZM_YVvEhk0o56u18qBS_7B-0xnGuX3AfM427_AJLuU1Wcwuzd",
+    image: serviceVehicleTransport,
   },
   {
     span: "md:col-span-4",
@@ -46,8 +48,7 @@ const FRAMES = [
     title: "High-Tension Steel Couplers",
     time: undefined,
     alt: "Close-up of a heavy-duty steel recovery winch hook",
-    image:
-      "https://lh3.googleusercontent.com/aida/AEtjO1XR4ZkjTfOMjF7PzrXj--Uj4XksdLQJDnSxMKcLWpfUik2auPLKmsHRTC5gNBBJ9-kyTxxYxkHgyl02AOwCNXtWtRVAMd3RqvrkV4XjccMNi2OMyi6b0k2dBzVC0JbAQRhq3CUT28T0xRKGdWGxkTFVrTCyknUMaP7PJobyM1YlJudfezx7xcAHHRJ83AWB9ZP4-X6Cptruv2SyU1kqN8PZ10-691SdjkUQyp14RZE-nLETKGUGZGLpCw",
+    image: galleryWinchHardware,
   },
   {
     span: "md:col-span-4",
@@ -58,8 +59,7 @@ const FRAMES = [
     title: "Zero-Splitter Loading",
     time: undefined,
     alt: "Car being tilt-slide loaded onto a flatbed",
-    image:
-      "https://lh3.googleusercontent.com/aida/AEtjO1UgAcwBjl9Sy7eQvMRaqmdThCOGD6yxoeSGXt8ygCK7GtYk9hqgv9lI06tvuEbDCh2xiuTwyC1dmrWN10cxMmX9G0lLN2gfKwxrWH1X6nPkRpv4cd1XcXoUAKMEcJ6wWGgGPBQ0E45SKZpCXZ-6LYtZQa9U10jBcv--moeYed78CyXnUwQU5bCxAVtGmeboqub0uJzhAFkWip6TVJjQrXO4mSaJ9zwN3hevn-_oRatakia3l3AQQp-cKzU",
+    image: serviceCarRecovery,
   },
 ] as const;
 

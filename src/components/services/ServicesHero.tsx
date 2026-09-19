@@ -1,4 +1,5 @@
 import Image from "next/image";
+import servicesHeroFlatbed from "@/assets/images/services-hero-flatbed.webp";
 import { SITE_PHONE_DISPLAY, SITE_PHONE_HREF } from "@/lib/site";
 
 export default function ServicesHero() {
@@ -38,9 +39,7 @@ export default function ServicesHero() {
             <div className="absolute inset-0 z-10 bg-gradient-to-t from-bg/80 via-transparent to-transparent" />
             <Image
               alt="SafeRide 24h Recovery flatbed truck stationed on a British highway at twilight"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuB6j7zIhPYahtUsl-MafKaIHYL4ZAn-pwlqP8STyzqEyIkBtMildVuCAFF0V9RA31TuOWq7Z2dNU4eoecOT-GyTmOODzkLBBb2DglR8Xwn_OaZnBLcRYmtWmUyLnifY5khVFVncZzmHvcwsu0xkfL3zLs0mDtPqUDQ2_PqHnT3EOaonGdH0z8wDkgBb-tMuSKcQAWrYBKtvwE0gUh7jE-x6WgBLnlvsGw6LY6tRSBLFbOhFvbNBdcHn"
-              width={640}
-              height={480}
+              src={servicesHeroFlatbed}
               priority
               className="h-80 w-full transform object-cover object-center transition-transform duration-700 ease-out group-hover:scale-105 sm:h-96"
             />
