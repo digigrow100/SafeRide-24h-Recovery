@@ -4,17 +4,25 @@ Guidance for Claude Code when working in this repository.
 
 ## Where content lives
 
-| Content change            | File path                          |
-| -------------------------- | ----------------------------------- |
-| Home page                  | `src/app/page.tsx`                  |
-| Other pages                 | `src/app/[page]/page.tsx`           |
-| Header                     | `src/components/Header.tsx`         |
-| Footer                     | `src/components/Footer.tsx`         |
-| Root layout / metadata     | `src/app/layout.tsx`                |
-| Global CSS                 | `src/app/globals.css`               |
-| Site config                | `next.config.mjs`                   |
-| Optimized images           | `src/assets/images/`                |
-| Static/public files        | `public/`                           |
+| Content change              | File path                                 |
+| ---------------------------- | ------------------------------------------ |
+| Home page                   | `src/app/page.tsx` + `src/components/home/`     |
+| About Us page                | `src/app/about/page.tsx` + `src/components/about/` |
+| Services page                | `src/app/services/page.tsx` + `src/components/services/` |
+| Contact Us page              | `src/app/contact/page.tsx` + `src/components/contact/` |
+| Other new pages              | `src/app/[page]/page.tsx`                 |
+| Header (global, all pages)   | `src/components/Header.tsx`               |
+| Footer (global, all pages)   | `src/components/Footer.tsx`               |
+| Mobile sticky call bar       | `src/components/MobileCallBar.tsx`        |
+| Phone/email/nav constants    | `src/lib/site.ts`                         |
+| Root layout / metadata / fonts | `src/app/layout.tsx`                    |
+| Global CSS / design tokens   | `src/app/globals.css`, `tailwind.config.ts` |
+| Site config                  | `next.config.mjs`                         |
+| Optimized images             | `src/assets/images/`                      |
+| Static/public files          | `public/`                                 |
+
+Header and Footer are rendered once in `src/app/layout.tsx` and apply to every
+page automatically — do not import or render them inside individual pages.
 
 ## Image rules
 
@@ -25,6 +33,7 @@ Guidance for Claude Code when working in this repository.
   - `alt`
   - `width`
   - `height`
+- **Current exception:** the Home/About/Services/Contact pages currently use temporary remote placeholder images from an AI design-mockup tool (`lh3.googleusercontent.com`, allow-listed in `next.config.mjs` under `images.remotePatterns`). These are stand-ins only — they should be replaced with real photography saved into `src/assets/images/` as `.webp` and imported locally as soon as real photos are available, then the remote pattern can be removed.
 
 ## Editing rules
 

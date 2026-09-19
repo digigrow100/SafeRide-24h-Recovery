@@ -1,15 +1,19 @@
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+import BrandStatement from "@/components/home/BrandStatement";
+import FinalCta from "@/components/home/FinalCta";
+import Gallery from "@/components/home/Gallery";
+import Hero from "@/components/home/Hero";
+import Protocol from "@/components/home/Protocol";
+import ServiceSpectrum from "@/components/home/ServiceSpectrum";
 
 export default function Home() {
   return (
     <>
-      <Header />
-      <main>
-        <h1>Welcome</h1>
-        <p>This is a placeholder home page.</p>
-      </main>
-      <Footer />
+      <Hero />
+      <BrandStatement />
+      <ServiceSpectrum />
+      <Protocol />
+      <Gallery />
+      <FinalCta />
     </>
   );
 }
