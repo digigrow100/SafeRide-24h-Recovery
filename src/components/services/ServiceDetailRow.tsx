@@ -51,6 +51,7 @@ export default function ServiceDetailRow({
           <Image
             alt={imageAlt}
             src={image}
+            sizes="(min-width: 1024px) 50vw, 100vw"
             className="h-80 w-full transform object-cover object-center transition-transform duration-700 ease-out group-hover:scale-105 sm:h-96 md:h-[420px]"
           />
         </div>
