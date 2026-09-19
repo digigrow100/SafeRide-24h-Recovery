@@ -4,17 +4,25 @@ Guidance for Claude Code when working in this repository.
 
 ## Where content lives
 
-| Content change            | File path                          |
-| -------------------------- | ----------------------------------- |
-| Home page                  | `src/app/page.tsx`                  |
-| Other pages                 | `src/app/[page]/page.tsx`           |
-| Header                     | `src/components/Header.tsx`         |
-| Footer                     | `src/components/Footer.tsx`         |
-| Root layout / metadata     | `src/app/layout.tsx`                |
-| Global CSS                 | `src/app/globals.css`               |
-| Site config                | `next.config.mjs`                   |
-| Optimized images           | `src/assets/images/`                |
-| Static/public files        | `public/`                           |
+| Content change              | File path                                 |
+| ---------------------------- | ------------------------------------------ |
+| Home page                   | `src/app/page.tsx` + `src/components/home/`     |
+| About Us page                | `src/app/about/page.tsx` + `src/components/about/` |
+| Services page                | `src/app/services/page.tsx` + `src/components/services/` |
+| Contact Us page              | `src/app/contact/page.tsx` + `src/components/contact/` |
+| Other new pages              | `src/app/[page]/page.tsx`                 |
+| Header (global, all pages)   | `src/components/Header.tsx`               |
+| Footer (global, all pages)   | `src/components/Footer.tsx`               |
+| Mobile sticky call bar       | `src/components/MobileCallBar.tsx`        |
+| Phone/email/nav constants    | `src/lib/site.ts`                         |
+| Root layout / metadata / fonts | `src/app/layout.tsx`                    |
+| Global CSS / design tokens   | `src/app/globals.css`, `tailwind.config.ts` |
+| Site config                  | `next.config.mjs`                         |
+| Optimized images             | `src/assets/images/`                      |
+| Static/public files          | `public/`                                 |
+
+Header and Footer are rendered once in `src/app/layout.tsx` and apply to every
+page automatically — do not import or render them inside individual pages.
 
 ## Image rules
 
@@ -25,6 +33,7 @@ Guidance for Claude Code when working in this repository.
   - `alt`
   - `width`
   - `height`
+- Brand assets (`logo.webp`, `site-icon.webp`, `open-graph.webp`) live in `src/assets/images/`. `site-icon.webp` is additionally copied into `public/site-icon.webp` since the favicon must be reachable by direct URL — if it's ever regenerated, update both copies.
 
 ## Editing rules
 
