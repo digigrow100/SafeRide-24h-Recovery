@@ -8,13 +8,20 @@ export default function Hero() {
       <div className="pointer-events-none absolute left-1/4 top-1/4 h-[500px] w-[500px] -translate-x-1/2 rounded-full bg-primaryNeon/15 blur-[140px]" />
       <div className="pointer-events-none absolute bottom-10 right-10 h-[420px] w-[420px] rounded-full bg-secondaryNeon/20 blur-[130px]" />
 
-      <div className="pointer-events-none absolute inset-x-0 top-12 z-0 select-none overflow-hidden text-center">
+      <div className="pointer-events-none absolute inset-x-0 top-12 z-0 hidden select-none overflow-hidden text-center sm:block">
         <h1 className="bg-gradient-to-b from-primaryNeon via-secondaryNeon to-transparent bg-clip-text font-display text-[13vw] font-black uppercase leading-[0.82] tracking-tighter text-transparent opacity-20">
           24H ROAD RESCUE
         </h1>
       </div>
 
       <div className="relative z-10 mt-6 grid w-full max-w-7xl grid-cols-1 items-center gap-10 md:mt-12 lg:grid-cols-12">
+        <div className="flex flex-col gap-1 md:hidden">
+          <p className="font-mono text-xs font-semibold uppercase tracking-widest text-accentCyan">
+            // LIVE FLEET ASSET
+          </p>
+          <p className="font-display text-lg font-bold text-bodyText">HYDRAULIC ROLLBACK UNIT 04</p>
+        </div>
+
         <div className="group relative lg:col-span-7">
           <div className="absolute -inset-2 rounded-2xl bg-gradient-to-r from-primaryNeon/30 to-secondaryNeon/30 opacity-75 blur-xl transition duration-700 group-hover:opacity-100" />
           <div className="relative overflow-hidden rounded-2xl border border-primaryNeon/40 bg-secondaryBg shadow-2xl">
@@ -32,7 +39,7 @@ export default function Hero() {
                 M62 / BRADFORD RAPID VERGE EXTRACTION
               </span>
             </div>
-            <div className="absolute bottom-5 left-5 right-5 flex items-end justify-between">
+            <div className="absolute bottom-5 left-5 right-5 hidden items-end justify-between md:flex">
               <div>
                 <p className="font-mono text-xs font-semibold uppercase tracking-widest text-accentCyan">
                   // LIVE FLEET ASSET
