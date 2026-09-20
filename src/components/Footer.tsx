@@ -19,7 +19,7 @@ export default function Footer() {
           <div className="space-y-4 md:col-span-5">
             <Link href="/" className="flex items-center gap-3">
               <div className="flex h-8 w-8 items-center justify-center rounded border border-primaryNeon/50 bg-secondaryBg p-1 shadow-neon-magenta">
-                <Image alt="SafeRide 24H Recovery" src={siteIcon} className="h-full w-full object-contain" />
+                <Image alt="SafeRide 24H Recovery" src={siteIcon} sizes="32px" className="h-full w-full object-contain" />
               </div>
               <span className="font-display text-xl font-bold uppercase tracking-wider text-bodyText">
                 SAFERIDE <span className="text-primaryNeon">24H</span>

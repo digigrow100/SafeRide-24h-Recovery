@@ -22,6 +22,7 @@ export default function Hero() {
               alt="SafeRide hydraulic rollback recovery truck responding to a night breakdown on the M62 near Bradford"
               src={heroRollbackTruck}
               priority
+              sizes="(min-width: 1024px) 58vw, 100vw"
               className="h-[400px] w-full scale-100 object-cover transition-transform duration-700 group-hover:scale-105 sm:h-[480px]"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-bg via-transparent to-transparent" />

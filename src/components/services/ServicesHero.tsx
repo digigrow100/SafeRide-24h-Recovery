@@ -41,6 +41,7 @@ export default function ServicesHero() {
               alt="SafeRide 24h Recovery flatbed truck stationed on a British highway at twilight"
               src={servicesHeroFlatbed}
               priority
+              sizes="(min-width: 1024px) 40vw, 100vw"
               className="h-80 w-full transform object-cover object-center transition-transform duration-700 ease-out group-hover:scale-105 sm:h-96"
             />
             <div className="absolute bottom-4 left-4 z-20 flex items-center gap-2 rounded border border-secondaryNeon/20 bg-bg/90 px-3 py-1.5">

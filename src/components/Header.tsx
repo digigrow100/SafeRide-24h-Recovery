@@ -20,6 +20,7 @@ export default function Header() {
             <Image
               alt="SafeRide 24H Recovery"
               src={siteIcon}
+              sizes="40px"
               className="relative z-10 h-full w-full object-contain transition-transform group-hover:scale-110"
               priority
             />
@@ -28,13 +29,13 @@ export default function Header() {
             <span className="flex items-center gap-1.5 font-display text-lg font-black uppercase tracking-wider text-bodyText sm:text-xl">
               SAFERIDE <span className="text-primaryNeon drop-shadow-[0_0_12px_#FF2BD6]">24H</span>
             </span>
-            <span className="-mt-1 font-mono text-[9px] uppercase tracking-[0.28em] text-mutedText">
+            <span className="-mt-1 hidden whitespace-nowrap font-mono text-[9px] uppercase tracking-[0.28em] text-mutedText xl:block">
               NIGHT DIVISION // WEST YORKSHIRE
             </span>
           </div>
         </Link>
 
-        <nav className="hidden items-center gap-8 lg:flex">
+        <nav className="hidden items-center gap-8 xl:flex">
           {NAV_LINKS.map((link) => {
             const isActive = pathname === link.href;
             return (
@@ -53,17 +54,17 @@ export default function Header() {
         </nav>
 
         <div className="flex items-center gap-3">
-          <div className="hidden items-center gap-2 rounded-full border border-accentCyan/30 bg-secondaryBg px-3 py-1 md:flex">
+          <div className="hidden items-center gap-2 rounded-full border border-accentCyan/30 bg-secondaryBg px-3 py-1 xl:flex">
             <span className="relative flex h-2 w-2">
               <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-accentCyan opacity-75" />
               <span className="relative inline-flex h-2 w-2 rounded-full bg-accentCyan" />
             </span>
-            <span className="font-mono text-[10px] font-semibold uppercase tracking-widest text-accentCyan">
+            <span className="whitespace-nowrap font-mono text-[10px] font-semibold uppercase tracking-widest text-accentCyan">
               ONLINE 24/7
             </span>
           </div>
           <a
-            className="hidden items-center gap-2 rounded-lg border border-primaryNeon bg-primaryNeon/10 px-4 py-2 font-mono text-xs tracking-wider text-primaryNeon shadow-neon-magenta transition-all duration-300 hover:bg-primaryNeon hover:text-bg sm:inline-flex"
+            className="hidden items-center gap-2 whitespace-nowrap rounded-lg border border-primaryNeon bg-primaryNeon/10 px-4 py-2 font-mono text-xs tracking-wider text-primaryNeon shadow-neon-magenta transition-all duration-300 hover:bg-primaryNeon hover:text-bg sm:inline-flex"
             href={SITE_PHONE_HREF}
           >
             <span className="material-symbols-outlined text-base">phone_in_talk</span>
@@ -74,7 +75,7 @@ export default function Header() {
             aria-label="Toggle navigation menu"
             aria-expanded={menuOpen}
             onClick={() => setMenuOpen((open) => !open)}
-            className="flex h-10 w-10 items-center justify-center rounded-lg border border-primaryNeon/40 text-bodyText lg:hidden"
+            className="flex h-10 w-10 items-center justify-center rounded-lg border border-primaryNeon/40 text-bodyText xl:hidden"
           >
             <span className="material-symbols-outlined">{menuOpen ? "close" : "menu"}</span>
           </button>
@@ -82,7 +83,7 @@ export default function Header() {
       </div>
 
       {menuOpen ? (
-        <nav className="flex flex-col gap-1 border-t border-primaryNeon/20 bg-bg px-4 py-4 lg:hidden">
+        <nav className="flex flex-col gap-1 border-t border-primaryNeon/20 bg-bg px-4 py-4 xl:hidden">
           {NAV_LINKS.map((link) => {
             const isActive = pathname === link.href;
             return (

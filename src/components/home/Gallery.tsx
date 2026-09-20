@@ -66,7 +66,7 @@ const FRAMES = [
 export default function Gallery() {
   return (
     <section className="mx-auto max-w-7xl px-4 py-24 sm:px-6" id="gallery">
-      <div className="mb-12 flex flex-col justify-between gap-6 md:flex-row md:items-end">
+      <div className="mb-12 flex flex-col justify-between gap-6 lg:flex-row lg:items-end">
         <div className="space-y-2">
           <span className="font-mono text-xs font-bold uppercase tracking-[0.25em] text-primaryNeon">
             // 03 CAMPAIGN SPREAD
@@ -75,7 +75,7 @@ export default function Gallery() {
             NOCTURNAL DOCUMENTARY
           </h2>
         </div>
-        <p className="max-w-md text-sm text-mutedText">
+        <p className="min-w-0 max-w-md text-sm text-mutedText">
           Unfiltered captures of SafeRide fleet units navigating rainfall, motorway interchanges,
           and night breakdowns across Bradford and beyond.
         </p>

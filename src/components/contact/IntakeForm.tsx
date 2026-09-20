@@ -20,7 +20,7 @@ export default function IntakeForm() {
   }
 
   const inputClasses =
-    "w-full rounded bg-secondaryBg px-4 py-3 font-sans text-sm text-bodyText placeholder-mutedText shadow-inner outline-none transition-colors border border-secondaryNeon/30 focus:border-primaryNeon";
+    "w-full rounded bg-secondaryBg px-4 py-3 font-sans text-base text-bodyText placeholder-mutedText shadow-inner outline-none transition-colors border border-secondaryNeon/30 focus:border-primaryNeon sm:text-sm";
 
   return (
     <div className="flex flex-col gap-4 rounded-xl bg-panel p-6 shadow-xl lg:col-span-7 lg:p-8">
