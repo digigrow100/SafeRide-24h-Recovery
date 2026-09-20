@@ -32,7 +32,14 @@ export default function Hero() {
                 M62 / BRADFORD RAPID VERGE EXTRACTION
               </span>
             </div>
-            <div className="absolute bottom-5 left-5 right-5 flex items-end justify-between">
+            <div className="pointer-events-none absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-bg/60 via-bg/15 to-transparent md:hidden" />
+            <div className="absolute left-5 right-5 top-20 md:hidden">
+              <p className="font-mono text-xs font-semibold uppercase tracking-widest text-accentCyan">
+                // LIVE FLEET ASSET
+              </p>
+              <p className="font-display text-lg font-bold text-bodyText">HYDRAULIC ROLLBACK UNIT 04</p>
+            </div>
+            <div className="absolute bottom-5 left-5 right-5 hidden items-end justify-between md:flex">
               <div>
                 <p className="font-mono text-xs font-semibold uppercase tracking-widest text-accentCyan">
                   // LIVE FLEET ASSET
