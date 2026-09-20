@@ -8,7 +8,7 @@ export default function Hero() {
       <div className="pointer-events-none absolute left-1/4 top-1/4 h-[500px] w-[500px] -translate-x-1/2 rounded-full bg-primaryNeon/15 blur-[140px]" />
       <div className="pointer-events-none absolute bottom-10 right-10 h-[420px] w-[420px] rounded-full bg-secondaryNeon/20 blur-[130px]" />
 
-      <div className="pointer-events-none absolute inset-x-0 top-12 z-0 select-none overflow-hidden text-center">
+      <div className="pointer-events-none absolute inset-x-0 top-12 z-0 hidden select-none overflow-hidden text-center sm:block">
         <h1 className="bg-gradient-to-b from-primaryNeon via-secondaryNeon to-transparent bg-clip-text font-display text-[13vw] font-black uppercase leading-[0.82] tracking-tighter text-transparent opacity-20">
           24H ROAD RESCUE
         </h1>
