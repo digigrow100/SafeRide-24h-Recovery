@@ -33,13 +33,13 @@ export default function TechGrid() {
   return (
     <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6 md:py-28">
       <div className="mb-12 max-w-2xl space-y-3">
-        <span className="font-mono text-xs font-bold uppercase tracking-widest text-primaryNeon">
+        <span className="font-sans text-xs font-bold uppercase tracking-widest text-blue-800">
           // Hardware &amp; Craft
         </span>
-        <h2 className="font-display text-4xl font-black uppercase tracking-tight text-bodyText sm:text-5xl">
+        <h2 className="font-display text-4xl font-black uppercase tracking-tight text-slate-900 sm:text-5xl">
           Prepared for the Road.
         </h2>
-        <p className="text-sm text-mutedText">
+        <p className="text-sm text-slate-500">
           Every component aboard our SafeRide units is selected to safeguard factory paint
           finishes, carbon aerodynamics, and ultra-wide performance rims.
         </p>
@@ -49,16 +49,16 @@ export default function TechGrid() {
         {ITEMS.map((item) => (
           <div
             key={item.title}
-            className="flex flex-col justify-between gap-6 rounded-xl border border-subtleBorder bg-secondaryBg p-6 transition-colors hover:border-primaryNeon"
+            className="flex flex-col justify-between gap-6 rounded-xl border border-slate-200 bg-slate-100 p-6 transition-colors hover:border-blue-800"
           >
             <div>
-              <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-lg border border-primaryNeon/30 bg-panel text-primaryNeon">
+              <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-lg border border-blue-800/30 bg-white text-blue-800">
                 <span className="material-symbols-outlined text-2xl">{item.icon}</span>
               </div>
-              <h4 className="mb-2 font-display text-lg font-bold text-bodyText">{item.title}</h4>
-              <p className="text-sm leading-relaxed text-mutedText">{item.description}</p>
+              <h4 className="mb-2 font-display text-lg font-bold text-slate-900">{item.title}</h4>
+              <p className="text-sm leading-relaxed text-slate-500">{item.description}</p>
             </div>
-            <div className="border-t border-white/10 pt-4 font-mono text-xs font-bold uppercase text-primaryNeon">
+            <div className="border-t border-black/10 pt-4 font-sans text-xs font-bold uppercase text-blue-800">
               Spec: {item.spec}
             </div>
           </div>

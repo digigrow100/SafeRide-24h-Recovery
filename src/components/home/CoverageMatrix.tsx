@@ -35,30 +35,30 @@ export default function CoverageMatrix() {
     <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6 md:py-28">
       <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-12">
         <div className="lg:col-span-5">
-          <span className="mb-2 block font-mono text-xs font-bold uppercase tracking-widest text-primaryNeon">
+          <span className="mb-2 block font-sans text-xs font-bold uppercase tracking-widest text-blue-800">
             Regional Operational Area
           </span>
-          <h2 className="mb-4 font-display text-5xl font-black uppercase leading-none tracking-tight text-bodyText lg:text-6xl">
+          <h2 className="mb-4 font-display text-5xl font-black uppercase leading-none tracking-tight text-slate-900 lg:text-6xl">
             BRADFORD
           </h2>
-          <p className="mb-8 text-base leading-relaxed text-mutedText">
+          <p className="mb-8 text-base leading-relaxed text-slate-500">
             Strategic recovery deployment hubs along the Bradford Outer Ring Road, guaranteeing
             rapid intercept times throughout all BD postal sectors and arterial links to Leeds,
             Halifax and Keighley.
           </p>
-          <div className="rounded-xl border border-subtleBorder bg-secondaryBg p-6">
+          <div className="rounded-xl border border-slate-200 bg-slate-100 p-6">
             <div className="mb-4 flex items-center justify-between">
-              <span className="font-mono text-sm font-bold uppercase text-bodyText">
+              <span className="font-sans text-sm font-bold uppercase text-slate-900">
                 Priority Corridor Access
               </span>
-              <span className="rounded border border-primaryNeon/30 bg-panel px-2 py-0.5 font-mono text-[10px] uppercase text-primaryNeon">
+              <span className="rounded border border-blue-800/30 bg-white px-2 py-0.5 font-sans text-[10px] uppercase text-blue-800">
                 High Frequency
               </span>
             </div>
-            <div className="grid grid-cols-2 gap-3 text-xs text-mutedText">
+            <div className="grid grid-cols-2 gap-3 text-xs text-slate-500">
               {CORRIDORS.map((item) => (
                 <div key={item} className="flex items-center gap-2">
-                  <span className="h-1.5 w-1.5 rounded-full bg-primaryNeon" />
+                  <span className="h-1.5 w-1.5 rounded-full bg-blue-800" />
                   {item}
                 </div>
               ))}
@@ -67,30 +67,30 @@ export default function CoverageMatrix() {
         </div>
 
         <div className="lg:col-span-7">
-          <div className="rounded-2xl border border-subtleBorder bg-secondaryBg p-6 sm:p-8">
+          <div className="rounded-2xl border border-slate-200 bg-slate-100 p-6 sm:p-8">
             <div className="mb-6 flex items-center justify-between">
-              <span className="font-display text-lg font-bold text-bodyText">Covered Postal Sectors</span>
-              <span className="font-mono text-xs font-bold text-mutedText">22 ZONES ACTIVE</span>
+              <span className="font-display text-lg font-bold text-slate-900">Covered Postal Sectors</span>
+              <span className="font-sans text-xs font-bold text-slate-500">22 ZONES ACTIVE</span>
             </div>
             <div className="grid grid-cols-3 gap-2 text-center sm:grid-cols-4 md:grid-cols-6">
               {POSTCODES.map((item) => (
                 <div
                   key={item.code}
-                  className="group cursor-default rounded-lg bg-panel p-3 transition-colors hover:bg-primaryNeon"
+                  className="group cursor-default rounded-lg bg-white p-3 transition-colors hover:bg-blue-800"
                 >
-                  <div className="font-display text-sm font-bold text-bodyText group-hover:text-bg">
+                  <div className="font-display text-sm font-bold text-slate-900 group-hover:text-bg">
                     {item.code}
                   </div>
-                  <div className="font-mono text-[9px] text-mutedText group-hover:text-bg/80">{item.area}</div>
+                  <div className="font-sans text-[9px] text-slate-500 group-hover:text-bg/80">{item.area}</div>
                 </div>
               ))}
             </div>
-            <div className="mt-6 flex flex-col items-start justify-between gap-3 rounded-xl border-t border-subtleBorder pt-6 sm:flex-row sm:items-center">
+            <div className="mt-6 flex flex-col items-start justify-between gap-3 rounded-xl border-t border-slate-200 pt-6 sm:flex-row sm:items-center">
               <div className="flex items-center gap-3">
-                <span className="material-symbols-outlined text-primaryNeon">navigation</span>
-                <span className="text-sm text-bodyText">Need recovery to or from Leeds, Manchester, or beyond?</span>
+                <span className="material-symbols-outlined text-blue-800">navigation</span>
+                <span className="text-sm text-slate-900">Need recovery to or from Leeds, Manchester, or beyond?</span>
               </div>
-              <a href="/contact" className="font-mono text-xs font-bold uppercase text-primaryNeon hover:underline">
+              <a href="/contact" className="font-sans text-xs font-bold uppercase text-blue-800 hover:underline">
                 Call Long Distance →
               </a>
             </div>

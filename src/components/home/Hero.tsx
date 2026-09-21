@@ -5,28 +5,24 @@ import { SITE_PHONE_DISPLAY, SITE_PHONE_HREF } from "@/lib/site";
 export default function Hero() {
   return (
     <section className="relative flex min-h-[92vh] items-center justify-center overflow-hidden px-4 py-12 md:px-8">
-      <div className="pointer-events-none absolute left-1/4 top-1/4 h-[500px] w-[500px] -translate-x-1/2 rounded-full bg-primaryNeon/15 blur-[140px]" />
-      <div className="pointer-events-none absolute bottom-10 right-10 h-[420px] w-[420px] rounded-full bg-secondaryNeon/20 blur-[130px]" />
-
-      <div className="pointer-events-none absolute inset-x-0 top-12 z-0 hidden select-none overflow-hidden text-center sm:block">
-        <h1 className="bg-gradient-to-b from-primaryNeon via-secondaryNeon to-transparent bg-clip-text font-display text-[13vw] font-black uppercase leading-[0.82] tracking-tighter text-transparent opacity-20">
-          24H ROAD RESCUE
+      <div className="pointer-events-none absolute inset-x-0 top-8 z-0 hidden select-none overflow-hidden text-center sm:block">
+        <h1 className="font-display text-[16vw] font-black uppercase leading-[0.82] tracking-tighter text-slate-200/60">
+          24H
         </h1>
       </div>
 
       <div className="relative z-10 mt-6 grid w-full max-w-7xl grid-cols-1 items-center gap-10 md:mt-12 lg:grid-cols-12">
         <div className="flex flex-col gap-1 md:hidden">
-          <p className="font-mono text-xs font-semibold uppercase tracking-widest text-accentCyan">
+          <p className="font-sans text-xs font-semibold uppercase tracking-widest text-emerald-600">
             // UNIT #4 OPERATIONAL
           </p>
-          <p className="font-display text-lg font-bold text-bodyText">
+          <p className="font-display text-lg font-bold text-slate-900">
             Tilt-and-Slide Carrier 04 — Bradford Ring Road (A6177)
           </p>
         </div>
 
         <div className="group relative lg:col-span-7">
-          <div className="absolute -inset-2 rounded-2xl bg-gradient-to-r from-primaryNeon/30 to-secondaryNeon/30 opacity-75 blur-xl transition duration-700 group-hover:opacity-100" />
-          <div className="relative overflow-hidden rounded-2xl border border-primaryNeon/40 bg-secondaryBg shadow-2xl">
+          <div className="relative overflow-hidden rounded-2xl border border-slate-200 bg-slate-100 shadow-xl">
             <Image
               alt="SafeRide hydraulic rollback recovery truck responding to a night breakdown on the M62 near Bradford"
               src={heroRollbackTruck}
@@ -34,37 +30,37 @@ export default function Hero() {
               sizes="(min-width: 1024px) 58vw, 100vw"
               className="h-[400px] w-full scale-100 object-cover transition-transform duration-700 group-hover:scale-105 sm:h-[480px]"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-bg via-transparent to-transparent" />
-            <div className="absolute left-5 top-5 flex items-center gap-2 rounded border border-primaryNeon/30 bg-bg/85 px-3 py-1.5 backdrop-blur-md">
-              <span className="h-2 w-2 animate-pulse rounded-full bg-primaryNeon" />
-              <span className="font-mono text-[10px] uppercase tracking-widest text-bodyText">
+            <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent" />
+            <div className="absolute left-5 top-5 flex items-center gap-2 rounded border border-blue-800/30 bg-slate-50/85 px-3 py-1.5 backdrop-blur-md">
+              <span className="h-2 w-2 animate-pulse rounded-full bg-blue-800" />
+              <span className="font-sans text-[10px] uppercase tracking-widest text-slate-900">
                 M62 / BRADFORD RAPID VERGE EXTRACTION
               </span>
             </div>
-            <div className="absolute right-5 top-5 hidden items-center gap-1.5 rounded-full border border-primaryNeon/40 bg-bg/85 px-3 py-1 backdrop-blur-md sm:flex">
-              <span className="h-1.5 w-1.5 rounded-full bg-primaryNeon" />
-              <span className="font-mono text-[10px] font-bold uppercase tracking-widest text-primaryNeon">
+            <div className="absolute right-5 top-5 hidden items-center gap-1.5 rounded-full border border-blue-800/40 bg-slate-50/85 px-3 py-1 backdrop-blur-md sm:flex">
+              <span className="h-1.5 w-1.5 rounded-full bg-blue-800" />
+              <span className="font-sans text-[10px] font-bold uppercase tracking-widest text-blue-800">
                 Ready
               </span>
             </div>
             <div className="absolute bottom-5 left-5 right-5 hidden items-end justify-between md:flex">
               <div>
-                <p className="font-mono text-xs font-semibold uppercase tracking-widest text-accentCyan">
+                <p className="font-sans text-xs font-semibold uppercase tracking-widest text-emerald-600">
                   // UNIT #4 OPERATIONAL
                 </p>
-                <p className="font-display text-lg font-bold text-bodyText">Tilt-and-Slide Carrier 04</p>
-                <p className="font-mono text-[11px] text-mutedText">Stationed at Bradford Ring Road (A6177)</p>
+                <p className="font-display text-lg font-bold text-slate-900">Tilt-and-Slide Carrier 04</p>
+                <p className="font-sans text-[11px] text-slate-500">Stationed at Bradford Ring Road (A6177)</p>
               </div>
               <div className="hidden text-right sm:block">
-                <span className="font-mono text-[11px] text-mutedText">RESPONSE: DIRECT CELL</span>
+                <span className="font-sans text-[11px] text-slate-500">RESPONSE: DIRECT CELL</span>
               </div>
             </div>
           </div>
         </div>
 
         <div className="space-y-7 pl-0 lg:col-span-5 lg:pl-4">
-          <div className="inline-flex items-center gap-2 rounded border border-secondaryNeon/40 bg-secondaryNeon/10 px-3 py-1">
-            <span className="font-mono text-[11px] font-bold uppercase tracking-[0.25em] text-primaryNeon">
+          <div className="inline-flex items-center gap-2 rounded border border-slate-700/40 bg-slate-700/10 px-3 py-1">
+            <span className="font-sans text-[11px] font-bold uppercase tracking-[0.25em] text-blue-800">
               SAFERIDE // BRADFORD // EDITORIAL DISPATCH
             </span>
           </div>
@@ -72,39 +68,37 @@ export default function Hero() {
           <div className="space-y-4">
             <h2 className="font-display text-4xl font-black uppercase leading-[1.05] tracking-tight sm:text-5xl">
               Built Around{" "}
-              <span className="neon-glow-magenta bg-gradient-to-r from-primaryNeon to-secondaryNeon bg-clip-text text-transparent">
-                Getting You Home.
-              </span>
+              <span className="text-blue-800">Getting You Home.</span>
             </h2>
-            <p className="font-sans text-base leading-relaxed text-mutedText">
+            <p className="font-sans text-base leading-relaxed text-slate-500">
               Engineered vehicle recovery, zero-damage hydraulic flatbed transport, and specialist
               roadside solutions throughout Bradford and West Yorkshire. Precision handled. Always
               operational.
             </p>
           </div>
 
-          <div className="space-y-4 rounded-xl border border-primaryNeon/30 bg-secondaryBg/80 p-6 backdrop-blur-md">
-            <div className="flex items-center justify-between border-b border-white/10 pb-3">
-              <span className="font-mono text-xs uppercase tracking-wider text-mutedText">
+          <div className="space-y-4 rounded-xl border border-blue-800/30 bg-slate-100/80 p-6 backdrop-blur-md">
+            <div className="flex items-center justify-between border-b border-black/10 pb-3">
+              <span className="font-sans text-xs uppercase tracking-wider text-slate-500">
                 DIRECT HOTLINE
               </span>
               <div className="flex items-center gap-1.5">
-                <span className="h-2 w-2 animate-ping rounded-full bg-accentCyan" />
-                <span className="font-mono text-[10px] font-bold uppercase tracking-widest text-accentCyan">
+                <span className="h-2 w-2 animate-ping rounded-full bg-emerald-600" />
+                <span className="font-sans text-[10px] font-bold uppercase tracking-widest text-emerald-600">
                   STATUS: DISPATCH CONTROLLERS ACTIVE
                 </span>
               </div>
             </div>
             <div className="flex flex-col items-stretch gap-3 sm:flex-row sm:items-center">
               <a
-                className="inline-flex flex-1 items-center justify-center gap-2 rounded-lg bg-gradient-to-r from-primaryNeon to-secondaryNeon px-6 py-3.5 font-mono text-xs font-bold uppercase tracking-widest text-white shadow-neon-magenta transition-all hover:brightness-110"
+                className="inline-flex flex-1 items-center justify-center gap-2 rounded-lg bg-amber-600 hover:bg-amber-700 px-6 py-3.5 font-sans text-xs font-bold uppercase tracking-widest text-white shadow-sm transition-all "
                 href={SITE_PHONE_HREF}
               >
                 <span>CALL NOW →</span>
                 <span className="text-sm">{SITE_PHONE_DISPLAY}</span>
               </a>
               <a
-                className="inline-flex items-center justify-center rounded-lg border border-subtleBorder px-4 py-3.5 font-mono text-xs uppercase tracking-wider text-bodyText transition-colors hover:border-primaryNeon"
+                className="inline-flex items-center justify-center rounded-lg border border-slate-200 px-4 py-3.5 font-sans text-xs uppercase tracking-wider text-slate-900 transition-colors hover:border-blue-800"
                 href="/services"
               >
                 EXPLORE
@@ -113,17 +107,17 @@ export default function Hero() {
           </div>
 
           <div className="grid grid-cols-3 gap-3 pt-1">
-            <div className="border-l border-primaryNeon/30 pl-3">
-              <p className="font-mono text-[10px] uppercase text-mutedText">Flatbed Payload</p>
-              <p className="font-display text-sm font-bold text-bodyText">3.5t</p>
+            <div className="border-l border-blue-800/30 pl-3">
+              <p className="font-sans text-[10px] uppercase text-slate-500">Flatbed Payload</p>
+              <p className="font-display text-sm font-bold text-slate-900">3.5t</p>
             </div>
-            <div className="border-l border-secondaryNeon/40 pl-3">
-              <p className="font-mono text-[10px] uppercase text-mutedText">Low Approach Deck</p>
-              <p className="font-display text-sm font-bold text-bodyText">0&deg; Rake</p>
+            <div className="border-l border-slate-700/40 pl-3">
+              <p className="font-sans text-[10px] uppercase text-slate-500">Low Approach Deck</p>
+              <p className="font-display text-sm font-bold text-slate-900">0&deg; Rake</p>
             </div>
-            <div className="border-l border-accentCyan/40 pl-3">
-              <p className="font-mono text-[10px] uppercase text-mutedText">Rim-Free Tie-Down</p>
-              <p className="font-display text-sm font-bold text-bodyText">100%</p>
+            <div className="border-l border-emerald-600/40 pl-3">
+              <p className="font-sans text-[10px] uppercase text-slate-500">Rim-Free Tie-Down</p>
+              <p className="font-display text-sm font-bold text-slate-900">100%</p>
             </div>
           </div>
         </div>

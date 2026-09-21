@@ -46,24 +46,24 @@ export default function PricingTable() {
     <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 md:py-24">
       <div className="mb-10 flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
         <div>
-          <span className="mb-2 flex items-center gap-2 font-mono text-xs font-bold uppercase tracking-widest text-secondaryNeon">
-            <span className="h-1.5 w-1.5 rounded-full bg-primaryNeon" />
+          <span className="mb-2 flex items-center gap-2 font-sans text-xs font-bold uppercase tracking-widest text-slate-700">
+            <span className="h-1.5 w-1.5 rounded-full bg-blue-800" />
             No Hidden Fees &bull; Fixed Agreed Quotes
           </span>
-          <h2 className="font-display text-3xl font-bold uppercase text-bodyText sm:text-4xl">
+          <h2 className="font-display text-3xl font-bold uppercase text-slate-900 sm:text-4xl">
             Standard Incident Triage &amp; Rates
           </h2>
         </div>
-        <p className="max-w-md text-sm text-mutedText">
+        <p className="max-w-md text-sm text-slate-500">
           Rates are transparently quoted before our truck rolls. No midnight multiplier penalties
           or unauthorized mileage surprises.
         </p>
       </div>
 
-      <div className="overflow-x-auto rounded-2xl border border-secondaryNeon/15 bg-panel">
+      <div className="overflow-x-auto rounded-2xl border border-slate-700/15 bg-white">
         <table className="w-full min-w-[720px] text-left">
           <thead>
-            <tr className="border-b border-white/10 bg-secondaryBg font-mono text-xs uppercase tracking-wider text-mutedText">
+            <tr className="border-b border-black/10 bg-slate-100 font-sans text-xs uppercase tracking-wider text-slate-500">
               <th className="px-6 py-4">Incident Scenario</th>
               <th className="px-6 py-4">Equipment Dispatched</th>
               <th className="px-6 py-4">Response Target</th>
@@ -71,23 +71,23 @@ export default function PricingTable() {
               <th className="px-6 py-4 text-right">Fixed Rate</th>
             </tr>
           </thead>
-          <tbody className="divide-y divide-white/5 text-sm text-mutedText">
+          <tbody className="divide-y divide-white/5 text-sm text-slate-500">
             {ROWS.map((row) => (
-              <tr key={row.scenario} className="transition-colors hover:bg-secondaryBg/60">
-                <td className="px-6 py-5 font-semibold text-bodyText">
+              <tr key={row.scenario} className="transition-colors hover:bg-slate-100/60">
+                <td className="px-6 py-5 font-semibold text-slate-900">
                   {row.scenario}
-                  <span className="mt-0.5 block text-xs font-normal text-mutedText">{row.note}</span>
+                  <span className="mt-0.5 block text-xs font-normal text-slate-500">{row.note}</span>
                 </td>
                 <td className="px-6 py-5">{row.equipment}</td>
-                <td className="px-6 py-5 font-bold text-primaryNeon">{row.target}</td>
+                <td className="px-6 py-5 font-bold text-blue-800">{row.target}</td>
                 <td className="px-6 py-5">{row.profile}</td>
-                <td className="px-6 py-5 text-right font-display text-lg font-bold text-bodyText">{row.rate}</td>
+                <td className="px-6 py-5 text-right font-display text-lg font-bold text-slate-900">{row.rate}</td>
               </tr>
             ))}
           </tbody>
         </table>
       </div>
-      <p className="mt-4 text-xs text-mutedText">
+      <p className="mt-4 text-xs text-slate-500">
         * Final price depends on mileage beyond core BD districts, vehicle immobilisation state,
         and specific access/extraction parameters.
       </p>

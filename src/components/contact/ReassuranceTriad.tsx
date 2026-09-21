@@ -1,7 +1,7 @@
 const REASSURANCES = [
   {
     icon: "schedule",
-    accent: "text-primaryNeon",
+    accent: "text-blue-800",
     label: "Continuous Shift",
     title: "24/7 Availability",
     description:
@@ -9,7 +9,7 @@ const REASSURANCES = [
   },
   {
     icon: "support_agent",
-    accent: "text-secondaryNeon",
+    accent: "text-slate-700",
     label: "Zero Automation",
     title: "Direct Phone Contact",
     description:
@@ -17,7 +17,7 @@ const REASSURANCES = [
   },
   {
     icon: "pin_drop",
-    accent: "text-primaryNeon",
+    accent: "text-blue-800",
     label: "Local Fleet Hub",
     title: "Bradford Coverage",
     description:
@@ -27,17 +27,17 @@ const REASSURANCES = [
 
 export default function ReassuranceTriad() {
   return (
-    <section className="w-full bg-secondaryBg py-12 sm:py-16">
+    <section className="w-full bg-slate-100 py-12 sm:py-16">
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
         <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
           {REASSURANCES.map((item) => (
-            <div key={item.title} className="flex flex-col gap-2 rounded-xl bg-panel p-6 shadow-sm">
+            <div key={item.title} className="flex flex-col gap-2 rounded-xl bg-white p-6 shadow-sm">
               <div className={`mb-1 flex items-center gap-2 ${item.accent}`}>
                 <span className="material-symbols-outlined text-[24px]">{item.icon}</span>
-                <span className="font-mono text-xs uppercase tracking-wider">{item.label}</span>
+                <span className="font-sans text-xs uppercase tracking-wider">{item.label}</span>
               </div>
-              <h3 className="font-display text-lg font-bold text-bodyText">{item.title}</h3>
-              <p className="text-sm text-mutedText">{item.description}</p>
+              <h3 className="font-display text-lg font-bold text-slate-900">{item.title}</h3>
+              <p className="text-sm text-slate-500">{item.description}</p>
             </div>
           ))}
         </div>

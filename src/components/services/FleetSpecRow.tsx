@@ -7,24 +7,24 @@ const SPECS = [
 
 export default function FleetSpecRow() {
   return (
-    <section className="border-y border-secondaryNeon/15 bg-secondaryBg px-4 py-16 sm:px-6 md:py-24">
+    <section className="border-y border-slate-700/15 bg-slate-100 px-4 py-16 sm:px-6 md:py-24">
       <div className="mx-auto max-w-7xl">
         <div className="mb-10 max-w-2xl">
-          <span className="mb-2 block font-mono text-xs font-bold uppercase tracking-widest text-primaryNeon">
+          <span className="mb-2 block font-sans text-xs font-bold uppercase tracking-widest text-blue-800">
             Showroom Grade Equipment
           </span>
-          <h2 className="font-display text-3xl font-bold uppercase text-bodyText sm:text-4xl">
+          <h2 className="font-display text-3xl font-bold uppercase text-slate-900 sm:text-4xl">
             Purpose-Built Fleet Specifications
           </h2>
         </div>
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {SPECS.map((spec) => (
-            <div key={spec.label} className="flex flex-col justify-between gap-6 rounded-xl border border-secondaryNeon/20 bg-panel p-6">
-              <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-primaryNeon/15 text-primaryNeon">
+            <div key={spec.label} className="flex flex-col justify-between gap-6 rounded-xl border border-slate-700/20 bg-white p-6">
+              <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-blue-800/15 text-blue-800">
                 <span className="material-symbols-outlined text-2xl">{spec.icon}</span>
               </div>
-              <h4 className="font-display text-base font-bold text-bodyText">{spec.label}</h4>
-              <div className="border-t border-white/10 pt-3 font-mono text-xs font-bold text-primaryNeon">{spec.value}</div>
+              <h4 className="font-display text-base font-bold text-slate-900">{spec.label}</h4>
+              <div className="border-t border-black/10 pt-3 font-sans text-xs font-bold text-blue-800">{spec.value}</div>
             </div>
           ))}
         </div>

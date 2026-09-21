@@ -35,52 +35,52 @@ export default function Certifications() {
       <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-12">
         <div className="flex flex-col gap-6 lg:col-span-6">
           <div>
-            <span className="mb-2 block font-mono text-xs font-bold uppercase tracking-widest text-secondaryNeon">
+            <span className="mb-2 block font-sans text-xs font-bold uppercase tracking-widest text-slate-700">
               Stringent Governance
             </span>
-            <h2 className="font-display text-2xl font-bold leading-tight text-bodyText sm:text-3xl">
+            <h2 className="font-display text-2xl font-bold leading-tight text-slate-900 sm:text-3xl">
               Safety Protocols That Surpass Industry Mandates
             </h2>
-            <p className="mt-3 text-base text-mutedText">
+            <p className="mt-3 text-base text-slate-500">
               We operate under commercial logistics compliance standards, eliminating the risks
               inherent in unregulated breakdown towing.
             </p>
           </div>
           <div className="space-y-4">
             {COMPLIANCE.map((item) => (
-              <div key={item.title} className="flex items-start gap-4 rounded-xl border border-secondaryNeon/20 bg-panel p-4">
-                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primaryNeon/15 text-primaryNeon">
+              <div key={item.title} className="flex items-start gap-4 rounded-xl border border-slate-700/20 bg-white p-4">
+                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-blue-800/15 text-blue-800">
                   <span className="material-symbols-outlined text-xl">{item.icon}</span>
                 </div>
                 <div>
-                  <h4 className="font-display text-base font-bold text-bodyText">{item.title}</h4>
-                  <p className="mt-1 text-sm text-mutedText">{item.description}</p>
+                  <h4 className="font-display text-base font-bold text-slate-900">{item.title}</h4>
+                  <p className="mt-1 text-sm text-slate-500">{item.description}</p>
                 </div>
               </div>
             ))}
           </div>
         </div>
 
-        <div className="rounded-3xl border border-subtleBorder bg-secondaryBg p-8 sm:p-10 lg:col-span-6">
-          <div className="mb-6 flex items-center justify-between border-b border-white/10 pb-4">
-            <span className="font-display text-lg font-bold text-primaryNeon">Accreditation Verification Matrix</span>
+        <div className="rounded-3xl border border-slate-200 bg-slate-100 p-8 sm:p-10 lg:col-span-6">
+          <div className="mb-6 flex items-center justify-between border-b border-black/10 pb-4">
+            <span className="font-display text-lg font-bold text-blue-800">Accreditation Verification Matrix</span>
           </div>
           <div className="space-y-3">
             {MATRIX.map((item) => (
-              <div key={item.label} className="flex items-center justify-between rounded-lg bg-panel p-3">
-                <span className="text-sm font-medium text-bodyText">{item.label}</span>
-                <span className="font-mono text-sm font-bold text-primaryNeon">{item.value}</span>
+              <div key={item.label} className="flex items-center justify-between rounded-lg bg-white p-3">
+                <span className="text-sm font-medium text-slate-900">{item.label}</span>
+                <span className="font-sans text-sm font-bold text-blue-800">{item.value}</span>
               </div>
             ))}
           </div>
-          <div className="mt-6 flex items-center justify-between gap-3 rounded-xl bg-primaryNeon p-4">
+          <div className="mt-6 flex items-center justify-between gap-3 rounded-xl bg-blue-800 p-4">
             <div className="flex items-center gap-3">
               <span className="material-symbols-outlined text-white">description</span>
               <span className="text-sm text-white/90">
                 Insurance certificates available upon request for fleet and commercial accounts.
               </span>
             </div>
-            <a href={SITE_EMAIL_HREF} className="shrink-0 font-mono text-xs font-bold text-white underline hover:no-underline">
+            <a href={SITE_EMAIL_HREF} className="shrink-0 font-sans text-xs font-bold text-white underline hover:no-underline">
               Request Pack
             </a>
           </div>

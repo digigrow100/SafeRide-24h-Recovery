@@ -29,10 +29,10 @@ export default function ServiceDetails() {
           {["Recovery for stranded vehicles", "Available day and night 24/7", "Fast assistance across Bradford & key corridors"].map(
             (item) => (
               <li key={item} className="flex items-center gap-3">
-                <span className="flex h-6 w-6 items-center justify-center rounded-full border border-primaryNeon/40 bg-primaryNeon/10 text-primaryNeon">
+                <span className="flex h-6 w-6 items-center justify-center rounded-full border border-blue-800/40 bg-blue-800/10 text-blue-800">
                   <span className="material-symbols-outlined text-sm">check</span>
                 </span>
-                <span className="text-sm text-bodyText md:text-base">{item}</span>
+                <span className="text-sm text-slate-900 md:text-base">{item}</span>
               </li>
             ),
           )}
@@ -50,9 +50,9 @@ export default function ServiceDetails() {
         imageAlt="Roadside recovery operator inspecting an immobilized car at night"
         ctaLabel="GET BREAKDOWN HELP"
       >
-        <div className="mb-8 w-full max-w-md rounded border border-secondaryNeon/20 bg-panel p-4">
-          <p className="mb-1 font-mono text-xs text-secondaryNeon">DISPATCH COVERAGE</p>
-          <p className="text-sm text-bodyText">
+        <div className="mb-8 w-full max-w-md rounded border border-slate-700/20 bg-white p-4">
+          <p className="mb-1 font-sans text-xs text-slate-700">DISPATCH COVERAGE</p>
+          <p className="text-sm text-slate-900">
             Immediate deployment to Bradford, Shipley, Pudsey, and connecting motorway corridors.
           </p>
         </div>
@@ -70,13 +70,13 @@ export default function ServiceDetails() {
         ctaLabel="ASK ABOUT VEHICLE TRANSPORT"
       >
         <div className="mb-8 grid w-full max-w-md grid-cols-2 gap-4">
-          <div className="rounded border border-secondaryNeon/15 bg-panel p-3.5">
-            <span className="mb-1 block font-mono text-xs text-primaryNeon">DEALER &amp; PRIVATE</span>
-            <span className="text-sm font-medium text-bodyText">Scheduled transfer</span>
+          <div className="rounded border border-slate-700/15 bg-white p-3.5">
+            <span className="mb-1 block font-sans text-xs text-blue-800">DEALER &amp; PRIVATE</span>
+            <span className="text-sm font-medium text-slate-900">Scheduled transfer</span>
           </div>
-          <div className="rounded border border-secondaryNeon/15 bg-panel p-3.5">
-            <span className="mb-1 block font-mono text-xs text-primaryNeon">SPECIALIZED RAMP</span>
-            <span className="text-sm font-medium text-bodyText">Low clearance safe</span>
+          <div className="rounded border border-slate-700/15 bg-white p-3.5">
+            <span className="mb-1 block font-sans text-xs text-blue-800">SPECIALIZED RAMP</span>
+            <span className="text-sm font-medium text-slate-900">Low clearance safe</span>
           </div>
         </div>
       </ServiceDetailRow>
@@ -94,8 +94,8 @@ export default function ServiceDetails() {
       >
         <ul className="mb-8 grid w-full max-w-lg grid-cols-1 gap-3 sm:grid-cols-2">
           {ROADSIDE_ITEMS.map((item) => (
-            <li key={item.label} className="flex items-center gap-2.5 text-sm text-bodyText">
-              <span className="material-symbols-outlined text-base text-secondaryNeon">{item.icon}</span>
+            <li key={item.label} className="flex items-center gap-2.5 text-sm text-slate-900">
+              <span className="material-symbols-outlined text-base text-slate-700">{item.icon}</span>
               <span>{item.label}</span>
             </li>
           ))}

@@ -30,13 +30,13 @@ export default function PostcodeDirectory() {
     <section className="w-full py-16 sm:py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
         <div className="mb-8 max-w-3xl">
-          <span className="mb-1 block font-mono text-xs font-bold uppercase tracking-widest text-primaryNeon">
+          <span className="mb-1 block font-sans text-xs font-bold uppercase tracking-widest text-blue-800">
             Geographic Coverage Index
           </span>
-          <h2 className="font-display text-2xl font-bold text-bodyText md:text-3xl">
+          <h2 className="font-display text-2xl font-bold text-slate-900 md:text-3xl">
             Comprehensive Bradford Postcode Geofence
           </h2>
-          <p className="mt-2 text-sm text-mutedText">
+          <p className="mt-2 text-sm text-slate-500">
             Every postal sector within the Bradford metropolitan zone is covered with rapid
             priority response dispatch.
           </p>
@@ -44,25 +44,25 @@ export default function PostcodeDirectory() {
 
         <div className="grid grid-cols-2 gap-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8">
           {POSTCODES.map((item) => (
-            <div key={item.code} className="flex flex-col items-center justify-center rounded-lg bg-secondaryBg p-3 text-center shadow-sm">
-              <span className="font-display text-base font-bold text-primaryNeon">{item.code}</span>
-              <span className="font-mono text-[10px] text-mutedText">{item.area}</span>
+            <div key={item.code} className="flex flex-col items-center justify-center rounded-lg bg-slate-100 p-3 text-center shadow-sm">
+              <span className="font-display text-base font-bold text-blue-800">{item.code}</span>
+              <span className="font-sans text-[10px] text-slate-500">{item.area}</span>
             </div>
           ))}
-          <div className="col-span-2 flex flex-col items-center justify-center rounded-lg bg-panel p-3 text-center shadow-sm">
-            <span className="font-mono text-[10px] font-bold uppercase text-primaryNeon">Long-Distance</span>
-            <span className="text-xs text-bodyText">UK-Wide Transit</span>
+          <div className="col-span-2 flex flex-col items-center justify-center rounded-lg bg-white p-3 text-center shadow-sm">
+            <span className="font-sans text-[10px] font-bold uppercase text-blue-800">Long-Distance</span>
+            <span className="text-xs text-slate-900">UK-Wide Transit</span>
           </div>
         </div>
 
-        <div className="mt-8 flex flex-col items-start justify-between gap-4 rounded-xl bg-secondaryBg p-6 md:flex-row md:items-center">
+        <div className="mt-8 flex flex-col items-start justify-between gap-4 rounded-xl bg-slate-100 p-6 md:flex-row md:items-center">
           <div className="flex items-center gap-3">
-            <span className="material-symbols-outlined text-2xl text-primaryNeon">rv_hookup</span>
+            <span className="material-symbols-outlined text-2xl text-blue-800">rv_hookup</span>
             <div>
-              <span className="block font-display text-base font-bold text-bodyText">
+              <span className="block font-display text-base font-bold text-slate-900">
                 Cross-Boundary &amp; Auction Hub Transfers
               </span>
-              <span className="text-sm text-mutedText">
+              <span className="text-sm text-slate-500">
                 Daily direct transport routes to BCA Brighouse, Copart Sandtoft, Leeds, Halifax,
                 Huddersfield, and Wakefield.
               </span>
@@ -70,7 +70,7 @@ export default function PostcodeDirectory() {
           </div>
           <a
             href={SITE_PHONE_HREF}
-            className="shrink-0 rounded-full bg-panel px-5 py-2.5 font-mono text-xs font-bold text-primaryNeon shadow-sm hover:bg-secondaryBg"
+            className="shrink-0 rounded-full bg-white px-5 py-2.5 font-sans text-xs font-bold text-blue-800 shadow-sm hover:bg-slate-100"
           >
             Book Auction Transport
           </a>
