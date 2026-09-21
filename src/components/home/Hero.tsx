@@ -13,8 +13,8 @@ export default function Hero() {
         sizes="100vw"
         className="absolute inset-0 z-0 object-cover"
       />
-      <div className="absolute inset-0 z-0 bg-slate-900/70" />
-      <div className="absolute inset-0 z-0 bg-gradient-to-t from-slate-900/90 via-slate-900/50 to-slate-900/60" />
+      <div className="absolute inset-0 z-0 bg-slate-900/50" />
+      <div className="absolute inset-0 z-0 bg-gradient-to-t from-slate-900/60 via-slate-900/35 to-slate-900/40" />
 
       <div className="relative z-10 mx-auto flex w-full max-w-3xl flex-col items-center space-y-6 text-center">
         <h2 className="font-display text-4xl font-black uppercase leading-[1.05] tracking-tight text-white sm:text-5xl lg:text-6xl">
