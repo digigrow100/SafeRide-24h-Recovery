@@ -17,6 +17,7 @@ export default function ContactPage() {
   return (
     <>
       <ContactHero />
+      <EmergencyStrip />
       <section className="w-full bg-secondaryBg py-12 sm:py-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6">
           <div className="grid grid-cols-1 items-start gap-10 lg:grid-cols-12">
@@ -25,7 +26,6 @@ export default function ContactPage() {
           </div>
         </div>
       </section>
-      <EmergencyStrip />
       <ContactCoverage />
       <ReassuranceTriad />
       <ContactFinalCta />

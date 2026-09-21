@@ -4,6 +4,7 @@ import ServiceDetails from "@/components/services/ServiceDetails";
 import ServicesCta from "@/components/services/ServicesCta";
 import ServicesHero from "@/components/services/ServicesHero";
 import ServicesIntro from "@/components/services/ServicesIntro";
+import ServicesStatStrip from "@/components/services/ServicesStatStrip";
 
 export const metadata: Metadata = {
   title: "Services | SafeRide 24h Recovery Bradford",
@@ -15,6 +16,7 @@ export default function ServicesPage() {
   return (
     <>
       <ServicesHero />
+      <ServicesStatStrip />
       <ServicesIntro />
       <ServiceDetails />
       <HowItWorks />
