@@ -60,6 +60,23 @@ export default function AboutHero() {
               LINE: {SITE_PHONE_DISPLAY}
             </span>
           </div>
+
+          <div className="grid grid-cols-2 gap-3 pt-4 sm:grid-cols-4">
+            {[
+              { icon: "verified_user", label: "PAS 43", sub: "Accredited Rescue" },
+              { icon: "engineering", label: "IVR Trained", sub: "Master Operators" },
+              { icon: "policy", label: "DVSA", sub: "Licensed Operator" },
+              { icon: "shield_with_heart", label: "£100k Cover", sub: "Goods-In-Transit" },
+            ].map((badge) => (
+              <div key={badge.label} className="flex items-center gap-2.5 rounded-lg border border-subtleBorder bg-panel p-3">
+                <span className="material-symbols-outlined text-primaryNeon">{badge.icon}</span>
+                <div className="flex flex-col leading-tight">
+                  <span className="font-mono text-[11px] font-bold text-bodyText">{badge.label}</span>
+                  <span className="text-[10px] text-mutedText">{badge.sub}</span>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
 
         <div className="relative lg:col-span-6">

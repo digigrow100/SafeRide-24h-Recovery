@@ -1,0 +1,52 @@
+const FAQS = [
+  {
+    icon: "timer",
+    question: "How quickly can a recovery unit reach me in Bradford?",
+    answer:
+      "Our average urban dispatch response time across BD1 through BD15 is between 20 to 35 minutes, subject to live traffic conditions on main arteries like the A650, A6177, and Manchester Road. For M606 and M62 incidents, our dedicated highway patrol trucks operate with rapid priority deployment.",
+  },
+  {
+    icon: "ev_station",
+    question: "Can you tow lowered sports cars or electric vehicles (EVs)?",
+    answer:
+      "Yes. Our fleet incorporates ultra-low approach hydraulic tilt-and-slide beds designed specifically to protect low front splitters and carbon bodywork. For EVs and AWD vehicles unable to engage neutral gear, we utilise specialised free-rolling skates so the transmission is never spun while moving.",
+  },
+  {
+    icon: "airline_seat_recline_normal",
+    question: "Can passengers ride inside the recovery truck?",
+    answer:
+      "Yes, our recovery truck cabs comfortably accommodate up to 2 passengers alongside the driver to accompany your vehicle to the chosen drop-off location or garage. For a larger travelling party, notify our controller so we can organise auxiliary escort transport.",
+  },
+  {
+    icon: "contactless",
+    question: "What payment methods do you accept at the roadside?",
+    answer:
+      "Every recovery vehicle is equipped with an encrypted roadside card terminal. We accept all major UK debit and credit cards, Apple Pay, Google Pay, direct bank transfer, and cash. Fully itemised receipts are issued digitally upon payment.",
+  },
+] as const;
+
+export default function ContactFaq() {
+  return (
+    <section className="w-full bg-secondaryBg py-16 sm:py-24">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6">
+        <div className="mb-10 max-w-2xl">
+          <span className="mb-1 block font-mono text-xs font-bold uppercase tracking-widest text-primaryNeon">
+            Incident FAQs
+          </span>
+          <h2 className="font-display text-2xl font-bold text-bodyText md:text-3xl">Frequently Asked Questions</h2>
+        </div>
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+          {FAQS.map((faq) => (
+            <div key={faq.question} className="rounded-xl bg-panel p-6 shadow-sm">
+              <div className="mb-2 flex items-center gap-3">
+                <span className="material-symbols-outlined text-primaryNeon">{faq.icon}</span>
+                <h3 className="font-display text-base font-bold text-bodyText">{faq.question}</h3>
+              </div>
+              <p className="text-sm leading-relaxed text-mutedText">{faq.answer}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
