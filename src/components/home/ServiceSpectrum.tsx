@@ -3,88 +3,67 @@ import serviceCarRecovery from "@/assets/images/service-car-recovery.webp";
 import serviceBreakdownRecovery from "@/assets/images/service-breakdown-recovery.webp";
 import serviceVehicleTransport from "@/assets/images/service-vehicle-transport.webp";
 import serviceRoadsideAssistance from "@/assets/images/service-roadside-assistance.webp";
+import { SITE_PHONE_HREF } from "@/lib/site";
 
 const ACCENTS = {
   primary: {
     hoverBorder: "hover:border-blue-800",
     hoverShadow: "hover:shadow-sm",
     badge: "bg-blue-800/20 border-blue-800/40 text-blue-800",
-    hoverTitle: "group-hover:text-blue-800",
-    tag: "text-emerald-600",
-    button: "bg-blue-800/20 text-blue-800 group-hover:bg-blue-800 group-hover:text-bg",
+    button: "bg-blue-800/10 text-blue-800 hover:bg-blue-800 hover:text-white",
   },
   secondary: {
     hoverBorder: "hover:border-slate-700",
     hoverShadow: "hover:shadow-sm",
     badge: "bg-slate-700/20 border-slate-700/40 text-slate-700",
-    hoverTitle: "group-hover:text-slate-700",
-    tag: "text-slate-700",
-    button: "bg-slate-700/20 text-slate-700 group-hover:bg-slate-700 group-hover:text-bg",
+    button: "bg-slate-700/10 text-slate-700 hover:bg-slate-700 hover:text-white",
   },
   cyan: {
     hoverBorder: "hover:border-emerald-600",
     hoverShadow: "hover:shadow-sm",
     badge: "bg-emerald-600/20 border-emerald-600/40 text-emerald-600",
-    hoverTitle: "group-hover:text-emerald-600",
-    tag: "text-emerald-600",
-    button: "bg-emerald-600/20 text-emerald-600 group-hover:bg-emerald-600 group-hover:text-bg",
+    button: "bg-emerald-600/10 text-emerald-600 hover:bg-emerald-600 hover:text-white",
   },
 } as const;
 
 const SERVICES = [
   {
     accent: "primary",
-    tag: "DEPLOYMENT 01",
-    title: "Car Recovery & Accident Extraction",
+    tag: "SERVICE 01",
+    title: "24/7 Car Recovery",
     description:
-      "Full hydraulic tilt-slide flatbed recovery. Perfect for low ground-clearance sports vehicles, prestige saloons, EVs, AWDs and accident recovery.",
-    spec: "TILT-SLIDE // 6.5T WINCH",
-    stats: [
-      { label: "Ramp Angle", value: "Ultra-Low 5.8°" },
-      { label: "Compatibility", value: "EV / AWD / Supercars" },
-    ],
+      "If your car cannot be driven, our 24/7 car recovery service can move it to your home, a local garage or another safe location. We assist drivers throughout Bradford and the surrounding areas. Call us at any time and provide your location, vehicle details and preferred destination.",
+    button: "GET CAR RECOVERY",
     image: serviceCarRecovery,
     alt: "24/7 car recovery hydraulic tilt-slide flatbed truck",
   },
   {
     accent: "secondary",
-    tag: "DEPLOYMENT 02",
-    title: "Advanced Breakdown Diagnostics",
+    tag: "SERVICE 02",
+    title: "Breakdown Recovery",
     description:
-      "On-scene mechanical triage under torchlight. Alternator faults, fuel system airlocks, ECU interrogation and critical drivetrain failures rescued.",
-    spec: "DIAGNOSTIC & HAUL",
-    stats: [
-      { label: "ECU Interrogation", value: "CAN-Bus / DoIP" },
-      { label: "First-Fix Rate", value: "78.4% Roadside" },
-    ],
+      "If your vehicle has broken down and cannot continue its journey, we can recover it safely from the roadside. Our breakdown recovery service is available for many common situations, including vehicles that will not start, mechanical problems and unexpected faults while travelling.",
+    button: "REQUEST BREAKDOWN RECOVERY",
     image: serviceBreakdownRecovery,
     alt: "Breakdown recovery technician diagnosing a vehicle at night",
   },
   {
     accent: "primary",
-    tag: "DEPLOYMENT 03",
-    title: "Prestige Intercity Haulage",
+    tag: "SERVICE 03",
+    title: "Vehicle Transportation",
     description:
-      "Nationwide scheduled transfers, auction deliveries, dealership swaps, and classic car logistics with high-spec security rigging.",
-    spec: "NATIONWIDE & REGIONAL",
-    stats: [
-      { label: "Transit Insurance", value: "£100,000 Cover" },
-      { label: "Tracking", value: "Live GPS Telemetry" },
-    ],
+      "Need to move a vehicle without driving it? We provide vehicle transportation for private owners, dealerships, garages and vehicle buyers. We can transport running and non-running vehicles locally or over longer distances. This service is suitable for vehicle purchases, garage deliveries, relocations and planned transport.",
+    button: "GET A TRANSPORT QUOTE",
     image: serviceVehicleTransport,
     alt: "Vehicle transportation carrier loaded with an executive car",
   },
   {
     accent: "cyan",
-    tag: "DEPLOYMENT 04",
-    title: "Immediate Roadside Interventions",
+    tag: "SERVICE 04",
+    title: "Roadside Assistance",
     description:
-      "Direct emergency assistance on motorway hard shoulders: puncture wheel swaps, heavy battery jump starts, misfuel draining, and lockout resolution.",
-    spec: "HARD SHOULDER SAFE",
-    stats: [
-      { label: "Battery Booster", value: "High-Amp Current" },
-      { label: "Tyre Change", value: "Alloy-Safe Sockets" },
-    ],
+      "Some vehicle problems may be handled at the roadside. Our team will assess the situation and provide suitable assistance where possible. If the vehicle cannot be made safe to drive, we can arrange recovery to your home, garage or another chosen destination.",
+    button: "REQUEST ROADSIDE HELP",
     image: serviceRoadsideAssistance,
     alt: "Roadside assistance technician on the hard shoulder at night",
   },
@@ -96,16 +75,17 @@ export default function ServiceSpectrum() {
       <div className="mb-16 space-y-3">
         <div className="flex items-center gap-2">
           <span className="font-sans text-xs font-bold uppercase tracking-widest text-blue-800">
-            // 01 SERVICE SPECTRUM
+            Our Services
           </span>
           <div className="h-[1px] w-20 bg-blue-800/40" />
         </div>
         <h2 className="font-display text-4xl font-black uppercase tracking-tight text-slate-900 sm:text-5xl">
-          ENGINEERED CAPABILITY
+          Vehicle Recovery Services in Bradford
         </h2>
         <p className="max-w-xl text-sm text-slate-500">
-          Four dedicated recovery channels equipped with industrial hydraulic tilt trays, gentle
-          alloy cradles, and night diagnostics.
+          We provide four main services to help drivers, vehicle owners, garages and businesses.
+          Tell us your location and vehicle problem, and we will explain the most suitable
+          option.
         </p>
       </div>
 
@@ -147,6 +127,12 @@ export default function ServiceSpectrum() {
                   {service.title}
                 </h3>
                 <p className="text-sm leading-relaxed text-slate-500">{service.description}</p>
+                <a
+                  href={SITE_PHONE_HREF}
+                  className={`inline-flex w-fit items-center gap-2 rounded-lg px-5 py-3 font-sans text-xs font-bold uppercase tracking-widest transition-colors ${accent.button}`}
+                >
+                  {service.button}
+                </a>
               </div>
             </div>
           );

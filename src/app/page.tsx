@@ -3,6 +3,7 @@ import CoverageMatrix from "@/components/home/CoverageMatrix";
 import FinalCta from "@/components/home/FinalCta";
 import Gallery from "@/components/home/Gallery";
 import Hero from "@/components/home/Hero";
+import HomeFaq from "@/components/home/HomeFaq";
 import Protocol from "@/components/home/Protocol";
 import ServiceSpectrum from "@/components/home/ServiceSpectrum";
 import SpecStrip from "@/components/home/SpecStrip";
@@ -14,13 +15,14 @@ export default function Home() {
     <>
       <Hero />
       <SpecStrip />
+      <BrandStatement />
       <ServiceSpectrum />
       <TechGrid />
       <Protocol />
-      <BrandStatement />
       <TransportBanner />
       <CoverageMatrix />
       <Gallery />
+      <HomeFaq />
       <FinalCta />
     </>
   );

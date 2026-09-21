@@ -1,31 +1,39 @@
 const ITEMS = [
   {
-    icon: "height",
-    title: "Low-Approach Ramps",
+    icon: "schedule",
+    title: "Available 24 Hours",
     description:
-      "Extended extruded aluminium beaver-tail extensions reducing loading gradient to below 6°, eliminating front bumper scraping on lowered sports cars and EV platforms.",
-    spec: "Zero Ground Friction",
+      "Vehicle problems do not follow normal working hours. You can contact us during the day, at night, on weekends and during public holidays.",
   },
   {
-    icon: "adjust",
-    title: "Non-Marking Harnesses",
+    icon: "location_on",
+    title: "Local Bradford Coverage",
     description:
-      "Industrial tyre-wrap webbing that locks vehicles strictly by tread surface. Zero metal-to-wheel contact, preserving diamond-cut and powder-coated alloys.",
-    spec: "100% Rim Preservation",
+      "We serve Bradford and nearby areas across West Yorkshire. Our local knowledge helps us understand major roads, residential areas and common travel routes.",
   },
   {
-    icon: "sync",
-    title: "Dynamic Wireless Winch",
+    icon: "verified_user",
+    title: "Careful Vehicle Handling",
     description:
-      "Heavy-capacity remote winches using synthetic plasma rope. Continuous variable speed allows millimetre-accurate alignment onto the deck without shock loads.",
-    spec: "12,000 LBS Controlled Pull",
+      "Your vehicle is handled carefully during loading, transport and unloading. We take suitable precautions to help protect the vehicle throughout the journey.",
   },
   {
-    icon: "terminal",
-    title: "Diagnostic Scan Tools",
+    icon: "forum",
+    title: "Clear Communication",
     description:
-      "Onboard bi-directional scan suites capable of clearing immobiliser lockdowns, resetting electronic parking brakes on dead batteries, and hybrid pack health tests.",
-    spec: "Deep CAN Interrogation",
+      "Tell us where you are, what happened and where the vehicle needs to go. We will explain the service clearly before arranging assistance.",
+  },
+  {
+    icon: "route",
+    title: "Local and Long-Distance Transport",
+    description:
+      "We can help with short journeys within Bradford and planned vehicle transportation to destinations further away.",
+  },
+  {
+    icon: "groups",
+    title: "Help for Different Customers",
+    description:
+      "Our services are available to private drivers, vehicle owners, garages, dealerships and businesses that need dependable vehicle transportation.",
   },
 ] as const;
 
@@ -34,32 +42,29 @@ export default function TechGrid() {
     <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6 md:py-28">
       <div className="mb-12 max-w-2xl space-y-3">
         <span className="font-sans text-xs font-bold uppercase tracking-widest text-blue-800">
-          // Hardware &amp; Craft
+          Why SafeRide?
         </span>
         <h2 className="font-display text-4xl font-black uppercase tracking-tight text-slate-900 sm:text-5xl">
-          Prepared for the Road.
+          Professional Help When Your Vehicle Stops
         </h2>
         <p className="text-sm text-slate-500">
-          Every component aboard our SafeRide units is selected to safeguard factory paint
-          finishes, carbon aerodynamics, and ultra-wide performance rims.
+          Our aim is to make vehicle recovery simple and less stressful. From your first call to
+          the final delivery, we keep you informed and handle your vehicle with care.
         </p>
       </div>
 
-      <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+      <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {ITEMS.map((item) => (
           <div
             key={item.title}
-            className="flex flex-col justify-between gap-6 rounded-xl border border-slate-200 bg-slate-100 p-6 transition-colors hover:border-blue-800"
+            className="flex flex-col gap-4 rounded-xl border border-slate-200 bg-slate-100 p-6 transition-colors hover:border-blue-800"
           >
-            <div>
-              <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-lg border border-blue-800/30 bg-white text-blue-800">
-                <span className="material-symbols-outlined text-2xl">{item.icon}</span>
-              </div>
-              <h4 className="mb-2 font-display text-lg font-bold text-slate-900">{item.title}</h4>
-              <p className="text-sm leading-relaxed text-slate-500">{item.description}</p>
+            <div className="flex h-12 w-12 items-center justify-center rounded-lg border border-blue-800/30 bg-white text-blue-800">
+              <span className="material-symbols-outlined text-2xl">{item.icon}</span>
             </div>
-            <div className="border-t border-black/10 pt-4 font-sans text-xs font-bold uppercase text-blue-800">
-              Spec: {item.spec}
+            <div>
+              <h3 className="mb-2 font-display text-lg font-bold text-slate-900">{item.title}</h3>
+              <p className="text-sm leading-relaxed text-slate-500">{item.description}</p>
             </div>
           </div>
         ))}
