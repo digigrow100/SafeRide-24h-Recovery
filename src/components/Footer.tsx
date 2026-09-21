@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import siteIcon from "@/assets/images/site-icon.webp";
+import logo from "@/assets/images/logo.webp";
 import { SITE_EMAIL, SITE_EMAIL_HREF, SITE_PHONE_DISPLAY, SITE_PHONE_HREF } from "@/lib/site";
 
 const SERVICES = [
@@ -25,14 +25,8 @@ export default function Footer() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
         <div className="grid grid-cols-1 gap-10 border-b border-slate-200 pb-12 md:grid-cols-2 lg:grid-cols-5">
           <div className="flex flex-col gap-4 lg:col-span-2">
-            <Link href="/" className="flex items-center gap-3">
-              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-blue-800">
-                <Image alt="SafeRide 24H Recovery" src={siteIcon} sizes="40px" className="h-6 w-6 object-contain" />
-              </div>
-              <div>
-                <span className="block font-display text-lg font-bold leading-none text-blue-800">SafeRide 24h</span>
-                <span className="text-xs text-slate-500">Breakdown Recovery</span>
-              </div>
+            <Link href="/" className="flex items-center">
+              <Image alt="SafeRide 24H Recovery" src={logo} sizes="180px" className="h-10 w-auto" />
             </Link>
             <p className="max-w-sm text-sm text-slate-600">
               Rapid incident dispatch, vehicle transportation, and 24/7 roadside assistance across
