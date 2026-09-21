@@ -36,40 +36,56 @@ const SERVICES = [
   {
     accent: "primary",
     tag: "DEPLOYMENT 01",
-    title: "24/7 Car Recovery",
+    title: "Car Recovery & Accident Extraction",
     description:
-      "Full hydraulic tilt-slide flatbed recovery. Perfect for low ground-clearance sports vehicles, prestige saloons, and immobile AWDs.",
+      "Full hydraulic tilt-slide flatbed recovery. Perfect for low ground-clearance sports vehicles, prestige saloons, EVs, AWDs and accident recovery.",
     spec: "TILT-SLIDE // 6.5T WINCH",
+    stats: [
+      { label: "Ramp Angle", value: "Ultra-Low 5.8°" },
+      { label: "Compatibility", value: "EV / AWD / Supercars" },
+    ],
     image: serviceCarRecovery,
     alt: "24/7 car recovery hydraulic tilt-slide flatbed truck",
   },
   {
     accent: "secondary",
     tag: "DEPLOYMENT 02",
-    title: "Breakdown Recovery",
+    title: "Advanced Breakdown Diagnostics",
     description:
-      "On-scene mechanical triage under torchlight. Alternator faults, fuel system airlocks, and critical drivetrain failures rescued.",
+      "On-scene mechanical triage under torchlight. Alternator faults, fuel system airlocks, ECU interrogation and critical drivetrain failures rescued.",
     spec: "DIAGNOSTIC & HAUL",
+    stats: [
+      { label: "ECU Interrogation", value: "CAN-Bus / DoIP" },
+      { label: "First-Fix Rate", value: "78.4% Roadside" },
+    ],
     image: serviceBreakdownRecovery,
     alt: "Breakdown recovery technician diagnosing a vehicle at night",
   },
   {
     accent: "primary",
     tag: "DEPLOYMENT 03",
-    title: "Vehicle Transport",
+    title: "Prestige Intercity Haulage",
     description:
       "Nationwide scheduled transfers, auction deliveries, dealership swaps, and classic car logistics with high-spec security rigging.",
     spec: "NATIONWIDE & REGIONAL",
+    stats: [
+      { label: "Transit Insurance", value: "£100,000 Cover" },
+      { label: "Tracking", value: "Live GPS Telemetry" },
+    ],
     image: serviceVehicleTransport,
     alt: "Vehicle transportation carrier loaded with an executive car",
   },
   {
     accent: "cyan",
     tag: "DEPLOYMENT 04",
-    title: "Roadside Assistance",
+    title: "Immediate Roadside Interventions",
     description:
       "Direct emergency assistance on motorway hard shoulders: puncture wheel swaps, heavy battery jump starts, misfuel draining, and lockout resolution.",
     spec: "HARD SHOULDER SAFE",
+    stats: [
+      { label: "Battery Booster", value: "High-Amp Current" },
+      { label: "Tyre Change", value: "Alloy-Safe Sockets" },
+    ],
     image: serviceRoadsideAssistance,
     alt: "Roadside assistance technician on the hard shoulder at night",
   },
@@ -132,6 +148,14 @@ export default function ServiceSpectrum() {
                   {service.title}
                 </h3>
                 <p className="text-sm leading-relaxed text-mutedText">{service.description}</p>
+                <div className="grid grid-cols-2 gap-3 rounded-lg border border-subtleBorder bg-secondaryBg/60 p-3">
+                  {service.stats.map((stat) => (
+                    <div key={stat.label}>
+                      <p className="font-mono text-[9px] uppercase tracking-wider text-mutedText">{stat.label}</p>
+                      <p className="font-display text-sm font-bold text-bodyText">{stat.value}</p>
+                    </div>
+                  ))}
+                </div>
                 <div className="flex items-center justify-between border-t border-white/10 pt-4">
                   <span className={`font-mono text-[11px] ${accent.tag}`}>{service.spec}</span>
                   <a

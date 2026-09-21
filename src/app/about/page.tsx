@@ -1,8 +1,11 @@
 import type { Metadata } from "next";
 import AboutCta from "@/components/about/AboutCta";
 import AboutHero from "@/components/about/AboutHero";
+import Certifications from "@/components/about/Certifications";
 import CoreEthos from "@/components/about/CoreEthos";
+import Depots from "@/components/about/Depots";
 import FleetBanner from "@/components/about/FleetBanner";
+import FleetHardware from "@/components/about/FleetHardware";
 import LocationSection from "@/components/about/LocationSection";
 import PrecisionProtocols from "@/components/about/PrecisionProtocols";
 import WhatWeDo from "@/components/about/WhatWeDo";
@@ -20,9 +23,12 @@ export default function AboutPage() {
       <AboutHero />
       <CoreEthos />
       <WhatWeDo />
+      <FleetHardware />
       <PrecisionProtocols />
       <FleetBanner />
+      <Certifications />
       <WhyTrust />
+      <Depots />
       <LocationSection />
       <AboutCta />
     </>

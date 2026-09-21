@@ -1,10 +1,10 @@
 const ITEMS = [
   "CAR RECOVERY",
-  "BREAKDOWN RECOVERY",
+  "BREAKDOWN DIAGNOSTICS",
   "VEHICLE TRANSPORTATION",
   "ROADSIDE ASSISTANCE",
   "24H BRADFORD DISPATCH",
-  "BD1–BD22",
+  "POSTCODES BD1–BD22",
 ] as const;
 
 export default function SpecStrip() {

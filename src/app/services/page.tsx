@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
+import DispatchForm from "@/components/services/DispatchForm";
+import FleetSpecRow from "@/components/services/FleetSpecRow";
 import HowItWorks from "@/components/services/HowItWorks";
+import PricingTable from "@/components/services/PricingTable";
 import ServiceDetails from "@/components/services/ServiceDetails";
 import ServicesCta from "@/components/services/ServicesCta";
 import ServicesHero from "@/components/services/ServicesHero";
@@ -19,6 +22,9 @@ export default function ServicesPage() {
       <ServicesStatStrip />
       <ServicesIntro />
       <ServiceDetails />
+      <PricingTable />
+      <FleetSpecRow />
+      <DispatchForm />
       <HowItWorks />
       <ServicesCta />
     </>

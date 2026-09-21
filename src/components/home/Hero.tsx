@@ -17,9 +17,11 @@ export default function Hero() {
       <div className="relative z-10 mt-6 grid w-full max-w-7xl grid-cols-1 items-center gap-10 md:mt-12 lg:grid-cols-12">
         <div className="flex flex-col gap-1 md:hidden">
           <p className="font-mono text-xs font-semibold uppercase tracking-widest text-accentCyan">
-            // LIVE FLEET ASSET
+            // UNIT #4 OPERATIONAL
           </p>
-          <p className="font-display text-lg font-bold text-bodyText">HYDRAULIC ROLLBACK UNIT 04</p>
+          <p className="font-display text-lg font-bold text-bodyText">
+            Tilt-and-Slide Carrier 04 — Bradford Ring Road (A6177)
+          </p>
         </div>
 
         <div className="group relative lg:col-span-7">
@@ -39,12 +41,19 @@ export default function Hero() {
                 M62 / BRADFORD RAPID VERGE EXTRACTION
               </span>
             </div>
+            <div className="absolute right-5 top-5 hidden items-center gap-1.5 rounded-full border border-primaryNeon/40 bg-bg/85 px-3 py-1 backdrop-blur-md sm:flex">
+              <span className="h-1.5 w-1.5 rounded-full bg-primaryNeon" />
+              <span className="font-mono text-[10px] font-bold uppercase tracking-widest text-primaryNeon">
+                Ready
+              </span>
+            </div>
             <div className="absolute bottom-5 left-5 right-5 hidden items-end justify-between md:flex">
               <div>
                 <p className="font-mono text-xs font-semibold uppercase tracking-widest text-accentCyan">
-                  // LIVE FLEET ASSET
+                  // UNIT #4 OPERATIONAL
                 </p>
-                <p className="font-display text-lg font-bold text-bodyText">HYDRAULIC ROLLBACK UNIT 04</p>
+                <p className="font-display text-lg font-bold text-bodyText">Tilt-and-Slide Carrier 04</p>
+                <p className="font-mono text-[11px] text-mutedText">Stationed at Bradford Ring Road (A6177)</p>
               </div>
               <div className="hidden text-right sm:block">
                 <span className="font-mono text-[11px] text-mutedText">RESPONSE: DIRECT CELL</span>
@@ -62,17 +71,15 @@ export default function Hero() {
 
           <div className="space-y-4">
             <h2 className="font-display text-4xl font-black uppercase leading-[1.05] tracking-tight sm:text-5xl">
-              Stranded in <br />
+              Built Around{" "}
               <span className="neon-glow-magenta bg-gradient-to-r from-primaryNeon to-secondaryNeon bg-clip-text text-transparent">
-                Darkness?
-              </span>{" "}
-              <br />
-              We Deploy Instantly.
+                Getting You Home.
+              </span>
             </h2>
             <p className="font-sans text-base leading-relaxed text-mutedText">
-              Vehicle Recovery &amp; Roadside Assistance. Built for unexpected breakdowns across
-              West Yorkshire, the M62 corridor, and Bradford Metro. Direct dispatch with zero
-              call-center delays.
+              Engineered vehicle recovery, zero-damage hydraulic flatbed transport, and specialist
+              roadside solutions throughout Bradford and West Yorkshire. Precision handled. Always
+              operational.
             </p>
           </div>
 
@@ -107,16 +114,16 @@ export default function Hero() {
 
           <div className="grid grid-cols-3 gap-3 pt-1">
             <div className="border-l border-primaryNeon/30 pl-3">
-              <p className="font-mono text-[10px] uppercase text-mutedText">COVERAGE</p>
-              <p className="font-display text-sm font-bold text-bodyText">BD1–BD22 &amp; M62</p>
+              <p className="font-mono text-[10px] uppercase text-mutedText">Flatbed Payload</p>
+              <p className="font-display text-sm font-bold text-bodyText">3.5t</p>
             </div>
             <div className="border-l border-secondaryNeon/40 pl-3">
-              <p className="font-mono text-[10px] uppercase text-mutedText">TECH APPARATUS</p>
-              <p className="font-display text-sm font-bold text-bodyText">Low-Angle Tilt</p>
+              <p className="font-mono text-[10px] uppercase text-mutedText">Low Approach Deck</p>
+              <p className="font-display text-sm font-bold text-bodyText">0&deg; Rake</p>
             </div>
             <div className="border-l border-accentCyan/40 pl-3">
-              <p className="font-mono text-[10px] uppercase text-mutedText">ARRIVAL</p>
-              <p className="font-display text-sm font-bold text-bodyText">Rapid Triage</p>
+              <p className="font-mono text-[10px] uppercase text-mutedText">Rim-Free Tie-Down</p>
+              <p className="font-display text-sm font-bold text-bodyText">100%</p>
             </div>
           </div>
         </div>

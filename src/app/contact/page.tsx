@@ -1,10 +1,13 @@
 import type { Metadata } from "next";
 import ContactCoverage from "@/components/contact/ContactCoverage";
+import ContactDepots from "@/components/contact/ContactDepots";
+import ContactFaq from "@/components/contact/ContactFaq";
 import ContactFinalCta from "@/components/contact/ContactFinalCta";
 import ContactHero from "@/components/contact/ContactHero";
 import DispatchInfoCard from "@/components/contact/DispatchInfoCard";
 import EmergencyStrip from "@/components/contact/EmergencyStrip";
 import IntakeForm from "@/components/contact/IntakeForm";
+import PostcodeDirectory from "@/components/contact/PostcodeDirectory";
 import ReassuranceTriad from "@/components/contact/ReassuranceTriad";
 
 export const metadata: Metadata = {
@@ -26,8 +29,11 @@ export default function ContactPage() {
           </div>
         </div>
       </section>
+      <ContactDepots />
+      <PostcodeDirectory />
       <ContactCoverage />
       <ReassuranceTriad />
+      <ContactFaq />
       <ContactFinalCta />
     </>
   );

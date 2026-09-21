@@ -64,6 +64,51 @@ export default function DispatchInfoCard() {
           <span className="material-symbols-outlined text-[20px]">call</span>
           CALL NOW • {SITE_PHONE_DISPLAY}
         </a>
+
+        <div className="grid grid-cols-1 gap-3 border-t border-white/10 pt-4 sm:grid-cols-2">
+          <a
+            className="inline-flex items-center justify-center gap-2 rounded bg-secondaryBg px-4 py-3 font-mono text-xs font-bold uppercase text-secondaryNeon transition-colors hover:bg-secondaryBg/70"
+            href="https://wa.me/447466354550"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span className="material-symbols-outlined text-[18px]">chat</span>
+            WhatsApp GPS Pin
+          </a>
+          <a
+            className="inline-flex items-center justify-center gap-2 rounded bg-secondaryBg px-4 py-3 font-mono text-xs font-bold uppercase text-bodyText transition-colors hover:bg-secondaryBg/70"
+            href={SITE_PHONE_HREF}
+          >
+            <span className="material-symbols-outlined text-[18px]">grid_4x4</span>
+            what3words Grid
+          </a>
+        </div>
+      </div>
+
+      <div className="rounded-xl bg-panel p-6 shadow-md">
+        <p className="mb-4 font-mono text-xs uppercase tracking-widest text-accentCyan">
+          Rapid Fleet Equipment
+        </p>
+        <div className="space-y-4">
+          <div className="flex items-center gap-3">
+            <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-primaryNeon font-mono text-xs font-bold text-white">
+              1
+            </span>
+            <div>
+              <span className="block font-display text-sm font-bold text-bodyText">Spec-Lift &amp; Low-Approach Flatbeds</span>
+              <span className="text-xs text-mutedText">Equipped for lowered chassis, EVs, AWDs &amp; stuck handbrakes.</span>
+            </div>
+          </div>
+          <div className="flex items-center gap-3">
+            <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-primaryNeon font-mono text-xs font-bold text-white">
+              2
+            </span>
+            <div>
+              <span className="block font-display text-sm font-bold text-bodyText">Roadside Jump &amp; Battery Boost</span>
+              <span className="text-xs text-mutedText">Industrial 12v/24v auxiliary pack start and diagnostics.</span>
+            </div>
+          </div>
+        </div>
       </div>
 
       <div className="relative overflow-hidden rounded-xl bg-panel shadow-md">
