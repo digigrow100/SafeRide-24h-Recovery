@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
-import siteIcon from "@/assets/images/site-icon.webp";
+import logo from "@/assets/images/logo.webp";
 import { NAV_LINKS, SITE_PHONE_DISPLAY, SITE_PHONE_HREF } from "@/lib/site";
 
 export default function Header() {
@@ -15,20 +15,14 @@ export default function Header() {
     <header className="fixed top-0 left-0 z-50 w-full shadow-[0_1px_8px_rgba(0,0,0,0.06)]">
       <div className="h-[68px] border-b border-slate-200 bg-white/95 backdrop-blur-xl lg:h-20">
         <div className="mx-auto flex h-full max-w-7xl items-center justify-between gap-4 px-4 sm:px-6">
-          <Link className="flex min-w-0 items-center gap-2 sm:gap-3" href="/">
-            <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-blue-800 p-1.5 shadow-sm sm:h-10 sm:w-10">
-              <Image
-                alt="SafeRide 24H Recovery"
-                src={siteIcon}
-                sizes="(min-width: 640px) 40px, 36px"
-                className="h-full w-full object-contain"
-                priority
-              />
-            </div>
-            <div className="flex min-w-0 flex-col leading-none">
-              <span className="font-display text-base font-bold text-blue-800 sm:text-lg">SafeRide 24h</span>
-              <span className="mt-0.5 hidden text-xs text-slate-500 xl:block">Bradford &amp; West Yorkshire</span>
-            </div>
+          <Link className="flex min-w-0 shrink-0 items-center" href="/">
+            <Image
+              alt="SafeRide 24H Recovery"
+              src={logo}
+              sizes="180px"
+              className="h-9 w-auto sm:h-11"
+              priority
+            />
           </Link>
 
           <nav className="hidden items-center gap-1 rounded-full bg-slate-100 p-1.5 lg:flex">
