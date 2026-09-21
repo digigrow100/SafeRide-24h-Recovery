@@ -13,26 +13,6 @@ export default function Header() {
 
   return (
     <header className="fixed top-0 left-0 z-50 w-full shadow-[0_1px_8px_rgba(0,0,0,0.06)]">
-      <div className="border-b border-blue-700/40 bg-blue-800 text-white">
-        <div className="mx-auto flex h-9 max-w-7xl items-center justify-between gap-4 px-4 text-xs tracking-wide sm:px-6">
-          <div className="flex min-w-0 items-center gap-2 overflow-hidden whitespace-nowrap">
-            <span className="h-2 w-2 shrink-0 animate-pulse rounded-full bg-emerald-400" />
-            <span className="font-semibold text-blue-100">FLEET STATUS:</span>
-            <span className="truncate text-white/90">ACTIVE WEST YORKSHIRE</span>
-          </div>
-          <div className="hidden shrink-0 items-center gap-4 sm:flex">
-            <span className="flex items-center gap-1.5 text-blue-100">
-              <span className="material-symbols-outlined text-[15px]">schedule</span>
-              AVERAGE DISPATCH: <strong className="text-white">23 Mins</strong>
-            </span>
-            <span className="text-blue-100/40">|</span>
-            <Link href="/contact" className="flex items-center gap-1 font-bold text-amber-300 hover:underline">
-              INSTANT DISPATCH →
-            </Link>
-          </div>
-        </div>
-      </div>
-
       <div className="h-[68px] border-b border-slate-200 bg-white/95 backdrop-blur-xl lg:h-20">
         <div className="mx-auto flex h-full max-w-7xl items-center justify-between gap-4 px-4 sm:px-6">
           <Link className="flex min-w-0 items-center gap-2 sm:gap-3" href="/">

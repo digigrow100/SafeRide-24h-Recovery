@@ -7,14 +7,12 @@ import Hero from "@/components/home/Hero";
 import Protocol from "@/components/home/Protocol";
 import ServiceSpectrum from "@/components/home/ServiceSpectrum";
 import SpecStrip from "@/components/home/SpecStrip";
-import StatusBar from "@/components/home/StatusBar";
 import TechGrid from "@/components/home/TechGrid";
 import TransportBanner from "@/components/home/TransportBanner";
 
 export default function Home() {
   return (
     <>
-      <StatusBar />
       <Hero />
       <SpecStrip />
       <ServiceSpectrum />
