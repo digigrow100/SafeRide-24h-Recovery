@@ -11,16 +11,14 @@ export default function Hero() {
         </h1>
       </div>
 
-      <div className="relative z-10 mt-6 grid w-full max-w-7xl grid-cols-1 items-center gap-10 md:mt-12 lg:grid-cols-12">
-        <div className="flex flex-col gap-1 md:hidden">
-          <p className="font-sans text-xs font-semibold uppercase tracking-widest text-emerald-600">
-            // UNIT #4 OPERATIONAL
-          </p>
-          <p className="font-display text-lg font-bold text-slate-900">
-            Tilt-and-Slide Carrier 04 — Bradford Ring Road (A6177)
-          </p>
+      <div className="relative z-10 mt-6 w-full max-w-7xl md:mt-12">
+        <div className="mb-6 inline-flex items-center gap-2 rounded border border-slate-700/40 bg-slate-700/10 px-3 py-1">
+          <span className="font-sans text-[11px] font-bold uppercase tracking-[0.25em] text-blue-800">
+            SAFERIDE // BRADFORD // EDITORIAL DISPATCH
+          </span>
         </div>
 
+        <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-12">
         <div className="group relative lg:col-span-7">
           <div className="relative overflow-hidden rounded-2xl border border-slate-200 bg-slate-100 shadow-xl">
             <Image
@@ -43,28 +41,10 @@ export default function Hero() {
                 Ready
               </span>
             </div>
-            <div className="absolute bottom-5 left-5 right-5 hidden items-end justify-between md:flex">
-              <div>
-                <p className="font-sans text-xs font-semibold uppercase tracking-widest text-emerald-600">
-                  // UNIT #4 OPERATIONAL
-                </p>
-                <p className="font-display text-lg font-bold text-slate-900">Tilt-and-Slide Carrier 04</p>
-                <p className="font-sans text-[11px] text-slate-500">Stationed at Bradford Ring Road (A6177)</p>
-              </div>
-              <div className="hidden text-right sm:block">
-                <span className="font-sans text-[11px] text-slate-500">RESPONSE: DIRECT CELL</span>
-              </div>
-            </div>
           </div>
         </div>
 
         <div className="space-y-7 pl-0 lg:col-span-5 lg:pl-4">
-          <div className="inline-flex items-center gap-2 rounded border border-slate-700/40 bg-slate-700/10 px-3 py-1">
-            <span className="font-sans text-[11px] font-bold uppercase tracking-[0.25em] text-blue-800">
-              SAFERIDE // BRADFORD // EDITORIAL DISPATCH
-            </span>
-          </div>
-
           <div className="space-y-4">
             <h2 className="font-display text-4xl font-black uppercase leading-[1.05] tracking-tight sm:text-5xl">
               Built Around{" "}
@@ -77,33 +57,14 @@ export default function Hero() {
             </p>
           </div>
 
-          <div className="space-y-4 rounded-xl border border-blue-800/30 bg-slate-100/80 p-6 backdrop-blur-md">
-            <div className="flex items-center justify-between border-b border-black/10 pb-3">
-              <span className="font-sans text-xs uppercase tracking-wider text-slate-500">
-                DIRECT HOTLINE
-              </span>
-              <div className="flex items-center gap-1.5">
-                <span className="h-2 w-2 animate-ping rounded-full bg-emerald-600" />
-                <span className="font-sans text-[10px] font-bold uppercase tracking-widest text-emerald-600">
-                  STATUS: DISPATCH CONTROLLERS ACTIVE
-                </span>
-              </div>
-            </div>
-            <div className="flex flex-col items-stretch gap-3 sm:flex-row sm:items-center">
-              <a
-                className="inline-flex flex-1 items-center justify-center gap-2 rounded-lg bg-amber-600 hover:bg-amber-700 px-6 py-3.5 font-sans text-xs font-bold uppercase tracking-widest text-white shadow-sm transition-all "
-                href={SITE_PHONE_HREF}
-              >
-                <span>CALL NOW →</span>
-                <span className="text-sm">{SITE_PHONE_DISPLAY}</span>
-              </a>
-              <a
-                className="inline-flex items-center justify-center rounded-lg border border-slate-200 px-4 py-3.5 font-sans text-xs uppercase tracking-wider text-slate-900 transition-colors hover:border-blue-800"
-                href="/services"
-              >
-                EXPLORE
-              </a>
-            </div>
+          <div className="rounded-xl border border-blue-800/30 bg-slate-100/80 p-6 backdrop-blur-md">
+            <a
+              className="inline-flex w-full items-center justify-center gap-2 rounded-lg bg-amber-600 px-6 py-3.5 font-sans text-xs font-bold uppercase tracking-widest text-white shadow-sm transition-colors hover:bg-amber-700"
+              href={SITE_PHONE_HREF}
+            >
+              <span>CALL NOW →</span>
+              <span className="text-sm">{SITE_PHONE_DISPLAY}</span>
+            </a>
           </div>
 
           <div className="grid grid-cols-3 gap-3 pt-1">
@@ -120,6 +81,7 @@ export default function Hero() {
               <p className="font-display text-sm font-bold text-slate-900">100%</p>
             </div>
           </div>
+        </div>
         </div>
       </div>
     </section>
