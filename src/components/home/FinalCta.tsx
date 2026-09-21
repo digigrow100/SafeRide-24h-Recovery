@@ -8,16 +8,17 @@ export default function FinalCta() {
         <div className="inline-flex items-center gap-2 rounded-full border border-blue-800/40 bg-slate-100 px-4 py-1.5 shadow-sm">
           <span className="h-2.5 w-2.5 animate-pulse rounded-full bg-blue-800" />
           <span className="font-sans text-xs font-bold uppercase tracking-[0.25em] text-blue-800">
-            STRANDED RIGHT NOW?
+            NEED VEHICLE RECOVERY?
           </span>
         </div>
-        <h2 className="font-display text-5xl font-black uppercase leading-[0.9] tracking-tight text-slate-900 sm:text-7xl md:text-8xl">
-          CALL <br />
-          <span className="text-blue-800">SAFERIDE</span>
+        <h2 className="font-display text-4xl font-black uppercase leading-[1.05] tracking-tight text-slate-900 sm:text-6xl md:text-7xl">
+          Stranded in Bradford? <br />
+          <span className="text-blue-800">Call SafeRide Now</span>
         </h2>
         <p className="mx-auto max-w-lg font-sans text-base text-slate-500 sm:text-lg">
-          One direct tap connects you to our senior recovery dispatch controller. Immediate
-          deployment across Bradford and all Yorkshire motorways.
+          If your vehicle has broken down or cannot be driven safely, contact SafeRide 24H
+          Recovery. Tell us your location and vehicle problem, and we will help arrange the right
+          service.
         </p>
         <div className="pb-2 pt-4">
           <a
@@ -33,18 +34,15 @@ export default function FinalCta() {
             href={SITE_PHONE_HREF}
           >
             <span className="material-symbols-outlined text-xl">electric_bolt</span>
-            <span>DIRECT DISPATCH NOW</span>
+            <span>CALL FOR 24/7 RECOVERY</span>
           </a>
           <a
             className="inline-flex w-full items-center justify-center gap-2 rounded-xl border border-slate-200 px-8 py-5 font-sans text-sm uppercase tracking-wider text-slate-900 transition-colors hover:border-blue-800 sm:w-auto"
             href={SITE_EMAIL_HREF}
           >
             <span className="material-symbols-outlined text-xl">mail</span>
-            <span>EMAIL DISPATCH</span>
+            <span>SEND AN EMAIL</span>
           </a>
-        </div>
-        <div className="pt-6 font-sans text-[11px] uppercase tracking-widest text-slate-500">
-          BRADFORD HQ // M62 // M606 // LEEDS CORRIDORS // 24-HOUR STANDBY
         </div>
       </div>
     </section>

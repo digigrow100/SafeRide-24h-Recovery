@@ -19,9 +19,9 @@ const plusJakartaSans = Plus_Jakarta_Sans({
   display: "swap",
 });
 
-const SITE_TITLE = "SafeRide 24H Recovery | Bradford Vehicle Recovery & Roadside Assistance";
+const SITE_TITLE = "24/7 Car Recovery Bradford | SafeRide 24H Recovery";
 const SITE_DESCRIPTION =
-  "SafeRide 24h Recovery provides 24/7 vehicle recovery, breakdown assistance, vehicle transportation and roadside help across Bradford and West Yorkshire. Call +44 7466 354550.";
+  "Need car recovery in Bradford? SafeRide provides 24/7 car recovery, breakdown recovery, roadside assistance and vehicle transportation across Bradford and West Yorkshire. Call now.";
 
 export const metadata: Metadata = {
   // TODO: replace with the live production domain before deploying.

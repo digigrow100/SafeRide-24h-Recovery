@@ -1,11 +1,14 @@
 import Image from "next/image";
 import serviceVehicleTransport from "@/assets/images/service-vehicle-transport.webp";
-import { SITE_EMAIL_HREF, SITE_PHONE_HREF } from "@/lib/site";
+import { SITE_PHONE_DISPLAY, SITE_PHONE_HREF } from "@/lib/site";
 
-const CHECKLIST = [
-  "Full auction yard credential clearance (BCA, Copart)",
-  "Electric Vehicle (EV) dead-battery roll and winch protocol",
-  "Comprehensive digital pre-transit photographic condition log",
+const SUITABLE_FOR = [
+  "Vehicle Purchases",
+  "Garage Deliveries",
+  "Dealership Transfers",
+  "Non-Running Vehicles",
+  "Private Vehicle Relocation",
+  "Local and Long-Distance Transport",
 ] as const;
 
 export default function TransportBanner() {
@@ -16,21 +19,29 @@ export default function TransportBanner() {
           <div className="flex flex-col justify-between gap-8 p-8 lg:col-span-6 lg:p-14">
             <div>
               <span className="mb-3 block font-sans text-xs font-bold uppercase tracking-widest text-emerald-600">
-                Prestige Automotive Logistics
+                Planned Vehicle Transport
               </span>
               <h2 className="mb-6 font-display text-3xl font-black uppercase leading-tight tracking-tight text-slate-900 sm:text-4xl">
-                Moving Vehicles.{" "}
-                <span className=" text-blue-800">
-                  Not Complications.
-                </span>
+                Safe Vehicle Transportation{" "}
+                <span className="text-blue-800">Without the Stress.</span>
               </h2>
-              <p className="mb-8 text-base leading-relaxed text-slate-500">
-                From high-value classic collections and auction purchases at BCA &amp; Copart, to
-                prestige dealership trade swaps. Insured, non-running winch logistics,
-                dealer-to-customer deliveries, and long-distance intercity transfers.
-              </p>
-              <div className="space-y-4">
-                {CHECKLIST.map((item) => (
+              <div className="mb-8 space-y-4 text-base leading-relaxed text-slate-500">
+                <p>
+                  Vehicle transportation is not only for emergencies. You may need to move a
+                  newly purchased car, deliver a vehicle to a garage or transport a non-running
+                  vehicle between locations.
+                </p>
+                <p>
+                  SafeRide offers planned vehicle transportation across Bradford, West Yorkshire
+                  and other UK destinations. Contact us with the collection address, delivery
+                  address and vehicle details to request a quote.
+                </p>
+              </div>
+              <span className="mb-3 block font-sans text-xs font-bold uppercase tracking-widest text-slate-900">
+                Suitable For:
+              </span>
+              <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
+                {SUITABLE_FOR.map((item) => (
                   <div key={item} className="flex items-start gap-3">
                     <span className="material-symbols-outlined mt-0.5 text-emerald-600">check_circle</span>
                     <span className="text-sm text-slate-900">{item}</span>
@@ -44,14 +55,14 @@ export default function TransportBanner() {
                 href={SITE_PHONE_HREF}
               >
                 <span className="material-symbols-outlined text-lg">phone</span>
-                Book Fleet Transporter
+                Request a Transport Quote
               </a>
               <a
                 className="inline-flex items-center gap-2 rounded-lg border border-slate-200 px-6 py-3 font-sans text-xs uppercase tracking-wider text-slate-900 transition-colors hover:border-blue-800"
-                href={SITE_EMAIL_HREF}
+                href={SITE_PHONE_HREF}
               >
-                <span className="material-symbols-outlined text-lg">mail</span>
-                Direct Logistics Quote
+                <span className="material-symbols-outlined text-lg">phone</span>
+                Call {SITE_PHONE_DISPLAY}
               </a>
             </div>
           </div>

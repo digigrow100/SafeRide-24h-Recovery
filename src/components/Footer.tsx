@@ -5,7 +5,7 @@ import { SITE_EMAIL, SITE_EMAIL_HREF, SITE_PHONE_DISPLAY, SITE_PHONE_HREF } from
 
 const SERVICES = [
   { label: "24/7 Car Recovery", href: "/services" },
-  { label: "Breakdown Diagnostics", href: "/services" },
+  { label: "Breakdown Recovery", href: "/services" },
   { label: "Vehicle Transportation", href: "/services" },
   { label: "Roadside Assistance", href: "/services" },
 ];
@@ -17,7 +17,7 @@ const COMPANY = [
   { label: "Safety Protocols", href: "/about" },
 ];
 
-const COVERAGE = ["Bradford (BD1–BD22)", "Leeds & West Yorkshire", "Motorways M606 / M62", "Airport Transfers"];
+const SERVICE_AREAS = ["Bradford", "Shipley", "Bingley", "Keighley", "Leeds", "Halifax", "West Yorkshire"];
 
 export default function Footer() {
   return (
@@ -29,8 +29,8 @@ export default function Footer() {
               <Image alt="SafeRide 24H Recovery" src={logo} sizes="180px" className="h-10 w-auto" />
             </Link>
             <p className="max-w-sm text-sm text-slate-600">
-              Rapid incident dispatch, vehicle transportation, and 24/7 roadside assistance across
-              Bradford, Leeds, and West Yorkshire motorways.
+              SafeRide 24H Recovery provides 24/7 car recovery, breakdown recovery, vehicle
+              transportation and roadside assistance across Bradford and West Yorkshire.
             </p>
             <div className="flex flex-col gap-2 pt-2">
               <div className="flex items-center gap-2 text-xs font-semibold uppercase text-slate-500">
@@ -76,23 +76,17 @@ export default function Footer() {
           </div>
 
           <div className="flex flex-col gap-3">
-            <span className="text-sm font-bold uppercase tracking-wider text-slate-900">Coverage &amp; Compliance</span>
-            <ul className="mb-2 flex flex-col gap-2 text-sm">
-              {COVERAGE.map((item) => (
+            <span className="text-sm font-bold uppercase tracking-wider text-slate-900">Service Areas</span>
+            <ul className="flex flex-col gap-2 text-sm">
+              {SERVICE_AREAS.map((item) => (
                 <li key={item}>{item}</li>
               ))}
             </ul>
-            <div className="border-t border-slate-200 pt-2">
-              <span className="mb-1 block text-xs font-semibold uppercase text-slate-500">Accreditations</span>
-              <p className="text-xs leading-relaxed text-slate-500">
-                PAS 43 &bull; DVSA Compliant &bull; Goods in Transit £100k
-              </p>
-            </div>
           </div>
         </div>
 
         <div className="flex flex-col items-center justify-between gap-4 pt-8 text-xs sm:flex-row">
-          <p>© {new Date().getFullYear()} SafeRide 24h Breakdown Recovery Ltd. Operating across Bradford &amp; West Yorkshire.</p>
+          <p>© 2026 SafeRide 24H Recovery. All rights reserved.</p>
           <div className="flex items-center gap-6">
             <Link href="/" className="hover:text-blue-800">
               Emergency Guidelines
