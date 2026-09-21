@@ -12,11 +12,15 @@ export default function Hero() {
       </div>
 
       <div className="relative z-10 mt-6 w-full max-w-7xl md:mt-12">
-        {/* Mobile-only: badge sits above the image */}
-        <div className="mb-6 inline-flex items-center gap-2 rounded border border-slate-700/40 bg-slate-700/10 px-3 py-1 lg:hidden">
-          <span className="font-sans text-[11px] font-bold uppercase tracking-[0.25em] text-blue-800">
-            SAFERIDE // BRADFORD // EDITORIAL DISPATCH
-          </span>
+        {/* Mobile-only: call button sits above the image */}
+        <div className="mb-6 lg:hidden">
+          <a
+            className="inline-flex w-full items-center justify-center gap-2 rounded-lg bg-amber-600 px-6 py-3.5 font-sans text-xs font-bold uppercase tracking-widest text-white shadow-sm transition-colors hover:bg-amber-700"
+            href={SITE_PHONE_HREF}
+          >
+            <span>CALL NOW →</span>
+            <span className="text-sm">{SITE_PHONE_DISPLAY}</span>
+          </a>
         </div>
 
         <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-12">
@@ -64,9 +68,8 @@ export default function Hero() {
               </p>
             </div>
 
-            <div className="rounded-xl border border-blue-800/30 bg-slate-100/80 p-6 backdrop-blur-md">
-              {/* Laptop/desktop only: hotline header row */}
-              <div className="mb-3 hidden items-center justify-between border-b border-black/10 pb-3 lg:flex">
+            <div className="hidden rounded-xl border border-blue-800/30 bg-slate-100/80 p-6 backdrop-blur-md lg:block">
+              <div className="mb-3 flex items-center justify-between border-b border-black/10 pb-3">
                 <span className="font-sans text-xs uppercase tracking-wider text-slate-500">DIRECT HOTLINE</span>
                 <div className="flex items-center gap-1.5">
                   <span className="h-2 w-2 animate-ping rounded-full bg-emerald-600" />
@@ -83,9 +86,8 @@ export default function Hero() {
                   <span>CALL NOW →</span>
                   <span className="text-sm">{SITE_PHONE_DISPLAY}</span>
                 </a>
-                {/* Laptop/desktop only: Explore button */}
                 <a
-                  className="hidden items-center justify-center rounded-lg border border-slate-200 px-4 py-3.5 font-sans text-xs uppercase tracking-wider text-slate-900 transition-colors hover:border-blue-800 lg:inline-flex"
+                  className="inline-flex items-center justify-center rounded-lg border border-slate-200 px-4 py-3.5 font-sans text-xs uppercase tracking-wider text-slate-900 transition-colors hover:border-blue-800"
                   href="/services"
                 >
                   EXPLORE
