@@ -4,7 +4,7 @@ import { SITE_PHONE_DISPLAY, SITE_PHONE_HREF } from "@/lib/site";
 
 export default function Hero() {
   return (
-    <section className="relative flex min-h-[92vh] items-center justify-center overflow-hidden px-4 py-12 md:px-8">
+    <section className="relative flex items-center justify-center overflow-hidden px-4 py-12 md:px-8 lg:min-h-[92vh]">
       <div className="pointer-events-none absolute inset-x-0 top-8 z-0 hidden select-none overflow-hidden text-center sm:block">
         <h1 className="font-display text-[16vw] font-black uppercase leading-[0.82] tracking-tighter text-slate-200/60">
           24H
