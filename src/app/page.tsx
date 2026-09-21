@@ -1,4 +1,3 @@
-import BrandStatement from "@/components/home/BrandStatement";
 import CoverageMatrix from "@/components/home/CoverageMatrix";
 import FinalCta from "@/components/home/FinalCta";
 import Gallery from "@/components/home/Gallery";
@@ -15,7 +14,6 @@ export default function Home() {
     <>
       <Hero />
       <SpecStrip />
-      <BrandStatement />
       <ServiceSpectrum />
       <TechGrid />
       <Protocol />
