@@ -19,8 +19,8 @@ export default function AboutPage() {
     <>
       <AboutHero />
       <CoreEthos />
-      <PrecisionProtocols />
       <WhatWeDo />
+      <PrecisionProtocols />
       <FleetBanner />
       <WhyTrust />
       <LocationSection />
