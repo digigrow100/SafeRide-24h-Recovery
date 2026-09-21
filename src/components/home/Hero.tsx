@@ -42,19 +42,6 @@ export default function Hero() {
                   Ready
                 </span>
               </div>
-              {/* Laptop/desktop only: on-image caption */}
-              <div className="absolute bottom-5 left-5 right-5 hidden items-end justify-between lg:flex">
-                <div>
-                  <p className="font-sans text-xs font-semibold uppercase tracking-widest text-emerald-600">
-                    // UNIT #4 OPERATIONAL
-                  </p>
-                  <p className="font-display text-lg font-bold text-slate-900">Tilt-and-Slide Carrier 04</p>
-                  <p className="font-sans text-[11px] text-slate-500">Stationed at Bradford Ring Road (A6177)</p>
-                </div>
-                <div className="hidden text-right sm:block">
-                  <span className="font-sans text-[11px] text-slate-500">RESPONSE: DIRECT CELL</span>
-                </div>
-              </div>
             </div>
           </div>
 

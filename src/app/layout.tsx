@@ -62,7 +62,7 @@ export default function RootLayout({
     <html lang="en" className={`${inter.variable} ${plusJakartaSans.variable}`}>
       <body className="bg-slate-50 font-sans text-slate-900 antialiased selection:bg-blue-800 selection:text-white">
         <Header />
-        <main className="w-full pt-[104px] lg:pt-[120px]">{children}</main>
+        <main className="w-full pt-[68px] lg:pt-20">{children}</main>
         <Footer />
         <MobileCallBar />
       </body>
