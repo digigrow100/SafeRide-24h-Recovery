@@ -1,6 +1,5 @@
 import BrandStatement from "@/components/home/BrandStatement";
 import CoverageMatrix from "@/components/home/CoverageMatrix";
-import DispatchTerminal from "@/components/home/DispatchTerminal";
 import FinalCta from "@/components/home/FinalCta";
 import Gallery from "@/components/home/Gallery";
 import Hero from "@/components/home/Hero";
@@ -21,7 +20,6 @@ export default function Home() {
       <BrandStatement />
       <TransportBanner />
       <CoverageMatrix />
-      <DispatchTerminal />
       <Gallery />
       <FinalCta />
     </>
