@@ -27,22 +27,22 @@ const FAQS = [
 
 export default function ContactFaq() {
   return (
-    <section className="w-full bg-secondaryBg py-16 sm:py-24">
+    <section className="w-full bg-slate-100 py-16 sm:py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
         <div className="mb-10 max-w-2xl">
-          <span className="mb-1 block font-mono text-xs font-bold uppercase tracking-widest text-primaryNeon">
+          <span className="mb-1 block font-sans text-xs font-bold uppercase tracking-widest text-blue-800">
             Incident FAQs
           </span>
-          <h2 className="font-display text-2xl font-bold text-bodyText md:text-3xl">Frequently Asked Questions</h2>
+          <h2 className="font-display text-2xl font-bold text-slate-900 md:text-3xl">Frequently Asked Questions</h2>
         </div>
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
           {FAQS.map((faq) => (
-            <div key={faq.question} className="rounded-xl bg-panel p-6 shadow-sm">
+            <div key={faq.question} className="rounded-xl bg-white p-6 shadow-sm">
               <div className="mb-2 flex items-center gap-3">
-                <span className="material-symbols-outlined text-primaryNeon">{faq.icon}</span>
-                <h3 className="font-display text-base font-bold text-bodyText">{faq.question}</h3>
+                <span className="material-symbols-outlined text-blue-800">{faq.icon}</span>
+                <h3 className="font-display text-base font-bold text-slate-900">{faq.question}</h3>
               </div>
-              <p className="text-sm leading-relaxed text-mutedText">{faq.answer}</p>
+              <p className="text-sm leading-relaxed text-slate-500">{faq.answer}</p>
             </div>
           ))}
         </div>

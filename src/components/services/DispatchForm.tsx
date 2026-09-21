@@ -21,19 +21,19 @@ export default function DispatchForm() {
   }
 
   const inputClasses =
-    "h-12 w-full rounded-lg border border-secondaryNeon/30 bg-secondaryBg px-3.5 font-sans text-sm text-bodyText placeholder-mutedText outline-none transition-colors focus:border-primaryNeon";
+    "h-12 w-full rounded-lg border border-slate-700/30 bg-slate-100 px-3.5 font-sans text-sm text-slate-900 placeholder-slate-500 outline-none transition-colors focus:border-blue-800";
 
   return (
     <section id="dispatch-request" className="mx-auto max-w-7xl px-4 py-16 sm:px-6 md:py-24">
-      <div className="rounded-3xl border border-secondaryNeon/15 bg-panel p-8 shadow-lg lg:p-14">
+      <div className="rounded-3xl border border-slate-700/15 bg-white p-8 shadow-lg lg:p-14">
         <div className="mb-4">
-          <span className="mb-2 inline-block rounded-full bg-primaryNeon px-3 py-1 font-mono text-[10px] font-bold uppercase text-white">
+          <span className="mb-2 inline-block rounded-full bg-blue-800 px-3 py-1 font-sans text-[10px] font-bold uppercase text-white">
             Rapid Intake Console
           </span>
-          <h2 className="font-display text-2xl font-bold uppercase text-bodyText sm:text-3xl">
+          <h2 className="font-display text-2xl font-bold uppercase text-slate-900 sm:text-3xl">
             Initiate Roadside Dispatch
           </h2>
-          <p className="mt-2 max-w-2xl text-sm text-mutedText">
+          <p className="mt-2 max-w-2xl text-sm text-slate-500">
             Submit your breakdown coordinates or registration for immediate routing. For urgent
             motorway breakdowns with safety risks, call our 24/7 hotline directly.
           </p>
@@ -42,11 +42,11 @@ export default function DispatchForm() {
         <form className="mt-8 flex flex-col gap-5" onSubmit={handleSubmit}>
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
             <div className="flex flex-col gap-1.5">
-              <label className="font-mono text-xs font-bold uppercase text-mutedText" htmlFor="servicesReg">
+              <label className="font-sans text-xs font-bold uppercase text-slate-500" htmlFor="servicesReg">
                 UK Registration Plate
               </label>
-              <div className="flex h-12 overflow-hidden rounded-lg border border-secondaryNeon/30">
-                <span className="flex w-10 items-center justify-center bg-primaryNeon font-mono text-[10px] font-bold text-white">
+              <div className="flex h-12 overflow-hidden rounded-lg border border-slate-700/30">
+                <span className="flex w-10 items-center justify-center bg-blue-800 font-sans text-[10px] font-bold text-white">
                   GB
                 </span>
                 <input
@@ -60,7 +60,7 @@ export default function DispatchForm() {
               </div>
             </div>
             <div className="flex flex-col gap-1.5">
-              <label className="font-mono text-xs font-bold uppercase text-mutedText" htmlFor="servicesIncident">
+              <label className="font-sans text-xs font-bold uppercase text-slate-500" htmlFor="servicesIncident">
                 Incident Classification
               </label>
               <select id="servicesIncident" name="servicesIncident" required className={inputClasses} defaultValue="">
@@ -77,7 +77,7 @@ export default function DispatchForm() {
           </div>
 
           <div className="flex flex-col gap-1.5">
-            <label className="font-mono text-xs font-bold uppercase text-mutedText" htmlFor="servicesLocation">
+            <label className="font-sans text-xs font-bold uppercase text-slate-500" htmlFor="servicesLocation">
               Incident Location / Coordinates
             </label>
             <div className="relative">
@@ -89,13 +89,13 @@ export default function DispatchForm() {
                 placeholder="Street name, postcode, or what3words"
                 className={`${inputClasses} pl-10`}
               />
-              <span className="material-symbols-outlined absolute left-3 top-3 text-mutedText">location_on</span>
+              <span className="material-symbols-outlined absolute left-3 top-3 text-slate-500">location_on</span>
             </div>
           </div>
 
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
             <div className="flex flex-col gap-1.5">
-              <label className="font-mono text-xs font-bold uppercase text-mutedText" htmlFor="servicesDropoff">
+              <label className="font-sans text-xs font-bold uppercase text-slate-500" htmlFor="servicesDropoff">
                 Delivery Destination (Optional)
               </label>
               <input
@@ -107,7 +107,7 @@ export default function DispatchForm() {
               />
             </div>
             <div className="flex flex-col gap-1.5">
-              <label className="font-mono text-xs font-bold uppercase text-mutedText" htmlFor="servicesPhone">
+              <label className="font-sans text-xs font-bold uppercase text-slate-500" htmlFor="servicesPhone">
                 Driver Contact Telephone
               </label>
               <input
@@ -122,7 +122,7 @@ export default function DispatchForm() {
           </div>
 
           <div className="flex flex-col gap-1.5">
-            <label className="font-mono text-xs font-bold uppercase text-mutedText" htmlFor="servicesNotes">
+            <label className="font-sans text-xs font-bold uppercase text-slate-500" htmlFor="servicesNotes">
               Vehicle Condition &amp; Access Notes
             </label>
             <textarea
@@ -136,14 +136,14 @@ export default function DispatchForm() {
 
           <button
             type="submit"
-            className="inline-flex h-13 items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-primaryNeon to-secondaryNeon px-6 py-3.5 font-mono text-sm font-bold uppercase tracking-wider text-white shadow-neon-magenta transition-all hover:brightness-110"
+            className="inline-flex h-13 items-center justify-center gap-2 rounded-xl bg-amber-600 hover:bg-amber-700 px-6 py-3.5 font-sans text-sm font-bold uppercase tracking-wider text-white shadow-sm transition-all "
           >
             <span className="material-symbols-outlined">send</span>
             Submit for Rapid Dispatch Confirmation
           </button>
 
           {submitted ? (
-            <div className="mt-2 flex items-start gap-3 rounded-xl bg-secondaryBg p-4 text-secondaryNeon">
+            <div className="mt-2 flex items-start gap-3 rounded-xl bg-slate-100 p-4 text-slate-700">
               <span className="material-symbols-outlined text-xl">check_circle</span>
               <p className="text-sm">
                 Incident logged to Bradford Operations Desk. A controller is reviewing telemetry

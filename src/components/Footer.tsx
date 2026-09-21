@@ -3,48 +3,64 @@ import Link from "next/link";
 import siteIcon from "@/assets/images/site-icon.webp";
 import { SITE_EMAIL, SITE_EMAIL_HREF, SITE_PHONE_DISPLAY, SITE_PHONE_HREF } from "@/lib/site";
 
-const RESCUE_CHANNELS = [
+const SERVICES = [
   { label: "24/7 Car Recovery", href: "/services" },
-  { label: "Breakdown Diagnosis", href: "/services" },
+  { label: "Breakdown Diagnostics", href: "/services" },
   { label: "Vehicle Transportation", href: "/services" },
-  { label: "Roadside Verge Assistance", href: "/services" },
-  { label: "Tilt-Slide Low Loader Fleet", href: "/services" },
+  { label: "Roadside Assistance", href: "/services" },
 ];
+
+const COMPANY = [
+  { label: "About SafeRide", href: "/about" },
+  { label: "Fleet & Hardware", href: "/about" },
+  { label: "Bradford Depots", href: "/about" },
+  { label: "Safety Protocols", href: "/about" },
+];
+
+const COVERAGE = ["Bradford (BD1–BD22)", "Leeds & West Yorkshire", "Motorways M606 / M62", "Airport Transfers"];
 
 export default function Footer() {
   return (
-    <footer className="w-full border-t border-primaryNeon/20 bg-bg pb-28 pt-16 font-sans text-mutedText md:pb-12">
+    <footer className="w-full border-t border-slate-200 bg-slate-100 pb-28 pt-14 text-slate-600 md:pb-14">
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
-        <div className="grid grid-cols-1 gap-10 border-b border-white/10 pb-12 md:grid-cols-12">
-          <div className="space-y-4 md:col-span-5">
+        <div className="grid grid-cols-1 gap-10 border-b border-slate-200 pb-12 md:grid-cols-2 lg:grid-cols-5">
+          <div className="flex flex-col gap-4 lg:col-span-2">
             <Link href="/" className="flex items-center gap-3">
-              <div className="flex h-8 w-8 items-center justify-center rounded border border-primaryNeon/50 bg-secondaryBg p-1 shadow-neon-magenta">
-                <Image alt="SafeRide 24H Recovery" src={siteIcon} sizes="32px" className="h-full w-full object-contain" />
+              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-blue-800">
+                <Image alt="SafeRide 24H Recovery" src={siteIcon} sizes="40px" className="h-6 w-6 object-contain" />
               </div>
-              <span className="font-display text-xl font-bold uppercase tracking-wider text-bodyText">
-                SAFERIDE <span className="text-primaryNeon">24H</span>
-              </span>
+              <div>
+                <span className="block font-display text-lg font-bold leading-none text-blue-800">SafeRide 24h</span>
+                <span className="text-xs text-slate-500">Breakdown Recovery</span>
+              </div>
             </Link>
-            <p className="max-w-sm text-xs leading-relaxed text-mutedText">
-              Avant-Garde emergency automotive rescue and prestige vehicle transportation. Serving
-              Bradford, Leeds periphery, Calderdale, and the Pennine transit routes round the clock.
+            <p className="max-w-sm text-sm text-slate-600">
+              Rapid incident dispatch, vehicle transportation, and 24/7 roadside assistance across
+              Bradford, Leeds, and West Yorkshire motorways.
             </p>
-            <div className="inline-flex items-center gap-2 rounded border border-accentCyan/30 bg-secondaryBg px-3 py-1">
-              <span className="h-1.5 w-1.5 rounded-full bg-accentCyan" />
-              <span className="font-mono text-[10px] font-semibold uppercase text-accentCyan">
-                OPS CENTER: LIVE 365 DAYS
-              </span>
+            <div className="flex flex-col gap-2 pt-2">
+              <div className="flex items-center gap-2 text-xs font-semibold uppercase text-slate-500">
+                <span className="material-symbols-outlined text-[18px] text-blue-800">headset_mic</span>
+                24/7 Bradford Incident Hotline
+              </div>
+              <a className="font-display text-xl font-bold text-blue-800 hover:underline" href={SITE_PHONE_HREF}>
+                {SITE_PHONE_DISPLAY}
+              </a>
+              <div className="flex items-center gap-2 text-sm text-slate-600">
+                <span className="material-symbols-outlined text-[18px]">mail</span>
+                <a className="transition-colors hover:text-blue-800" href={SITE_EMAIL_HREF}>
+                  {SITE_EMAIL}
+                </a>
+              </div>
             </div>
           </div>
 
-          <div className="space-y-3 md:col-span-3">
-            <span className="block font-mono text-xs font-bold uppercase tracking-widest text-primaryNeon">
-              RESCUE CHANNELS
-            </span>
-            <ul className="space-y-2 text-xs">
-              {RESCUE_CHANNELS.map((item) => (
+          <div className="flex flex-col gap-3">
+            <span className="text-sm font-bold uppercase tracking-wider text-slate-900">Services</span>
+            <ul className="flex flex-col gap-2 text-sm">
+              {SERVICES.map((item) => (
                 <li key={item.label}>
-                  <Link className="transition-colors hover:text-primaryNeon" href={item.href}>
+                  <Link className="transition-colors hover:text-blue-800" href={item.href}>
                     {item.label}
                   </Link>
                 </li>
@@ -52,36 +68,44 @@ export default function Footer() {
             </ul>
           </div>
 
-          <div className="space-y-3 md:col-span-4">
-            <span className="block font-mono text-xs font-bold uppercase tracking-widest text-secondaryNeon">
-              COORDINATES &amp; CELL
-            </span>
-            <ul className="space-y-2.5 text-xs">
-              <li className="flex items-center gap-2">
-                <span className="material-symbols-outlined text-base text-primaryNeon">call</span>
-                <a className="font-mono font-bold text-bodyText transition-colors hover:text-primaryNeon" href={SITE_PHONE_HREF}>
-                  {SITE_PHONE_DISPLAY}
-                </a>
-              </li>
-              <li className="flex items-center gap-2">
-                <span className="material-symbols-outlined text-base text-secondaryNeon">mail</span>
-                <a className="font-mono transition-colors hover:text-secondaryNeon" href={SITE_EMAIL_HREF}>
-                  {SITE_EMAIL}
-                </a>
-              </li>
-              <li className="flex items-center gap-2">
-                <span className="material-symbols-outlined text-base text-accentCyan">location_on</span>
-                <span>Bradford, West Yorkshire, United Kingdom</span>
-              </li>
+          <div className="flex flex-col gap-3">
+            <span className="text-sm font-bold uppercase tracking-wider text-slate-900">Company</span>
+            <ul className="flex flex-col gap-2 text-sm">
+              {COMPANY.map((item) => (
+                <li key={item.label}>
+                  <Link className="transition-colors hover:text-blue-800" href={item.href}>
+                    {item.label}
+                  </Link>
+                </li>
+              ))}
             </ul>
+          </div>
+
+          <div className="flex flex-col gap-3">
+            <span className="text-sm font-bold uppercase tracking-wider text-slate-900">Coverage &amp; Compliance</span>
+            <ul className="mb-2 flex flex-col gap-2 text-sm">
+              {COVERAGE.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
+            </ul>
+            <div className="border-t border-slate-200 pt-2">
+              <span className="mb-1 block text-xs font-semibold uppercase text-slate-500">Accreditations</span>
+              <p className="text-xs leading-relaxed text-slate-500">
+                PAS 43 &bull; DVSA Compliant &bull; Goods in Transit £100k
+              </p>
+            </div>
           </div>
         </div>
 
-        <div className="flex flex-col items-center justify-between gap-4 pt-8 font-mono text-[11px] sm:flex-row">
-          <p>© {new Date().getFullYear()} SafeRide 24H Recovery. All Night Operations Active.</p>
+        <div className="flex flex-col items-center justify-between gap-4 pt-8 text-xs sm:flex-row">
+          <p>© {new Date().getFullYear()} SafeRide 24h Breakdown Recovery Ltd. Operating across Bradford &amp; West Yorkshire.</p>
           <div className="flex items-center gap-6">
-            <span className="uppercase text-primaryNeon">SEC // BD_AUTONOMOUS</span>
-            <span className="uppercase text-accentCyan">AVANT-GARDE EDITION 04</span>
+            <Link href="/" className="hover:text-blue-800">
+              Emergency Guidelines
+            </Link>
+            <Link href="/" className="hover:text-blue-800">
+              Privacy Policy
+            </Link>
           </div>
         </div>
       </div>

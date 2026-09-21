@@ -12,103 +12,112 @@ export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 z-50 w-full border-b border-primaryNeon/20 bg-bg/90 backdrop-blur-xl transition-all duration-300">
-      <div className="mx-auto flex h-20 max-w-7xl items-center justify-between gap-4 px-4 sm:px-6">
-        <Link className="group flex min-w-0 items-center gap-1.5 sm:gap-3" href="/">
-          <div className="relative flex h-8 w-8 shrink-0 items-center justify-center overflow-hidden rounded-lg border border-primaryNeon/40 bg-secondaryBg p-1.5 shadow-neon-magenta transition-all group-hover:border-primaryNeon sm:h-10 sm:w-10">
-            <div className="absolute inset-0 bg-gradient-to-br from-primaryNeon/30 to-secondaryNeon/20" />
-            <Image
-              alt="SafeRide 24H Recovery"
-              src={siteIcon}
-              sizes="(min-width: 640px) 40px, 32px"
-              className="relative z-10 h-full w-full object-contain transition-transform group-hover:scale-110"
-              priority
-            />
+    <header className="fixed top-0 left-0 z-50 w-full shadow-[0_1px_8px_rgba(0,0,0,0.06)]">
+      <div className="border-b border-blue-700/40 bg-blue-800 text-white">
+        <div className="mx-auto flex h-9 max-w-7xl items-center justify-between gap-4 px-4 text-xs tracking-wide sm:px-6">
+          <div className="flex min-w-0 items-center gap-2 overflow-hidden whitespace-nowrap">
+            <span className="h-2 w-2 shrink-0 animate-pulse rounded-full bg-emerald-400" />
+            <span className="font-semibold text-blue-100">FLEET STATUS:</span>
+            <span className="truncate text-white/90">ACTIVE WEST YORKSHIRE</span>
           </div>
-          <div className="flex min-w-0 flex-col">
-            <span className="flex items-center gap-1 font-display text-sm font-black uppercase tracking-wider text-bodyText sm:gap-1.5 sm:text-xl">
-              SAFERIDE <span className="text-primaryNeon drop-shadow-[0_0_12px_#FF2BD6]">24H</span>
+          <div className="hidden shrink-0 items-center gap-4 sm:flex">
+            <span className="flex items-center gap-1.5 text-blue-100">
+              <span className="material-symbols-outlined text-[15px]">schedule</span>
+              AVERAGE DISPATCH: <strong className="text-white">23 Mins</strong>
             </span>
-            <span className="-mt-1 hidden whitespace-nowrap font-mono text-[9px] uppercase tracking-[0.28em] text-mutedText xl:block">
-              NIGHT DIVISION // WEST YORKSHIRE
-            </span>
+            <span className="text-blue-100/40">|</span>
+            <Link href="/contact" className="flex items-center gap-1 font-bold text-amber-300 hover:underline">
+              INSTANT DISPATCH →
+            </Link>
           </div>
-        </Link>
-
-        <nav className="hidden items-center gap-8 xl:flex">
-          {NAV_LINKS.map((link) => {
-            const isActive = pathname === link.href;
-            return (
-              <Link
-                key={link.href}
-                href={link.href}
-                aria-current={isActive ? "page" : undefined}
-                className={`font-mono text-xs uppercase tracking-widest transition-colors ${
-                  isActive ? "text-primaryNeon" : "text-mutedText hover:text-primaryNeon"
-                }`}
-              >
-                {link.label}
-              </Link>
-            );
-          })}
-        </nav>
-
-        <div className="flex items-center gap-3">
-          <div className="hidden items-center gap-2 rounded-full border border-accentCyan/30 bg-secondaryBg px-3 py-1 xl:flex">
-            <span className="relative flex h-2 w-2">
-              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-accentCyan opacity-75" />
-              <span className="relative inline-flex h-2 w-2 rounded-full bg-accentCyan" />
-            </span>
-            <span className="whitespace-nowrap font-mono text-[10px] font-semibold uppercase tracking-widest text-accentCyan">
-              ONLINE 24/7
-            </span>
-          </div>
-          <a
-            className="hidden items-center gap-2 whitespace-nowrap rounded-lg border border-primaryNeon bg-primaryNeon/10 px-4 py-2 font-mono text-xs tracking-wider text-primaryNeon shadow-neon-magenta transition-all duration-300 hover:bg-primaryNeon hover:text-bg sm:inline-flex"
-            href={SITE_PHONE_HREF}
-          >
-            <span className="material-symbols-outlined text-base">phone_in_talk</span>
-            <span className="font-bold">{SITE_PHONE_DISPLAY}</span>
-          </a>
-          <button
-            type="button"
-            aria-label="Toggle navigation menu"
-            aria-expanded={menuOpen}
-            onClick={() => setMenuOpen((open) => !open)}
-            className="flex h-10 w-10 items-center justify-center rounded-lg border border-primaryNeon/40 text-bodyText xl:hidden"
-          >
-            <span className="material-symbols-outlined">{menuOpen ? "close" : "menu"}</span>
-          </button>
         </div>
       </div>
 
-      {menuOpen ? (
-        <nav className="flex flex-col gap-1 border-t border-primaryNeon/20 bg-bg px-4 py-4 xl:hidden">
-          {NAV_LINKS.map((link) => {
-            const isActive = pathname === link.href;
-            return (
-              <Link
-                key={link.href}
-                href={link.href}
-                onClick={() => setMenuOpen(false)}
-                aria-current={isActive ? "page" : undefined}
-                className={`rounded-lg px-3 py-3 font-mono text-sm uppercase tracking-widest transition-colors ${
-                  isActive ? "bg-primaryNeon/10 text-primaryNeon" : "text-mutedText hover:text-primaryNeon"
-                }`}
-              >
-                {link.label}
-              </Link>
-            );
-          })}
-          <a
-            href={SITE_PHONE_HREF}
-            className="mt-2 flex items-center justify-center gap-2 rounded-lg border border-primaryNeon bg-primaryNeon/10 px-4 py-3 font-mono text-xs uppercase tracking-wider text-primaryNeon"
-          >
-            <span className="material-symbols-outlined text-base">phone_in_talk</span>
-            <span className="font-bold">{SITE_PHONE_DISPLAY}</span>
-          </a>
-        </nav>
-      ) : null}
+      <div className="h-[68px] border-b border-slate-200 bg-white/95 backdrop-blur-xl lg:h-20">
+        <div className="mx-auto flex h-full max-w-7xl items-center justify-between gap-4 px-4 sm:px-6">
+          <Link className="flex min-w-0 items-center gap-2 sm:gap-3" href="/">
+            <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-blue-800 p-1.5 shadow-sm sm:h-10 sm:w-10">
+              <Image
+                alt="SafeRide 24H Recovery"
+                src={siteIcon}
+                sizes="(min-width: 640px) 40px, 36px"
+                className="h-full w-full object-contain"
+                priority
+              />
+            </div>
+            <div className="flex min-w-0 flex-col leading-none">
+              <span className="font-display text-base font-bold text-blue-800 sm:text-lg">SafeRide 24h</span>
+              <span className="mt-0.5 hidden text-xs text-slate-500 xl:block">Bradford &amp; West Yorkshire</span>
+            </div>
+          </Link>
+
+          <nav className="hidden items-center gap-1 rounded-full bg-slate-100 p-1.5 lg:flex">
+            {NAV_LINKS.map((link) => {
+              const isActive = pathname === link.href;
+              return (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  aria-current={isActive ? "page" : undefined}
+                  className={`rounded-full px-4 py-2 text-sm font-semibold transition-colors ${
+                    isActive ? "bg-blue-700 text-white" : "text-slate-600 hover:text-slate-900"
+                  }`}
+                >
+                  {link.label}
+                </Link>
+              );
+            })}
+          </nav>
+
+          <div className="flex items-center gap-3">
+            <a
+              className="hidden items-center gap-2 whitespace-nowrap rounded-full bg-amber-600 px-5 py-2.5 text-sm font-bold text-white shadow-sm transition-colors hover:bg-amber-700 sm:inline-flex"
+              href={SITE_PHONE_HREF}
+            >
+              <span className="material-symbols-outlined text-[18px]">phone_in_talk</span>
+              <span className="hidden xl:inline">{SITE_PHONE_DISPLAY}</span>
+              <span className="xl:hidden">Call Now</span>
+            </a>
+            <button
+              type="button"
+              aria-label="Toggle navigation menu"
+              aria-expanded={menuOpen}
+              onClick={() => setMenuOpen((open) => !open)}
+              className="flex h-10 w-10 items-center justify-center rounded-lg border border-slate-200 text-slate-700 lg:hidden"
+            >
+              <span className="material-symbols-outlined">{menuOpen ? "close" : "menu"}</span>
+            </button>
+          </div>
+        </div>
+
+        {menuOpen ? (
+          <nav className="flex flex-col gap-1 border-t border-slate-200 bg-white px-4 py-4 lg:hidden">
+            {NAV_LINKS.map((link) => {
+              const isActive = pathname === link.href;
+              return (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  onClick={() => setMenuOpen(false)}
+                  aria-current={isActive ? "page" : undefined}
+                  className={`rounded-lg px-3 py-3 text-sm font-semibold transition-colors ${
+                    isActive ? "bg-blue-50 text-blue-800" : "text-slate-600 hover:text-blue-800"
+                  }`}
+                >
+                  {link.label}
+                </Link>
+              );
+            })}
+            <a
+              href={SITE_PHONE_HREF}
+              className="mt-2 flex items-center justify-center gap-2 rounded-full bg-amber-600 px-4 py-3 text-sm font-bold text-white"
+            >
+              <span className="material-symbols-outlined text-[18px]">phone_in_talk</span>
+              {SITE_PHONE_DISPLAY}
+            </a>
+          </nav>
+        ) : null}
+      </div>
     </header>
   );
 }

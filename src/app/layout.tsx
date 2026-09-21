@@ -1,27 +1,21 @@
 import type { Metadata } from "next";
-import { JetBrains_Mono, Space_Grotesk, Syne } from "next/font/google";
+import { Inter, Plus_Jakarta_Sans } from "next/font/google";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import MobileCallBar from "@/components/MobileCallBar";
 import openGraphImage from "@/assets/images/open-graph.webp";
 import "./globals.css";
 
-const spaceGrotesk = Space_Grotesk({
+const inter = Inter({
   subsets: ["latin"],
-  variable: "--font-space-grotesk",
+  variable: "--font-inter",
   display: "swap",
 });
 
-const syne = Syne({
+const plusJakartaSans = Plus_Jakarta_Sans({
   subsets: ["latin"],
-  weight: ["700", "800"],
-  variable: "--font-syne",
-  display: "swap",
-});
-
-const jetbrainsMono = JetBrains_Mono({
-  subsets: ["latin"],
-  variable: "--font-jetbrains-mono",
+  weight: ["600", "700", "800"],
+  variable: "--font-plus-jakarta-sans",
   display: "swap",
 });
 
@@ -65,13 +59,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-      className={`dark ${spaceGrotesk.variable} ${syne.variable} ${jetbrainsMono.variable}`}
-    >
-      <body className="bg-bg font-sans text-bodyText antialiased selection:bg-primaryNeon selection:text-white">
+    <html lang="en" className={`${inter.variable} ${plusJakartaSans.variable}`}>
+      <body className="bg-slate-50 font-sans text-slate-900 antialiased selection:bg-blue-800 selection:text-white">
         <Header />
-        <main className="w-full pt-20">{children}</main>
+        <main className="w-full pt-[104px] lg:pt-[120px]">{children}</main>
         <Footer />
         <MobileCallBar />
       </body>

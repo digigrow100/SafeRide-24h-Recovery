@@ -31,13 +31,13 @@ export default function Depots() {
   return (
     <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:py-24">
       <div className="mb-10 flex flex-col gap-2">
-        <span className="font-mono text-xs font-bold uppercase tracking-widest text-accentCyan">
+        <span className="font-sans text-xs font-bold uppercase tracking-widest text-emerald-600">
           Local Staging Architecture
         </span>
-        <h2 className="font-display text-3xl font-bold uppercase text-bodyText sm:text-4xl">
+        <h2 className="font-display text-3xl font-bold uppercase text-slate-900 sm:text-4xl">
           Bradford Depots &amp; Strategic Coverage
         </h2>
-        <p className="max-w-2xl text-base text-mutedText">
+        <p className="max-w-2xl text-base text-slate-500">
           We don&rsquo;t dispatch from distant regional centers. Our trucks are permanently
           positioned across Bradford to circumvent urban congestion and motorway bottlenecks.
         </p>
@@ -45,20 +45,20 @@ export default function Depots() {
 
       <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
         {DEPOTS.map((depot) => (
-          <div key={depot.name} className="flex flex-col justify-between rounded-2xl border border-secondaryNeon/25 bg-panel p-6">
+          <div key={depot.name} className="flex flex-col justify-between rounded-2xl border border-slate-700/25 bg-white p-6">
             <div>
               <div className="mb-2 flex items-center justify-between gap-2">
-                <h3 className="font-display text-lg font-bold text-primaryNeon">{depot.name}</h3>
+                <h3 className="font-display text-lg font-bold text-blue-800">{depot.name}</h3>
               </div>
-              <span className="mb-3 inline-block rounded bg-secondaryBg px-2.5 py-1 font-mono text-[10px] font-bold uppercase text-secondaryNeon">
+              <span className="mb-3 inline-block rounded bg-slate-100 px-2.5 py-1 font-sans text-[10px] font-bold uppercase text-slate-700">
                 {depot.badge}
               </span>
-              <p className="text-sm text-mutedText">{depot.description}</p>
+              <p className="text-sm text-slate-500">{depot.description}</p>
             </div>
-            <div className="mt-4 flex flex-wrap items-center gap-4 border-t border-white/10 pt-4 font-mono text-[11px] text-mutedText">
+            <div className="mt-4 flex flex-wrap items-center gap-4 border-t border-black/10 pt-4 font-sans text-[11px] text-slate-500">
               {depot.tags.map((tag) => (
                 <span key={tag} className="flex items-center gap-1">
-                  <span className="material-symbols-outlined text-sm text-primaryNeon">navigation</span>
+                  <span className="material-symbols-outlined text-sm text-blue-800">navigation</span>
                   {tag}
                 </span>
               ))}
@@ -67,18 +67,18 @@ export default function Depots() {
         ))}
       </div>
 
-      <div className="mt-8 rounded-2xl bg-secondaryBg p-6">
+      <div className="mt-8 rounded-2xl bg-slate-100 p-6">
         <div className="mb-4 flex flex-col justify-between gap-3 md:flex-row md:items-center">
-          <span className="font-mono text-sm font-bold uppercase tracking-wider text-bodyText">
+          <span className="font-sans text-sm font-bold uppercase tracking-wider text-slate-900">
             Full BD Postcode Priority Service Zone
           </span>
-          <span className="text-sm text-mutedText">
+          <span className="text-sm text-slate-500">
             Plus regional transport across Leeds (LS), Halifax (HX), Huddersfield (HD) &amp; Manchester (M)
           </span>
         </div>
         <div className="flex flex-wrap gap-2">
           {POSTCODES.map((code) => (
-            <span key={code} className="rounded-lg bg-panel px-3 py-1 font-mono text-xs font-semibold text-primaryNeon">
+            <span key={code} className="rounded-lg bg-white px-3 py-1 font-sans text-xs font-semibold text-blue-800">
               {code}
             </span>
           ))}
