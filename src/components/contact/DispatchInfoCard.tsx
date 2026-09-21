@@ -4,7 +4,7 @@ import { SITE_EMAIL, SITE_EMAIL_HREF, SITE_PHONE_DISPLAY, SITE_PHONE_HREF } from
 
 export default function DispatchInfoCard() {
   return (
-    <div className="flex flex-col gap-6 lg:col-span-5">
+    <div className="flex flex-col gap-6">
       <div className="relative flex flex-col gap-6 overflow-hidden rounded-xl bg-white p-6 shadow-xl">
         <div className="flex items-center justify-between">
           <span className="font-sans text-xs uppercase tracking-widest text-slate-500">

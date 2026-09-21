@@ -6,7 +6,6 @@ import ContactFinalCta from "@/components/contact/ContactFinalCta";
 import ContactHero from "@/components/contact/ContactHero";
 import DispatchInfoCard from "@/components/contact/DispatchInfoCard";
 import EmergencyStrip from "@/components/contact/EmergencyStrip";
-import IntakeForm from "@/components/contact/IntakeForm";
 import PostcodeDirectory from "@/components/contact/PostcodeDirectory";
 import ReassuranceTriad from "@/components/contact/ReassuranceTriad";
 
@@ -22,11 +21,8 @@ export default function ContactPage() {
       <ContactHero />
       <EmergencyStrip />
       <section className="w-full bg-slate-100 py-12 sm:py-16">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6">
-          <div className="grid grid-cols-1 items-start gap-10 lg:grid-cols-12">
-            <DispatchInfoCard />
-            <IntakeForm />
-          </div>
+        <div className="mx-auto max-w-3xl px-4 sm:px-6">
+          <DispatchInfoCard />
         </div>
       </section>
       <ContactDepots />

@@ -3,7 +3,6 @@ import serviceCarRecovery from "@/assets/images/service-car-recovery.webp";
 import serviceBreakdownRecovery from "@/assets/images/service-breakdown-recovery.webp";
 import serviceVehicleTransport from "@/assets/images/service-vehicle-transport.webp";
 import serviceRoadsideAssistance from "@/assets/images/service-roadside-assistance.webp";
-import { SITE_PHONE_HREF } from "@/lib/site";
 
 const ACCENTS = {
   primary: {
@@ -132,7 +131,7 @@ export default function ServiceSpectrum() {
                     sizes="(min-width: 1024px) 55vw, 100vw"
                     className="object-cover transition-transform duration-700 group-hover:scale-105"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/60/40 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-slate-900/40 via-transparent to-transparent" />
                 </div>
               </div>
 
@@ -148,24 +147,6 @@ export default function ServiceSpectrum() {
                   {service.title}
                 </h3>
                 <p className="text-sm leading-relaxed text-slate-500">{service.description}</p>
-                <div className="grid grid-cols-2 gap-3 rounded-lg border border-slate-200 bg-slate-100/60 p-3">
-                  {service.stats.map((stat) => (
-                    <div key={stat.label}>
-                      <p className="font-sans text-[9px] uppercase tracking-wider text-slate-500">{stat.label}</p>
-                      <p className="font-display text-sm font-bold text-slate-900">{stat.value}</p>
-                    </div>
-                  ))}
-                </div>
-                <div className="flex items-center justify-between border-t border-black/10 pt-4">
-                  <span className={`font-sans text-[11px] ${accent.tag}`}>{service.spec}</span>
-                  <a
-                    href={SITE_PHONE_HREF}
-                    aria-label={`Call SafeRide about ${service.title}`}
-                    className={`flex h-9 w-9 items-center justify-center rounded-full transition-colors ${accent.button}`}
-                  >
-                    <span className="material-symbols-outlined text-base">north_east</span>
-                  </a>
-                </div>
               </div>
             </div>
           );
