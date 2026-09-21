@@ -12,15 +12,16 @@ export default function Hero() {
       </div>
 
       <div className="relative z-10 mt-6 w-full max-w-7xl md:mt-12">
-        {/* Mobile-only: call button sits above the image */}
-        <div className="mb-6 lg:hidden">
-          <a
-            className="inline-flex w-full items-center justify-center gap-2 rounded-lg bg-amber-600 px-6 py-3.5 font-sans text-xs font-bold uppercase tracking-widest text-white shadow-sm transition-colors hover:bg-amber-700"
-            href={SITE_PHONE_HREF}
-          >
-            <span>CALL NOW →</span>
-            <span className="text-sm">{SITE_PHONE_DISPLAY}</span>
-          </a>
+        {/* Mobile-only: headline and paragraph sit above the image */}
+        <div className="mb-6 space-y-4 lg:hidden">
+          <h2 className="font-display text-4xl font-black uppercase leading-[1.05] tracking-tight sm:text-5xl">
+            Built Around <span className="text-blue-800">Getting You Home.</span>
+          </h2>
+          <p className="font-sans text-base leading-relaxed text-slate-500">
+            Engineered vehicle recovery, zero-damage hydraulic flatbed transport, and specialist
+            roadside solutions throughout Bradford and West Yorkshire. Precision handled. Always
+            operational.
+          </p>
         </div>
 
         <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-12">
@@ -57,7 +58,7 @@ export default function Hero() {
               </span>
             </div>
 
-            <div className="space-y-4">
+            <div className="hidden space-y-4 lg:block">
               <h2 className="font-display text-4xl font-black uppercase leading-[1.05] tracking-tight sm:text-5xl">
                 Built Around <span className="text-blue-800">Getting You Home.</span>
               </h2>
@@ -66,6 +67,17 @@ export default function Hero() {
                 roadside solutions throughout Bradford and West Yorkshire. Precision handled. Always
                 operational.
               </p>
+            </div>
+
+            {/* Mobile-only: call button below the image */}
+            <div className="rounded-xl border border-blue-800/30 bg-slate-100/80 p-6 backdrop-blur-md lg:hidden">
+              <a
+                className="inline-flex w-full items-center justify-center gap-2 rounded-lg bg-amber-600 px-6 py-3.5 font-sans text-xs font-bold uppercase tracking-widest text-white shadow-sm transition-colors hover:bg-amber-700"
+                href={SITE_PHONE_HREF}
+              >
+                <span>CALL NOW →</span>
+                <span className="text-sm">{SITE_PHONE_DISPLAY}</span>
+              </a>
             </div>
 
             <div className="hidden rounded-xl border border-blue-800/30 bg-slate-100/80 p-6 backdrop-blur-md lg:block">
@@ -95,7 +107,7 @@ export default function Hero() {
               </div>
             </div>
 
-            <div className="grid grid-cols-3 gap-3 pt-1">
+            <div className="hidden grid-cols-3 gap-3 pt-1 lg:grid">
               <div className="border-l border-blue-800/30 pl-3">
                 <p className="font-sans text-[10px] uppercase text-slate-500">Flatbed Payload</p>
                 <p className="font-display text-sm font-bold text-slate-900">3.5t</p>
