@@ -3,7 +3,6 @@ const ITEMS = [
   "BREAKDOWN RECOVERY",
   "VEHICLE TRANSPORTATION",
   "ROADSIDE ASSISTANCE",
-  "BRADFORD AND WEST YORKSHIRE",
 ] as const;
 
 export default function SpecStrip() {

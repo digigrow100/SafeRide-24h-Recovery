@@ -1,9 +1,9 @@
 const FAQS = [
   {
     icon: "timer",
-    question: "How quickly can a recovery unit reach me in Bradford?",
+    question: "How quickly can a recovery unit reach me?",
     answer:
-      "Our average urban dispatch response time across BD1 through BD15 is between 20 to 35 minutes, subject to live traffic conditions on main arteries like the A650, A6177, and Manchester Road. For M606 and M62 incidents, our dedicated highway patrol trucks operate with rapid priority deployment.",
+      "Our average urban dispatch response time is between 20 to 35 minutes, subject to live traffic conditions. For motorway incidents, our dedicated highway patrol trucks operate with rapid priority deployment.",
   },
   {
     icon: "ev_station",

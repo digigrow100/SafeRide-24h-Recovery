@@ -6,7 +6,7 @@ export default function Hero() {
   return (
     <section className="relative flex min-h-[92vh] items-center justify-center overflow-hidden px-4 py-20 md:px-8">
       <Image
-        alt="SafeRide hydraulic rollback recovery truck responding to a night breakdown on the M62 near Bradford"
+        alt="SafeRide hydraulic rollback recovery truck responding to a night breakdown"
         src={heroRollbackTruck}
         priority
         fill
@@ -17,15 +17,14 @@ export default function Hero() {
       <div className="absolute inset-0 z-0 bg-gradient-to-t from-slate-900/60 via-slate-900/35 to-slate-900/40" />
 
       <div className="relative z-10 mx-auto flex w-full max-w-2xl flex-col items-center space-y-6 text-center">
-        <span className="font-sans text-xs font-bold uppercase tracking-[0.25em] text-amber-500">
-          24/7 Vehicle Recovery in Bradford
-        </span>
         <h1 className="font-display text-4xl font-black uppercase leading-[1.05] tracking-tight text-white sm:text-5xl lg:text-6xl">
-          Fast and Reliable <span className="text-amber-500">Car Recovery in Bradford</span>
+          SafeRide 24h Recovery
+          <br />
+          <span className="text-amber-500">24/7 Car Recovery &amp; Breakdown Assistance</span>
         </h1>
         <p className="font-sans text-base leading-relaxed text-slate-200 sm:text-lg">
-          Dependable car recovery, breakdown recovery and vehicle transportation across Bradford
-          and West Yorkshire, available 24 hours a day.
+          Dependable car recovery, breakdown recovery and vehicle transportation, available 24
+          hours a day.
         </p>
         <div className="flex flex-col items-center gap-4 sm:flex-row">
           <a

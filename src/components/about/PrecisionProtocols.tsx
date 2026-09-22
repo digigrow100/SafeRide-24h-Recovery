@@ -7,7 +7,7 @@ const PROTOCOL_ITEMS = [
     accent: "text-blue-800",
     title: "Direct Communication",
     description:
-      "Zero call-center holding loops or automated IVR mazes. You speak immediately with local recovery controllers who understand Bradford junctions.",
+      "Zero call-center holding loops or automated IVR mazes. You speak immediately with local recovery controllers who understand the local roads.",
   },
   {
     icon: "schedule",
@@ -26,9 +26,9 @@ const PROTOCOL_ITEMS = [
   {
     icon: "pin_drop",
     accent: "text-slate-700",
-    title: "Bradford Coverage",
+    title: "Local Coverage",
     description:
-      "Surgical sector familiarity covering BD1 through BD24, the M62 chain, M606, Tong Street, and elevated Moor routes.",
+      "Surgical sector familiarity covering the city centre, motorway network, and elevated moor routes.",
   },
 ] as const;
 

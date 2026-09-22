@@ -20,13 +20,13 @@ export default function ServiceDetails() {
         number="01"
         eyebrow="EMERGENCY DISPATCH"
         title="24/7 Car Recovery"
-        description="Professional recovery for stranded vehicles day and night across Bradford. Quick dispatch and careful handling for all vehicle makes and chassis setups, ensuring your car is brought to safety without secondary damage."
+        description="Professional recovery for stranded vehicles day and night. Quick dispatch and careful handling for all vehicle makes and chassis setups, ensuring your car is brought to safety without secondary damage."
         image={servicesCarRecoveryDetail}
         imageAlt="Car being winched onto a specialized tilt-slide recovery flatbed truck at night"
         ctaLabel="CALL FOR CAR RECOVERY"
       >
         <ul className="mb-8 w-full space-y-3">
-          {["Recovery for stranded vehicles", "Available day and night 24/7", "Fast assistance across Bradford & key corridors"].map(
+          {["Recovery for stranded vehicles", "Available day and night 24/7", "Fast assistance across your local area"].map(
             (item) => (
               <li key={item} className="flex items-center gap-3">
                 <span className="flex h-6 w-6 items-center justify-center rounded-full border border-blue-800/40 bg-blue-800/10 text-blue-800">
@@ -45,7 +45,7 @@ export default function ServiceDetails() {
         number="02"
         eyebrow="ROADSIDE & MOTORWAY"
         title="Breakdown Recovery"
-        description="Drivers can call SafeRide when their vehicle breaks down and requires rapid recovery assistance. Whether you are immobilized on major arterial roads like the M606/M62, city junctions, or residential streets, our technicians arrive equipped to secure and transport your vehicle immediately."
+        description="Drivers can call SafeRide when their vehicle breaks down and requires rapid recovery assistance. Whether you are immobilized on a motorway, city junctions, or residential streets, our technicians arrive equipped to secure and transport your vehicle immediately."
         image={servicesBreakdownDetail}
         imageAlt="Roadside recovery operator inspecting an immobilized car at night"
         ctaLabel="GET BREAKDOWN HELP"
@@ -53,7 +53,7 @@ export default function ServiceDetails() {
         <div className="mb-8 w-full max-w-md rounded border border-slate-700/20 bg-white p-4">
           <p className="mb-1 font-sans text-xs text-slate-700">DISPATCH COVERAGE</p>
           <p className="text-sm text-slate-900">
-            Immediate deployment to Bradford, Shipley, Pudsey, and connecting motorway corridors.
+            Immediate deployment to your local area and connecting motorway corridors.
           </p>
         </div>
       </ServiceDetailRow>
@@ -64,7 +64,7 @@ export default function ServiceDetails() {
         number="03"
         eyebrow="LOGISTICS & TRANSIT"
         title="Vehicle Transportation"
-        description="Planned and scheduled carriage for vehicles requiring secure transit across West Yorkshire and nationwide. We manage trade transports, private acquisitions, auction collections, and body shop relocations using purpose-built vehicle transporters equipped with low-angle loading ramps."
+        description="Planned and scheduled carriage for vehicles requiring secure transit locally and nationwide. We manage trade transports, private acquisitions, auction collections, and body shop relocations using purpose-built vehicle transporters equipped with low-angle loading ramps."
         image={serviceVehicleTransport}
         imageAlt="Automotive carrier securely loaded with an executive vehicle"
         ctaLabel="ASK ABOUT VEHICLE TRANSPORT"
@@ -87,7 +87,7 @@ export default function ServiceDetails() {
         number="04"
         eyebrow="ON-SITE FIX"
         title="Roadside Assistance"
-        description="Immediate roadside help designed to resolve common immobilizing faults without a tow whenever safe to do so. Our mobile units assist with flat tire wheel changes, 12V battery jump-starts, misfueling recovery, and lockout support across metropolitan Bradford."
+        description="Immediate roadside help designed to resolve common immobilizing faults without a tow whenever safe to do so. Our mobile units assist with flat tire wheel changes, 12V battery jump-starts, misfueling recovery, and lockout support across the local area."
         image={servicesRoadsideDetail}
         imageAlt="Roadside mechanic attending to a car on wet tarmac at night"
         ctaLabel="CALL FOR ROADSIDE HELP"

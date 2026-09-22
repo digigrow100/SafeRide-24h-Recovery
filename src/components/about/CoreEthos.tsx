@@ -14,8 +14,8 @@ export default function CoreEthos() {
         <div className="grid grid-cols-1 gap-8 pt-4 font-sans text-lg text-slate-500 md:grid-cols-2">
           <p>
             Established to counteract bloated corporate call centers and stranded driver
-            abandonment, SafeRide delivers swift, dependable, direct-dispatch recovery across the
-            entirety of Bradford and surrounding West Yorkshire arteries.
+            abandonment, SafeRide delivers swift, dependable, direct-dispatch recovery across
+            your local area and the surrounding region.
           </p>
           <p>
             We operate without third-party brokers. When you ring our line, you connect straight

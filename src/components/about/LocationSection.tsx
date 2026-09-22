@@ -11,12 +11,12 @@ export default function LocationSection() {
                 STATION COORDINATES
               </span>
               <h2 className="font-display text-3xl font-bold uppercase text-slate-900 sm:text-4xl">
-                Based in Bradford
+                Based Locally
               </h2>
             </div>
             <p className="font-sans text-base text-slate-500">
-              Our strategic depot allows rapid deployment along the key West Yorkshire arterial
-              transit networks:
+              Our strategic depot allows rapid deployment along the key regional arterial transit
+              networks:
             </p>
             <div className="flex flex-col gap-4">
               <div className="flex items-start gap-4 rounded border border-slate-700/25 bg-white p-4">
@@ -26,9 +26,9 @@ export default function LocationSection() {
                     Primary Operational Zone
                   </span>
                   <span className="font-display text-lg font-bold text-slate-900">
-                    Bradford &amp; West Yorkshire, UK
+                    UK, Local &amp; Regional Coverage
                   </span>
-                  <span className="mt-0.5 text-sm text-slate-500">BD1 – BD24 • Leeds Ring • M62 • M606</span>
+                  <span className="mt-0.5 text-sm text-slate-500">City Centre • Ring Road • Motorway Network</span>
                 </div>
               </div>
               <div className="flex items-start gap-4 rounded border border-slate-700/25 bg-white p-4">
@@ -71,23 +71,21 @@ export default function LocationSection() {
                     radar
                   </span>
                   <span className="font-sans text-sm font-bold uppercase text-white">
-                    BRADFORD DISPATCH SECTOR ACTIVE
+                    DISPATCH SECTOR ACTIVE
                   </span>
-                  <span className="font-sans text-xs text-slate-300">LAT 53.7959° N // LON 1.7594° W</span>
                 </div>
               </div>
               <div className="absolute left-4 top-4 z-10 flex flex-col gap-1 rounded border border-blue-800/30 bg-slate-50/90 p-3 backdrop-blur">
                 <div className="flex items-center gap-2">
                   <span className="h-2 w-2 rounded-full bg-blue-800 shadow-sm" />
                   <span className="font-sans text-xs font-bold uppercase tracking-wider text-slate-900">
-                    RADAR: BRADFORD CENTRAL
+                    RADAR: CENTRAL
                   </span>
                 </div>
-                <span className="font-sans text-xs text-slate-500">LAT 53.7959° N // LON 1.7594° W</span>
               </div>
               <div className="absolute bottom-4 right-4 z-10 rounded border border-slate-700/30 bg-slate-50/90 px-3 py-1.5 backdrop-blur">
                 <span className="font-sans text-xs font-bold uppercase tracking-wider text-slate-700">
-                  SECTOR: WEST YORKSHIRE
+                  SECTOR: REGIONAL
                 </span>
               </div>
             </div>

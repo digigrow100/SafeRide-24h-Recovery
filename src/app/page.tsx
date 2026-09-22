@@ -1,4 +1,3 @@
-import CoverageMatrix from "@/components/home/CoverageMatrix";
 import FinalCta from "@/components/home/FinalCta";
 import Gallery from "@/components/home/Gallery";
 import Hero from "@/components/home/Hero";
@@ -18,7 +17,6 @@ export default function Home() {
       <TechGrid />
       <Protocol />
       <TransportBanner />
-      <CoverageMatrix />
       <Gallery />
       <HomeFaq />
       <FinalCta />

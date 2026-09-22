@@ -26,9 +26,8 @@ export default function FleetBanner() {
               <span className=" text-blue-800">7 Days A Week</span>
             </h2>
             <p className="font-sans text-lg text-slate-500">
-              From the peak of Queensbury down through the M606 corridor, our specialized
-              flatbeds operate continuously through rain, snow, and dense West Yorkshire night
-              fog.
+              From city streets to motorway corridors, our specialized flatbeds operate
+              continuously through rain, snow, and dense night fog.
             </p>
           </div>
         </div>

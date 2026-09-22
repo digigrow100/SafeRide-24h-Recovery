@@ -1,9 +1,9 @@
 const FAQS = [
   {
     icon: "schedule",
-    question: "Do you provide 24/7 car recovery in Bradford?",
+    question: "Do you provide 24/7 car recovery?",
     answer:
-      "Yes. SafeRide provides 24/7 car recovery in Bradford and nearby areas. Call us with your location and vehicle details to check availability.",
+      "Yes. SafeRide provides 24/7 car recovery in your local area. Call us with your location and vehicle details to check availability.",
   },
   {
     icon: "checklist",
@@ -31,9 +31,9 @@ const FAQS = [
   },
   {
     icon: "map",
-    question: "Do you cover areas outside Bradford?",
+    question: "Do you cover areas outside the city centre?",
     answer:
-      "Yes. We serve Bradford and surrounding areas across West Yorkshire. Longer-distance transport may also be available.",
+      "Yes. We serve the surrounding local area. Longer-distance transport may also be available.",
   },
   {
     icon: "payments",

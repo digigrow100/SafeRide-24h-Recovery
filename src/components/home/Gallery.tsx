@@ -12,7 +12,7 @@ const FRAMES = [
     hoverBorder: "hover:border-blue-800",
     frame: "FRAME 01",
     frameColor: "text-blue-800",
-    title: "Car Recovery in Bradford",
+    title: "Car Recovery in Action",
     time: undefined,
     alt: "Recovery truck at night on a wet UK road",
     image: heroRollbackTruck,
@@ -72,7 +72,7 @@ export default function Gallery() {
             Our Recovery Work
           </span>
           <h2 className="font-display text-4xl font-black uppercase text-slate-900 sm:text-5xl">
-            Helping Drivers Across Bradford
+            Helping Drivers Get Back on the Road
           </h2>
         </div>
         <p className="min-w-0 max-w-md text-sm text-slate-500">

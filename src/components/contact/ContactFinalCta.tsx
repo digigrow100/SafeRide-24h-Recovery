@@ -13,7 +13,7 @@ export default function ContactFinalCta() {
         </h2>
         <p className="max-w-xl font-sans text-base text-slate-500 sm:text-lg">
           Every second counts when stranded roadside. One tap connects you instantly to our
-          Bradford night control operator.
+          night control operator.
         </p>
         <a
           className=" my-1 block font-display text-3xl font-bold tracking-tighter text-blue-800 shadow-sm transition-colors hover:text-slate-700 sm:text-5xl"

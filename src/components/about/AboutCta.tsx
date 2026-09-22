@@ -19,8 +19,8 @@ export default function AboutCta() {
             Need Vehicle Assistance?
           </h2>
           <p className="font-sans text-lg text-slate-500">
-            SafeRide is available 24/7 across Bradford. Tell us your location, and our nearest
-            recovery unit will be mobilized immediately.
+            SafeRide is available 24/7. Tell us your location, and our nearest recovery unit will
+            be mobilized immediately.
           </p>
         </div>
 

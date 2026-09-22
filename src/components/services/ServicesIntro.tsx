@@ -13,7 +13,7 @@ export default function ServicesIntro() {
         </h2>
         <p className="font-sans text-base leading-relaxed text-slate-500 md:text-lg">
           SafeRide provides reliable assistance for roadside emergencies and vehicle recovery
-          situations across Bradford and surrounding corridors. From unexpected mechanical
+          situations across the local area and surrounding corridors. From unexpected mechanical
           failure on arterial highways to scheduled dealer transports, our recovery operators are
           equipped for immediate deployment.
         </p>
