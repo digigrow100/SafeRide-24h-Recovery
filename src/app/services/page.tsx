@@ -8,9 +8,9 @@ import ServicesIntro from "@/components/services/ServicesIntro";
 import ServicesStatStrip from "@/components/services/ServicesStatStrip";
 
 export const metadata: Metadata = {
-  title: "Services | SafeRide 24h Recovery Bradford",
+  title: "Services | SafeRide 24h Recovery",
   description:
-    "24/7 car recovery, breakdown recovery, vehicle transportation and roadside assistance across Bradford and West Yorkshire. Call +44 7466 354550 for immediate dispatch.",
+    "24/7 car recovery, breakdown recovery, vehicle transportation and roadside assistance in your local area. Call +44 7466 354550 for immediate dispatch.",
 };
 
 export default function ServicesPage() {

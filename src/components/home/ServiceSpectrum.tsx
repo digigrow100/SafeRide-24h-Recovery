@@ -44,7 +44,7 @@ export default function ServiceSpectrum() {
           Our Services
         </span>
         <h2 className="font-display text-4xl font-black uppercase tracking-tight text-slate-900 sm:text-5xl">
-          Vehicle Recovery Services in Bradford
+          Vehicle Recovery Services
         </h2>
       </div>
 

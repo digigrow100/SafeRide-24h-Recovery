@@ -23,7 +23,7 @@ export default function ServicesHero() {
           </h1>
           <p className="mb-8 max-w-2xl font-sans text-base leading-relaxed text-slate-500 sm:text-lg">
             SafeRide 24h Recovery provides vehicle recovery, breakdown assistance, vehicle
-            transportation and roadside help across Bradford and adjacent corridors.
+            transportation and roadside help across your local area and adjacent corridors.
           </p>
           <a
             className="inline-flex items-center gap-3 rounded bg-amber-600 px-6 py-3.5 font-display text-sm font-bold uppercase tracking-wider text-bg shadow-sm transition-all hover:bg-amber-700 hover:-translate-y-0.5"
@@ -46,7 +46,7 @@ export default function ServicesHero() {
             />
             <div className="absolute bottom-4 left-4 z-20 flex items-center gap-2 rounded border border-slate-700/20 bg-slate-50/90 px-3 py-1.5">
               <span className="material-symbols-outlined text-sm text-slate-700">fmd_good</span>
-              <span className="font-sans text-xs text-slate-900">Bradford Metropolitan Base</span>
+              <span className="font-sans text-xs text-slate-900">Local Recovery Base</span>
             </div>
           </div>
         </div>

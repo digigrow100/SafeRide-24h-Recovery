@@ -1,18 +1,16 @@
 import type { Metadata } from "next";
 import ContactCoverage from "@/components/contact/ContactCoverage";
-import ContactDepots from "@/components/contact/ContactDepots";
 import ContactFaq from "@/components/contact/ContactFaq";
 import ContactFinalCta from "@/components/contact/ContactFinalCta";
 import ContactHero from "@/components/contact/ContactHero";
 import DispatchInfoCard from "@/components/contact/DispatchInfoCard";
 import EmergencyStrip from "@/components/contact/EmergencyStrip";
-import PostcodeDirectory from "@/components/contact/PostcodeDirectory";
 import ReassuranceTriad from "@/components/contact/ReassuranceTriad";
 
 export const metadata: Metadata = {
-  title: "Contact Us | SafeRide 24H Recovery Bradford",
+  title: "Contact Us | SafeRide 24H Recovery",
   description:
-    "Contact SafeRide 24h Recovery for vehicle recovery, breakdown assistance, transportation or roadside help in Bradford. Call +44 7466 354550, available 24/7.",
+    "Contact SafeRide 24h Recovery for vehicle recovery, breakdown assistance, transportation or roadside help. Call +44 7466 354550, available 24/7.",
 };
 
 export default function ContactPage() {
@@ -25,8 +23,6 @@ export default function ContactPage() {
           <DispatchInfoCard />
         </div>
       </section>
-      <ContactDepots />
-      <PostcodeDirectory />
       <ContactCoverage />
       <ReassuranceTriad />
       <ContactFaq />

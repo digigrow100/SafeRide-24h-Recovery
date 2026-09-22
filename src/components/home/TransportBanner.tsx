@@ -32,9 +32,9 @@ export default function TransportBanner() {
                   vehicle between locations.
                 </p>
                 <p>
-                  SafeRide offers planned vehicle transportation across Bradford, West Yorkshire
-                  and other UK destinations. Contact us with the collection address, delivery
-                  address and vehicle details to request a quote.
+                  SafeRide offers planned vehicle transportation locally and across the UK.
+                  Contact us with the collection address, delivery address and vehicle details to
+                  request a quote.
                 </p>
               </div>
               <span className="mb-3 block font-sans text-xs font-bold uppercase tracking-widest text-slate-900">

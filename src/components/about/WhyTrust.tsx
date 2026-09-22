@@ -9,9 +9,9 @@ const REASONS = [
   {
     tag: "02 // LOCAL BASE",
     accent: "text-slate-700",
-    title: "Bradford Based",
+    title: "Locally Based",
     description:
-      "We are rooted in Bradford. We don't dispatch trucks from two counties over—our crews know the city shortcuts, low bridges, industrial estates, and steepest hills intimately.",
+      "We are rooted in your local area. We don't dispatch trucks from two counties over—our crews know the city shortcuts, low bridges, industrial estates, and steepest hills intimately.",
   },
   {
     tag: "03 // VERSATILITY",

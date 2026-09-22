@@ -10,20 +10,19 @@ export default function AboutHero() {
           <div className="flex items-center gap-2">
             <span className="h-2 w-2 rounded-full bg-blue-800 shadow-sm" />
             <span className="font-sans text-xs font-bold uppercase tracking-widest text-slate-700">
-              ABOUT SAFERIDE // BRADFORD RESCUE
+              ABOUT SAFERIDE // ROADSIDE RESCUE
             </span>
           </div>
           <div className="flex flex-col gap-3">
             <h1 className="font-display text-4xl font-black uppercase tracking-tight text-slate-900 sm:text-5xl md:text-6xl">
               Here When <br />
-              <span className=" text-blue-800">Bradford</span> Drivers <br />
+              <span className=" text-blue-800">Drivers</span> <br />
               Need Help.
             </h1>
             <p className="max-w-xl font-sans text-lg text-slate-500">
               SafeRide 24h Recovery is an independent, dedicated vehicle rescue and specialized
-              roadside engineering team based directly in Bradford. Designed specifically for
-              uncompromised reliability across dark hours, adverse weather, and motorway
-              emergencies.
+              roadside engineering team. Designed specifically for uncompromised reliability
+              across dark hours, adverse weather, and motorway emergencies.
             </p>
           </div>
 
@@ -35,7 +34,7 @@ export default function AboutHero() {
               <span className="font-display text-xl font-bold text-blue-800 ">
                 15–25 MINS
               </span>
-              <span className="mt-1 block text-sm text-slate-500">Bradford &amp; M606 Spine</span>
+              <span className="mt-1 block text-sm text-slate-500">Local &amp; Motorway Coverage</span>
             </div>
             <div className="rounded border border-slate-700/25 bg-white p-4">
               <span className="block font-sans text-xs uppercase tracking-wider text-slate-500">
@@ -82,7 +81,7 @@ export default function AboutHero() {
         <div className="relative lg:col-span-6">
           <div className="relative aspect-[4/3] w-full overflow-hidden rounded-2xl bg-slate-100 shadow-2xl">
             <Image
-              alt="SafeRide recovery operator beside a tilt-slide flatbed truck on a wet Bradford road at night"
+              alt="SafeRide recovery operator beside a tilt-slide flatbed truck on a wet road at night"
               src={aboutHeroOperator}
               fill
               priority

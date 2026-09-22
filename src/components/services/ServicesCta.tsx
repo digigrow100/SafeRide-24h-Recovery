@@ -45,7 +45,7 @@ export default function ServicesCta() {
           </a>
         </div>
         <p className="mt-6 font-sans text-xs text-slate-500">
-          Average dispatch time: Rapid local attendance within Bradford &amp; West Yorkshire.
+          Average dispatch time: Rapid local attendance in your area.
         </p>
       </div>
     </section>

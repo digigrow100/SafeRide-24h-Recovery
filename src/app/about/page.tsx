@@ -3,7 +3,6 @@ import AboutCta from "@/components/about/AboutCta";
 import AboutHero from "@/components/about/AboutHero";
 import Certifications from "@/components/about/Certifications";
 import CoreEthos from "@/components/about/CoreEthos";
-import Depots from "@/components/about/Depots";
 import FleetBanner from "@/components/about/FleetBanner";
 import FleetHardware from "@/components/about/FleetHardware";
 import LocationSection from "@/components/about/LocationSection";
@@ -12,9 +11,9 @@ import WhatWeDo from "@/components/about/WhatWeDo";
 import WhyTrust from "@/components/about/WhyTrust";
 
 export const metadata: Metadata = {
-  title: "About Us | SafeRide 24H Recovery Bradford",
+  title: "About Us | SafeRide 24H Recovery",
   description:
-    "SafeRide 24h Recovery is an independent Bradford-based vehicle rescue team providing direct-dispatch recovery, breakdown assistance and vehicle transportation across West Yorkshire.",
+    "SafeRide 24h Recovery is an independent vehicle rescue team providing direct-dispatch recovery, breakdown assistance and vehicle transportation across your local area.",
 };
 
 export default function AboutPage() {
@@ -28,7 +27,6 @@ export default function AboutPage() {
       <FleetBanner />
       <Certifications />
       <WhyTrust />
-      <Depots />
       <LocationSection />
       <AboutCta />
     </>

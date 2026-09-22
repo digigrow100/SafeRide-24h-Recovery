@@ -19,7 +19,7 @@ const REASSURANCES = [
     icon: "pin_drop",
     accent: "text-blue-800",
     label: "Local Fleet Hub",
-    title: "Bradford Coverage",
+    title: "Local Coverage",
     description:
       "Strategically parked units ready for high-speed motorway verge extractions and residential breakdowns.",
   },

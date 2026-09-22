@@ -12,7 +12,7 @@ export default function FinalCta() {
           </span>
         </div>
         <h2 className="font-display text-4xl font-black uppercase leading-[1.05] tracking-tight text-slate-900 sm:text-6xl md:text-7xl">
-          Stranded in Bradford? <br />
+          Stranded on the Road? <br />
           <span className="text-blue-800">Call SafeRide Now</span>
         </h2>
         <p className="mx-auto max-w-lg font-sans text-base text-slate-500 sm:text-lg">

@@ -20,7 +20,7 @@ const FLEET = [
     name: "Multi-Carrier Demountable",
     spec: "18T Multi-Carrier",
     description:
-      "Dual-tier multi-car platform designed for motorway clearance, insurance salvage transport, and nationwide vehicle repatriations across West Yorkshire.",
+      "Dual-tier multi-car platform designed for motorway clearance, insurance salvage transport, and nationwide vehicle repatriations.",
     specialization: "Motorway Incident Clearance",
     detail: "Up to 8,500 kg Payload",
     image: aboutHydraulicRigging,

@@ -51,7 +51,7 @@ export default function DispatchInfoCard() {
                 Operational Base
               </span>
               <span className="font-sans text-sm text-slate-900">
-                Bradford, UK (M62 / M606 Rapid Corridor)
+                UK (Local & Regional Coverage)
               </span>
             </div>
           </div>
@@ -114,7 +114,7 @@ export default function DispatchInfoCard() {
       <div className="relative overflow-hidden rounded-xl bg-white shadow-md">
         <div className="relative h-44 w-full">
           <Image
-            alt="Night recovery operative securing a car wheel on a wet highway in Bradford"
+            alt="Night recovery operative securing a car wheel on a wet highway"
             src={contactNightOperative}
             fill
             sizes="(min-width: 1024px) 40vw, 100vw"
@@ -125,7 +125,7 @@ export default function DispatchInfoCard() {
               DISPATCH UNIT ENGAGED
             </span>
             <span className="font-display text-base font-semibold text-slate-900">
-              Trained tilt-slide specialists active across West Yorkshire
+              Trained tilt-slide specialists active across the region
             </span>
           </div>
         </div>

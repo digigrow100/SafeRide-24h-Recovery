@@ -13,8 +13,8 @@ export default function ContactHero() {
           Need Help? <span className=" text-blue-800">Get In Touch.</span>
         </h1>
         <p className="max-w-xl font-sans text-base text-slate-500 md:text-lg">
-          For vehicle recovery, breakdown assistance, transportation or roadside help in
-          Bradford, contact SafeRide 24h Recovery. Immediate response operators on standby.
+          For vehicle recovery, breakdown assistance, transportation or roadside help, contact
+          SafeRide 24h Recovery. Immediate response operators on standby.
         </p>
       </div>
     </section>

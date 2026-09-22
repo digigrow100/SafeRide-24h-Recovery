@@ -2,9 +2,9 @@ import Image from "next/image";
 import contactCoverageMapArea from "@/assets/images/contact-coverage-map-area.webp";
 
 const CORRIDORS = [
-  { area: "M606 / M62 Corridor", eta: "Avg ETA: 15-20 Min", accent: "text-blue-800" },
-  { area: "Bradford Central & Inner Ring", eta: "Avg ETA: 15-25 Min", accent: "text-slate-700" },
-  { area: "Airedale & Calderdale Arteries", eta: "Avg ETA: 25-35 Min", accent: "text-blue-800" },
+  { area: "City Centre & Inner Ring", eta: "Avg ETA: 15-25 Min", accent: "text-blue-800" },
+  { area: "Motorway & Arterial Routes", eta: "Avg ETA: 20-30 Min", accent: "text-slate-700" },
+  { area: "Surrounding Towns", eta: "Avg ETA: 25-35 Min", accent: "text-blue-800" },
 ];
 
 export default function ContactCoverage() {
@@ -15,7 +15,7 @@ export default function ContactCoverage() {
           <div className="relative min-h-[280px] overflow-hidden rounded-xl bg-white shadow-xl lg:col-span-7">
             <div className="relative h-80 w-full sm:h-96">
               <Image
-                alt="Map of Bradford, West Yorkshire recovery coverage area"
+                alt="Map of the local vehicle recovery coverage area"
                 src={contactCoverageMapArea}
                 fill
                 sizes="(min-width: 1024px) 60vw, 100vw"
@@ -26,7 +26,7 @@ export default function ContactCoverage() {
               <div className="flex items-center gap-2">
                 <span className="material-symbols-outlined text-[20px] text-blue-800">explore</span>
                 <span className="font-sans text-xs uppercase tracking-wider text-blue-800">
-                  SECTOR: BRADFORD METROPOLITAN // M62 • M606 • A650
+                  LOCAL & REGIONAL COVERAGE
                 </span>
               </div>
               <span className="font-sans text-xs font-semibold uppercase text-blue-800">UNIT GPS LIVE</span>
@@ -40,10 +40,10 @@ export default function ContactCoverage() {
                 REGIONAL COVERAGE
               </span>
             </div>
-            <h2 className="font-display text-2xl font-bold text-slate-900 md:text-3xl">Serving Bradford</h2>
+            <h2 className="font-display text-2xl font-bold text-slate-900 md:text-3xl">Serving Your Area</h2>
             <p className="font-sans text-base text-slate-500">
-              Vehicle recovery and roadside assistance across Bradford. Rapid dispatch along the
-              Chain Bar interchange, Shipley, Keighley, and all West Yorkshire ring routes.
+              Vehicle recovery and roadside assistance across your local area and the surrounding
+              region, with rapid dispatch along key routes.
             </p>
             <div className="flex flex-col gap-3 pt-1">
               {CORRIDORS.map((item) => (

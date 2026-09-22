@@ -7,9 +7,9 @@ const ITEMS = [
   },
   {
     icon: "location_on",
-    title: "Local Bradford Coverage",
+    title: "Local Area Coverage",
     description:
-      "We serve Bradford and nearby areas across West Yorkshire. Our local knowledge helps us understand major roads, residential areas and common travel routes.",
+      "We serve our local area and nearby towns. Our local knowledge helps us understand major roads, residential areas and common travel routes.",
   },
   {
     icon: "verified_user",
@@ -27,7 +27,7 @@ const ITEMS = [
     icon: "route",
     title: "Local and Long-Distance Transport",
     description:
-      "We can help with short journeys within Bradford and planned vehicle transportation to destinations further away.",
+      "We can help with short local journeys and planned vehicle transportation to destinations further away.",
   },
   {
     icon: "groups",

@@ -1,6 +1,6 @@
 const STATS = [
   { label: "AVAILABILITY", value: "24/7" },
-  { label: "COVERAGE", value: "BD1–BD24" },
+  { label: "COVERAGE", value: "Local & Regional" },
   { label: "COMPLIANCE", value: "PAS 43" },
   { label: "DISPATCH", value: "Zero IVR Delay" },
 ] as const;
