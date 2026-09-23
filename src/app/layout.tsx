@@ -23,9 +23,16 @@ const SITE_TITLE = "24/7 Car Recovery | SafeRide 24H Recovery";
 const SITE_DESCRIPTION =
   "Need car recovery? SafeRide provides 24/7 car recovery, breakdown recovery, roadside assistance and vehicle transportation in your local area. Call now.";
 
+const SITE_URL =
+  process.env.NEXT_PUBLIC_SITE_URL ??
+  (process.env.VERCEL_PROJECT_PRODUCTION_URL
+    ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
+    : process.env.VERCEL_URL
+      ? `https://${process.env.VERCEL_URL}`
+      : "http://localhost:3000");
+
 export const metadata: Metadata = {
-  // TODO: replace with the live production domain before deploying.
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000"),
+  metadataBase: new URL(SITE_URL),
   title: SITE_TITLE,
   description: SITE_DESCRIPTION,
   icons: {
